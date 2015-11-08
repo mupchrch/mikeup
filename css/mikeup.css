@@ -3,6 +3,9 @@ html, body {
   padding:0;
   font-size: 100%;
   font-family: Verdana, Geneva, sans-serif;
+  height: 100%;
+  min-width: 600px;
+  min-height: 500px;
 }
 
 .myName {
@@ -11,7 +14,7 @@ html, body {
   font-size: 2em;
   position: absolute;
   bottom: 5px;
-  left: 0;
+  left: 10px;
   font-weight: bold;
 }
 
@@ -50,6 +53,8 @@ html, body {
   width: 80px;
   text-align: center;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .menuItem > a,
@@ -82,9 +87,47 @@ html, body {
 }
 
 .contentHolder {
+  padding-top: 1px;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  width: 100%;
+}
+
+.backgroundImageHolder {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.backgroundImage {
   opacity: 0;
   transition: opacity 0.5s;
   transition-delay: 0.5s;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-image: url("../images/myself.jpg");
+  background-size: cover;
+}
+
+.moveImageRight {
+  right: -20%;
+}
+
+.bigText {
+  font-size: 5vh;
+  font-weight: bolder;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transition: opacity 0.5s;
+  transition-delay: 1s;
+  opacity: 0;
 }
 
 .loadOpacity{
