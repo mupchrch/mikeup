@@ -30,6 +30,15 @@ html, body {
   height: 80px;
 }
 
+.belowHeader {
+  opacity: 0;
+  transition: opacity 0.25s;
+  transition-delay: 0.25s;
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+}
+
 .headerHolder {
   width: 100%;
   height: 80px;
@@ -83,7 +92,7 @@ html, body {
 
 .menuItem:hover > .menuHighlight {
   opacity: 1;
-  bottom: 0;
+  bottom: -3px;
 }
 
 .contentHolder {
@@ -107,11 +116,11 @@ html, body {
   transition: opacity 0.5s;
   transition-delay: 0.5s;
   position: absolute;
-  top: 80px;
+  top: 83px;
   bottom: 0;
   right: 0;
   width: 100%;
-  background-image: url("../images/myself.jpg");
+  background-image: url("../images/myself_bw.jpg");
   background-size: cover;
 }
 
@@ -120,14 +129,19 @@ html, body {
 }
 
 .bigText {
+  opacity: 0;
   font-size: 5vh;
   font-weight: bolder;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 10%;
-  transition: opacity 0.5s;
+  transition: top 0.5s, opacity 0.5s;
   transition-delay: 1s;
-  opacity: 0;
+}
+
+.loadBigText {
+  top: 30%;
+  opacity: 1;
 }
 
 .loadOpacity{
