@@ -10,7 +10,6 @@ html, body {
 
 .myName {
   color: #61A0D2;
-  /*color: #5AA5E0;*/
   float: left;
   font-size: 2em;
   position: absolute;
@@ -58,6 +57,7 @@ html, body {
 }
 
 .menuItem {
+  cursor: pointer;
   display: inline-block;
   height: 30px;
   width: 80px;
@@ -106,9 +106,8 @@ html, body {
 }
 
 .contentHolder {
-  padding-top: 1px;
-  position: absolute;
-  top: 80px;
+  position: fixed;
+  top: 83px;
   bottom: 0;
   width: 100%;
 }
@@ -123,8 +122,7 @@ html, body {
 
 .backgroundImage {
   opacity: 0;
-  transition: opacity 0.5s;
-  transition-delay: 0.5s;
+  transition: opacity 0.5s ease 0.5s, right 0.75s ease 0s;
   position: absolute;
   top: 83px;
   bottom: 0;
@@ -136,6 +134,17 @@ html, body {
 
 .moveImageRight {
   right: -20%;
+}
+
+.backgroundImageCover {
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 83px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: black;
 }
 
 .bigText {
@@ -155,6 +164,38 @@ html, body {
 .loadBigText {
   top: 30%;
   opacity: 1;
+}
+
+.aboutPanel {
+  position: absolute;
+  width: 65%;
+  left: -65%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.75s;
+  overflow: auto;
+}
+
+.aboutPanelContent {
+  padding: 0 30px 0 30px;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.aboutPanel h2 {
+  border-bottom-color: lightgray;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  padding-bottom: 10.8px;
+}
+
+.loadAboutPanel {
+  left: 0;
+}
+
+.loadHalfOpacity {
+  opacity: 0.5;
 }
 
 .loadOpacity{
