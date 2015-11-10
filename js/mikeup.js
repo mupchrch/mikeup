@@ -8,7 +8,7 @@ function initializePage() {
   $(".about").click(loadAbout);
   $(".contact").click(loadContact);
 
-  if (document.location.hash === "#home") {
+  if (document.location.hash === "#") {
     loadHome();
   } else if (document.location.hash === "#about") {
     loadAbout();
@@ -30,12 +30,16 @@ function loadHome() {
   $(".backgroundImage").removeClass("moveImageRight");
   $(".aboutPanel").removeClass("loadAboutPanel");
   $(".backgroundImageCover").removeClass("loadHalfOpacity");
+  $(".triangleLeft").removeClass("loadTriangleLeft");
+  $(".aboutPanelContent h2").removeClass("loadH2Line");
 }
 
 function loadAbout() {
   $(".backgroundImage").addClass("moveImageRight");
   $(".aboutPanel").addClass("loadAboutPanel");
   $(".backgroundImageCover").addClass("loadHalfOpacity");
+  $(".triangleLeft").addClass("loadTriangleLeft");
+  $(".aboutPanelContent h2").addClass("loadH2Line");
 }
 
 function loadContact() {
