@@ -128,6 +128,7 @@ html, body {
   top: 83px;
   bottom: 0;
   right: 0;
+  width: 100%;
   background-image: url("../images/myself_bw.jpg");
   background-size: cover;
 }
