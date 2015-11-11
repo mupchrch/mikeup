@@ -123,7 +123,7 @@ html, body {
 
 .backgroundImage {
   opacity: 0;
-  transition: opacity 0.5s ease 0.5s, right 0.75s ease 0s;
+  transition: opacity 0.5s ease 0.5s, right 0.5s;
   position: absolute;
   top: 83px;
   bottom: 0;
@@ -135,6 +135,11 @@ html, body {
 
 .moveImageRight {
   right: -20%;
+}
+
+.moveImageLeft {
+  transition: opacity 0.5s ease 0.5s, right 0.5s ease 0.3s;
+  right: 10%;
 }
 
 .backgroundImageCover {
@@ -156,6 +161,7 @@ html, body {
   font-size: 5vh;
   font-weight: bold;
   position: absolute;
+  width: 100%;
   top: 35%;
   left: 8%;
   transition: top 0.5s, opacity 0.5s;
@@ -164,7 +170,6 @@ html, body {
 
 .loadBigText {
   top: 30%;
-  opacity: 1;
 }
 
 .aboutPanel {
@@ -173,7 +178,7 @@ html, body {
   left: -65%;
   height: 100%;
   background-color: white;
-  transition: left 0.75s;
+  transition: left 0.5s;
   overflow: auto;
 }
 
@@ -213,14 +218,34 @@ html, body {
   float: left;
   top: 40px;
   left: -40px;
+  width: 0;
+  height: 0;
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
   border-left: 30px solid #61A0D2;
   transition: left 0.5s;
   transition-delay: 1s;
 }
+
 .loadTriangleLeft {
   left: 0;
+}
+
+.contactPanel {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  width: 80px;
+  height: 0px;
+  background-color: #61A0D2;
+  transition: right 0.1s ease 0.45s, height 0.3s ease 0.5s, width 0.5s;
+}
+
+.loadContactPanel {
+  transition: right 0.1s ease 0.25s, height 0.3s, width 0.5s ease 0.3s;
+  right: 0;
+  height: 100%;
+  width: 35%;
 }
 
 .loadHalfOpacity {

@@ -8,29 +8,12 @@ CurrentPage = {
 
 function initializePage() {
   loadHeader();
-  loadHome();
+  loadCurrentPage();
 
   $(".home").click(loadHome);
   $(".about").click(loadAbout);
   $(".contact").click(loadContact);
-
-  $(window).on("hashchange", function() {
-    var hash = location.hash;
-
-    switch(hash) {
-      case CurrentPage.HOME:
-        loadHome();
-        break;
-      case CurrentPage.ABOUT:
-        loadAbout();
-        break;
-      case CurrentPage.CONTACT:
-        loadContact();
-        break;
-      default:
-        loadHome();
-    }
-  });
+  $(window).on("hashchange", loadCurrentPage);
 }
 
 function loadHeader() {
@@ -40,14 +23,36 @@ function loadHeader() {
   $(".backgroundImage").addClass("loadOpacity");
 }
 
+function loadCurrentPage() {
+  var hash = window.location.hash;
+
+  switch(hash) {
+    case CurrentPage.HOME:
+      loadHome();
+      break;
+    case CurrentPage.ABOUT:
+      loadAbout();
+      break;
+    case CurrentPage.CONTACT:
+      loadContact();
+      break;
+    default:
+      loadHome();
+  }
+}
+
 function loadHome() {
   $(".bigText").addClass("loadBigText");
+  $(".bigText").addClass("loadOpacity");
 
   $(".backgroundImage").removeClass("moveImageRight");
   $(".aboutPanel").removeClass("loadAboutPanel");
   $(".backgroundImageCover").removeClass("loadHalfOpacity");
   $(".triangleLeft").removeClass("loadTriangleLeft");
   $(".aboutPanelContent h2").removeClass("loadH2Line");
+
+  $(".backgroundImage").removeClass("moveImageLeft");
+  $(".contactPanel").removeClass("loadContactPanel");
 }
 
 function loadAbout() {
@@ -59,5 +64,6 @@ function loadAbout() {
 }
 
 function loadContact() {
-
+  $(".backgroundImage").addClass("moveImageLeft");
+  $(".contactPanel").addClass("loadContactPanel");
 }
