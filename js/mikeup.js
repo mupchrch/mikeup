@@ -53,6 +53,7 @@ function loadHome() {
 
   $(".backgroundImage").removeClass("moveImageLeft");
   $(".contactPanel").removeClass("loadContactPanel");
+  $(".bigText").removeClass("moveBigTextLeft");
 }
 
 function loadAbout() {
@@ -66,4 +67,5 @@ function loadAbout() {
 function loadContact() {
   $(".backgroundImage").addClass("moveImageLeft");
   $(".contactPanel").addClass("loadContactPanel");
+  $(".bigText").addClass("moveBigTextLeft");
 }

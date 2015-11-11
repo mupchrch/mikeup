@@ -164,12 +164,16 @@ html, body {
   width: 100%;
   top: 35%;
   left: 8%;
-  transition: top 0.5s, opacity 0.5s;
-  transition-delay: 1s;
+  transition: top 0.5s ease 1s, opacity 0.5s ease 1s, left 0.5s;
 }
 
 .loadBigText {
   top: 30%;
+}
+
+.moveBigTextLeft {
+  transition: top 0.5s ease 1s, opacity 0.5s ease 1s, left 0.5s ease 0.3s;
+  left: 3%;
 }
 
 .aboutPanel {
