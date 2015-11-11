@@ -1,5 +1,11 @@
 $(window).load(initializePage);
 
+CurrentPage = {
+  HOME: "#home",
+  ABOUT: "#about",
+  CONTACT: "#contact"
+}
+
 function initializePage() {
   loadHeader();
   loadHome();
@@ -8,13 +14,23 @@ function initializePage() {
   $(".about").click(loadAbout);
   $(".contact").click(loadContact);
 
-  if (document.location.hash === "#") {
-    loadHome();
-  } else if (document.location.hash === "#about") {
-    loadAbout();
-  } else if (document.location.hash === "#contact") {
+  $(window).on("hashchange", function() {
+    var hash = location.hash;
 
-  }
+    switch(hash) {
+      case CurrentPage.HOME:
+        loadHome();
+        break;
+      case CurrentPage.ABOUT:
+        loadAbout();
+        break;
+      case CurrentPage.CONTACT:
+        loadContact();
+        break;
+      default:
+        loadHome();
+    }
+  });
 }
 
 function loadHeader() {
