@@ -10,6 +10,8 @@ function initializePage() {
   loadHeader();
   loadCurrentPage();
 
+  $(".email").text("contact" + "@" + "mikeup.church")
+
   $(".home").click(loadHome);
   $(".about").click(loadAbout);
   $(".contact").click(loadContact);
@@ -42,22 +44,34 @@ function loadCurrentPage() {
 }
 
 function loadHome() {
+  // add home
   $(".bigText").addClass("loadBigText");
   $(".bigText").addClass("loadOpacity");
 
-  $(".backgroundImage").removeClass("moveImageRight");
+  // remove about panel
+  $(".backgroundImage").removeClass("loadImageRight");
   $(".aboutPanel").removeClass("loadAboutPanel");
   $(".backgroundImageCover").removeClass("loadHalfOpacity");
   $(".triangleLeft").removeClass("loadTriangleLeft");
   $(".aboutPanelContent h2").removeClass("loadH2Line");
 
-  $(".backgroundImage").removeClass("moveImageLeft");
+  // remove contact panel
+  $(".backgroundImage").removeClass("loadImageLeft");
+  $(".contactPanel").removeClass("loadOverflowAuto");
   $(".contactPanel").removeClass("loadContactPanel");
   $(".bigText").removeClass("moveBigTextLeft");
+  $(".behindMyFace").removeClass("loadBehindMyFace");
+  $(".myContactName").removeClass("loadOpacity");
+  $(".myContactName").removeClass("loadMyContactName");
+  $(".myFace").removeClass("loadOpacity");
+  $(".myFace").removeClass("loadMyFace");
+  $(".email").removeClass("loadOpacity");
+  $(".email").removeClass("loadEmail");
 }
 
 function loadAbout() {
-  $(".backgroundImage").addClass("moveImageRight");
+  // add about panel
+  $(".backgroundImage").addClass("loadImageRight");
   $(".aboutPanel").addClass("loadAboutPanel");
   $(".backgroundImageCover").addClass("loadHalfOpacity");
   $(".triangleLeft").addClass("loadTriangleLeft");
@@ -65,7 +79,21 @@ function loadAbout() {
 }
 
 function loadContact() {
-  $(".backgroundImage").addClass("moveImageLeft");
+  // add contact panel
+  $(".backgroundImage").addClass("loadImageLeft");
+  $(".backgroundImageCover").addClass("loadHalfOpacity");
   $(".contactPanel").addClass("loadContactPanel");
   $(".bigText").addClass("moveBigTextLeft");
+  $(".behindMyFace").addClass("loadBehindMyFace");
+  $(".myContactName").addClass("loadOpacity");
+  $(".myContactName").addClass("loadMyContactName");
+  $(".myFace").addClass("loadOpacity");
+  $(".myFace").addClass("loadMyFace");
+  $(".email").addClass("loadOpacity");
+  $(".email").addClass("loadEmail");
+
+  // don't show scrollbars during transition
+  window.setTimeout(function(){
+    $(".contactPanel").addClass("loadOverflowAuto");
+  }, 800);
 }
