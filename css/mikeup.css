@@ -242,6 +242,42 @@ html, body {
   left: 0;
 }
 
+.icon {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    cursor: pointer;
+    float: right;
+    margin-left: 8px;
+}
+
+.githubIcon {
+    background-image: url("../images/GitHub-Mark-32px.png");
+    opacity: 0.3;
+}
+
+.githubIcon:hover {
+    opacity: 0.5;
+}
+
+.atomIcon {
+    background-image: url("../images/atom_logo.png");
+    opacity: 0.6;
+}
+
+.atomIcon:hover {
+    opacity: 1;
+}
+
+.linkIcon {
+    background-image: url("../images/link.png");
+    opacity: 0.3;
+}
+
+.linkIcon:hover {
+    opacity: 0.5;
+}
+
 /*** Contact Panel Classes ***/
 
 .contactPanel {
