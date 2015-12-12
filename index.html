@@ -60,15 +60,34 @@
         <p>
             Hello! I am a Software Developer who graduated in 2015 from the
             University of New Hampshire with a B.S. in Computer Science. I live
-            in Stratham, NH and I am currently employed with Pegasystems Inc.,
-            located in Bedford, NH.
+            in Stratham, NH and I am currently employed with Pegasystems Inc.
+        </p>
+        <p>
+            Below are some of my favorite projects that I have worked on with
+            relevant links at the top right of each section.
         </p>
 
         <div class="triangleLeft"></div>
         <h2>
             mikeup.church <a class="githubIcon icon" href="https://github.com/mupchrch/mikeup" target="_blank"></a>
         </h2>
-        <p>I made this website!</p>
+        <p>
+            I created the website you are currently browsing from scratch. The
+            goal was to hone my skills with CSS transitions. A secondary goal
+            was to show off this domain name; I am proud of its cleverness!
+        </p>
+        <p>
+            In actual time spent on this project, I would say that this one took
+            me about 2 weeks to complete; being a perfectionist certainly does
+            not expedite the process. I am most pleased with how clean the
+            Javascript is despite there being so much going on with page load
+            transitions and having to keep track of which page the user is on.
+            This is by no means a technically advanced project, but I hope you
+            agree that this is the most visually polished!
+        </p>
+        <p>
+            <i>Technologies: HTML, JQuery, CSS</i>
+        </p>
 
         <div class="triangleLeft"></div>
         <h2>
@@ -76,26 +95,99 @@
             <a class="githubIcon icon" href="https://github.com/mupchrch/split-diff" target="_blank"></a>
             <a class="atomIcon icon" href="https://atom.io/packages/split-diff" target="_blank"></a>
         </h2>
-        <p>I made an atom package!</p>
+        <div class="projectContent">
+            <div class="projectText">
+                <p>
+                    Split Diff is an Atom package that compares code
+                    side-by-side and highlights any differences. I began using
+                    the open source Atom text editor at my first full time job.
+                    At the time, the editor was freshly out of beta and I sorely
+                    noticed that there was no package available to diff two
+                    files. I mainly developed this package for myself, but as
+                    you can see by clicking the Atom icon to the right, it has
+                    been well received!
+                </p>
+                <p>
+                    Developing Split Diff has given me valuable experience with
+                    the open source community. It has also given me quite a lot
+                    of headaches trying to work within the bounds of an API. I
+                    have had to do some pretty interesting things to work around
+                    the fact that there is no easy way to add unnumbered lines
+                    into an editor window.
+                </p>
+                <p>
+                    <i>Technologies: Coffeescript, Javascript, CSS</i>
+                </p>
+            </div>
+            <img src="images/split-diff.gif" alt="Split Diff" height="auto" width="50%"></img>
+        </div>
 
         <div class="triangleLeft"></div>
         <h2>
             ET-NavSwarm
             <a class="linkIcon icon" href="http://www.unh.edu/navswarm/" target="_blank"></a>
         </h2>
-        <p>I made a swarm of robots!</p>
-        <p>
-            I think one of the most exciting experiences that my time at school
-            provided would be having the opportunity to visit NASA's Goddard
-            Space Flight Center. My senior project involved...
-        </p>
+        <div class="projectContent">
+            <div class="projectText">
+                <p>
+                    Extraterrestrial Navigational Swarm was my senior project at
+                    UNH. The goal of the project was to create a swarm of robots
+                    that would be able to implement any swarming algorithm
+                    thrown at it - specifically the Partical Swarm Optimization
+                    algorithm. This algorithm would allow the robots to
+                    cooperatively search an area to find the highest value (ex:
+                    altitude).
+                </p>
+                <p>
+                    To achieve the goal, I was in charge of getting all of the
+                    devices on the robot to communicate with one another. The
+                    Arduino Mega was used to drive the motors and collect
+                    locational data. This data needed to be passed to the
+                    Raspberry Pi Model B+ for the swarming algorithm. Then a
+                    subset of the data needed to be broadcast to the rest of the
+                    swarm in mesh networking mode via Zigbee devices.
+                </p>
+                <p>
+                    The ET-NavSwarm project was an invaluable experience. The
+                    greatest reward to all of the hard work we put into the
+                    project was getting to visit NASA's Goddard Space Flight
+                    Center. I experienced some amazing things there, including
+                    the Hubble Space Telescope Operations Control Center, the
+                    assembly of the James Webb Space Telescope in the world's
+                    largest clean room, and finally being able to present our
+                    research to top NASA engineers.
+                </p>
+                <p>
+                    <i>Technologies: Java, C, Google Protocol Buffers</i>
+                </p>
+            </div>
+            <img src="images/etnavswarm-robot.jpg" alt="ET-NavSwarm Robot" height="auto" width="50%"></img>
+        </div>
 
         <div class="triangleLeft"></div>
         <h2>
             kappafeed
             <a class="linkIcon icon" href="http://kappafeed.com" target="_blank"></a>
         </h2>
-        <p>I made a terrible website!</p>
+        <p>
+            Kappafeed listens in top
+            <a href="http://www.twitch.tv" target="_blank">Twitch.tv</a>
+            channels for specified emoticons and displays them in one collective
+            feed. It integrates with Twitch APIs and IRC servers in order to
+            merge the top chat channels into one.
+        </p>
+        <p>
+            I learned a lot from this project about maintaining servers and
+            keeping a service running reliably 24/7. Admittedly, the code for
+            this project quickly grew out of control as more features were added
+            and bugs that would cause the service to crash were fixed. I
+            think at this point, the effort of code refactor would outweigh the
+            benefits. I am not ashamed to admit how monstrous this code became
+            because it taught me valuable lessons for future projects.
+        </p>
+        <p>
+            <i>Technologies: Python, Tornado Web Server, IRC, Websockets, HTML, JQuery, CSS</i>
+        </p>
       </div>
     </div>
   </div>

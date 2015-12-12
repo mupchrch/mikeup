@@ -219,7 +219,7 @@ html, body {
   border-bottom-color: lightgray !important;
 }
 
-.aboutPanelContent > p {
+.aboutPanelContent p {
   padding: 0 40px 0 40px;
 }
 
@@ -231,8 +231,8 @@ html, body {
   left: -40px;
   width: 0;
   height: 0;
-	border-top: 30px solid transparent;
-	border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
   border-left: 30px solid #61A0D2;
   transition: left 0.5s;
   transition-delay: 1s;
@@ -276,6 +276,17 @@ html, body {
 
 .linkIcon:hover {
     opacity: 0.5;
+}
+
+.projectText {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+}
+
+.projectContent > img {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /*** Contact Panel Classes ***/
