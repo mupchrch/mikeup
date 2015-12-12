@@ -67,6 +67,8 @@ function loadHome() {
   $(".myFace").removeClass("loadMyFace");
   $(".email").removeClass("loadOpacity");
   $(".email").removeClass("loadEmail");
+  $(".mySocialMedia").removeClass("loadOpacity");
+  $(".mySocialMedia").removeClass("loadMySocialMedia");
 }
 
 function loadAbout() {
@@ -91,6 +93,8 @@ function loadContact() {
   $(".myFace").addClass("loadMyFace");
   $(".email").addClass("loadOpacity");
   $(".email").addClass("loadEmail");
+  $(".mySocialMedia").addClass("loadOpacity");
+  $(".mySocialMedia").addClass("loadMySocialMedia");
 
   // don't show scrollbars during transition
   window.setTimeout(function(){
