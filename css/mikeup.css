@@ -152,6 +152,7 @@ html, body {
   width: 100%;
   background-color: black;
   display: block;
+  cursor: default;
 }
 
 .bigText {
