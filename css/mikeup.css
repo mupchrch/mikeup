@@ -12,15 +12,16 @@ html, body {
 
 .myName {
   color: #61A0D2;
-  float: left;
   font-size: 2em;
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
   font-weight: bold;
+  padding: 5px;
 }
 
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
   height: 0px;
   background-color: black;
@@ -30,7 +31,7 @@ html, body {
 }
 
 .loadHeader {
-  height: 80px;
+  height: 50px;
 }
 
 .belowHeader {
@@ -44,20 +45,15 @@ html, body {
 
 .headerHolder {
   width: 100%;
-  height: 80px;
+  height: 50px;
 }
 
 .menuItems {
-  float: right;
-  position: absolute;
-  bottom: 0;
-  right: 5px;
   padding: 0;
   margin: 0;
   opacity: 0;
   transition: opacity 0.5s;
   transition-delay: 0.25s;
-  background-color: black;
 }
 
 .menuItem {
@@ -123,7 +119,7 @@ html, body {
   opacity: 0;
   transition: opacity 0.5s ease 0.5s, right 0.5s;
   position: absolute;
-  top: 83px;
+  top: 53px;
   bottom: 0;
   right: 0;
   width: 100%;
@@ -146,7 +142,7 @@ html, body {
   opacity: 0;
   transition: opacity 0.5s;
   position: absolute;
-  top: 83px;
+  top: 53px;
   bottom: 0;
   right: 0;
   width: 100%;
@@ -185,7 +181,7 @@ html, body {
 .aboutPanel {
   position: fixed;
   width: 65%;
-  top: 83px;
+  top: 53px;
   bottom: 0;
   left: -65%;
   background-color: white;
@@ -215,12 +211,27 @@ html, body {
   transition-delay: 0.75s;
 }
 
+.aboutPanelContent img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 60%;
+}
+
 .loadH2Line {
   border-bottom-color: lightgray !important;
 }
 
-.aboutPanelContent p {
-  padding: 0 40px 0 40px;
+.aboutPanelContent p,
+.aboutPanelContent ul {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.aboutPanelContent li {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 .triangleLeft {
@@ -278,23 +289,12 @@ html, body {
   opacity: 0.5;
 }
 
-.projectText {
-  display: inline-block;
-  width: 45%;
-  vertical-align: middle;
-}
-
-.projectContent > img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 /*** Contact Panel Classes ***/
 
 .contactPanel {
   position: fixed;
-  right: 5px;
-  top: 83px;
+  right: 0;
+  top: 53px;
   bottom: 0;
   width: 80px;
   height: 0px;
@@ -307,7 +307,7 @@ html, body {
 .loadContactPanel {
   transition: right 0.1s ease 0.25s, height 0.3s, width 0.5s ease 0.3s;
   right: 0;
-  height: calc(100% - 83px);
+  height: calc(100% - 53px);
   width: 35%;
 }
 

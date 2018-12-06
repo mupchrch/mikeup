@@ -88,32 +88,83 @@
           About
         </h2>
         <p>
-          Hello! I am a Software Developer who graduated in 2015 from the
+          I am a Software Developer who graduated in 2015 from the
           University of New Hampshire with a B.S. in Computer Science. I live
-          in Stratham, NH and I am currently employed with Pegasystems Inc.
+          in Manchester, NH and I am currently employed with Pegasystems Inc.
         </p>
         <p>
-          Below are some of my favorite projects that I have worked on with
+          Below are some of my favorite projects (in order of creation) with
           relevant links at the top right of each section.
         </p>
 
         <div class="triangleLeft"></div>
         <h2>
-          mikeup.church <a class="githubIcon icon" href="https://github.com/mupchrch/mikeup" target="_blank"></a>
+          updash <a class="githubIcon icon" title="Github" href="https://github.com/mupchrch/updash" target="_blank"></a>
         </h2>
         <p>
-          I created the website you are currently browsing from scratch. The
-          goal was to hone my skills with CSS transitions. A secondary goal
-          was to show off this domain name; I am proud of its cleverness!
+          Updash is a personalized information dashboard for my home. It
+          displays helpful things about my life such as commute time, currently
+          playing music, weather, calendar, Instagram photos, etc.
+        </p>
+        <img src="images/updash.png" title="Updash" alt="Updash"></img>
+        <p>
+          It is built using Smashing (a Ruby-based framework for quickly
+          building dashboards) and runs on a Raspberry Pi connected to a
+          monitor. I had to customize many of the widgets as they were either
+          no longer working or did not exist.
         </p>
         <p>
-          In actual time spent on this project, I would say that this one took
-          me about 2 weeks to complete; being a perfectionist certainly does
-          not expedite the process. I am most pleased with how clean the
-          Javascript is despite there being so much going on with page load
-          transitions and having to keep track of which page the user is on.
-          This is by no means a technically advanced project, but I hope you
-          agree that this is the most visually polished!
+          <i>Technologies: Smashing, Ruby, Coffeescript, CSS</i>
+        </p>
+
+        <div class="triangleLeft"></div>
+        <h2>
+          upchat <a class="linkIcon icon" title="Upchat Website" href="https://upchat.mikeup.church" target="_blank"></a>
+        </h2>
+        <p>
+          Upchat is a web app <i>heavily</i> inspired by
+          <a href="https://slack.com/" target="_blank">Slack</a>. It supports
+          channels, nested sub-channels, single/multi user direct messages,
+          channel/user mentions, profile pictures, and more.
+        </p>
+        <img src="images/upchat.png" title="Upchat" alt="Upchat"></img>
+        <p>
+          This project started as an excuse to learn Node, then exploded into an
+          opportunity to learn many more aspects of creating and running a web
+          app:
+        </p>
+        <ul>
+          <li>
+            I began with MongoDB and Mongoose which served me well in the
+            beginning. I quickly realized what I actually needed was a relational
+            database, so I chose Postgres with node-postgres. Choosing a lower level
+            library like node-postgres allowed me to actually learn to write SQL
+            queries.
+          </li>
+          <li>
+            I chose to roll my own user authentication via JSON Web Tokens, as
+            this was another aspect of web apps that I wanted to learn more about.
+          </li>
+          <li>
+            All server APIs are unit tested. All unit tests run with each commit
+            via CircleCI.
+          </li>
+          <li>
+            I learned how to set up a production Node server running via PM2 on a
+            Digital Ocean droplet with an SSL certificate.
+          </li>
+        </ul>
+        <p>
+          <i>Technologies: Webpack, Node, Express, Websockets, JWT, Postgres, React, Sass, Mocha, Chai, CircleCI</i>
+        </p>
+
+        <div class="triangleLeft"></div>
+        <h2>
+          mikeup.church <a class="githubIcon icon" title="Github" href="https://github.com/mupchrch/mikeup" target="_blank"></a>
+        </h2>
+        <p>
+          I created this website from scratch with the goal to hone my skills
+          with CSS transitions and understand static websites a bit more.
         </p>
         <p>
           <i>Technologies: HTML, JQuery, CSS</i>
@@ -122,98 +173,104 @@
         <div class="triangleLeft"></div>
         <h2>
           split-diff
-          <a class="githubIcon icon" href="https://github.com/mupchrch/split-diff" target="_blank"></a>
-          <a class="atomIcon icon" href="https://atom.io/packages/split-diff" target="_blank"></a>
+          <a class="githubIcon icon" title="Github" href="https://github.com/mupchrch/split-diff" target="_blank"></a>
+          <a class="atomIcon icon" title="Atom Package" href="https://atom.io/packages/split-diff" target="_blank"></a>
         </h2>
-        <div class="projectContent">
-          <div class="projectText">
-            <p>
-              Split Diff is an Atom package that compares code
-              side-by-side and highlights any differences. I began using
-              the open source Atom text editor at my first full time job.
-              At the time, the editor was freshly out of beta and I sorely
-              noticed that there was no package available to diff two
-              files. I mainly developed this package for myself, but as
-              you can see by clicking the Atom icon to the right, it has
-              been well received!
-            </p>
-            <p>
-              Developing Split Diff has given me valuable experience with
-              the open source community. It has also given me quite a lot
-              of headaches trying to work within the bounds of an API. I
-              have had to do some pretty interesting things to work around
-              the fact that there is no easy way to add unnumbered lines
-              into an editor window.
-            </p>
-            <p>
-              <i>Technologies: Coffeescript, Javascript, CSS</i>
-            </p>
-          </div>
-          <img src="images/split-diff.gif" alt="Split Diff" height="auto" width="50%"></img>
-        </div>
+        <p>
+          Split Diff is an Atom package that compares code
+          side-by-side and highlights any differences. I began using
+          the open source Atom text editor at my first full time job.
+          At the time, the editor was freshly out of beta and I noticed
+          there was no package available to diff files. Even though I don't
+          use the package much anymore, I have continued to support it.
+        </p>
+        <img src="images/split-diff.gif" title="Split Diff" alt="Split Diff"></img>
+        <p>
+          Developing Split Diff has given me valuable experience with the
+          open source community. It has also given me quite a lot of
+          practice with trying to work within the bounds of an API. I have
+          had to do some pretty interesting workarounds to do things like
+          keep the two editor scroll positions in sync, add empty lines so
+          the diff chunks stay visibly next to each other, run the diffing
+          calculations on a separate node process so the UI doesn't freeze,
+          etc.
+        </p>
+        <p>
+          Another popular Atom package,
+          <a href="https://atom.io/packages/git-time-machine" target="_blank">Git Time Machine</a>,
+          is built on top of Split Diff, and I have worked with the developer of
+          that package to expose helpful hooks into my package. I have also developed
+          two other Atom packages:
+          <a href="https://atom.io/packages/minimap-split-diff" target="_blank">Minimap Split Diff</a>
+          and
+          <a href="https://atom.io/packages/outline-selection" target="_blank">Outline Selection</a>.
+        </p>
+        <p>
+          <i>Technologies: Coffeescript, Javascript, Less</i>
+        </p>
 
         <div class="triangleLeft"></div>
         <h2>
           ET-NavSwarm
-          <a class="linkIcon icon" href="http://www.unh.edu/navswarm/" target="_blank"></a>
+          <a class="linkIcon icon" title="ET-NavSwarm Website" href="http://www.unh.edu/navswarm/" target="_blank"></a>
         </h2>
-        <div class="projectContent">
-          <div class="projectText">
-            <p>
-              Extraterrestrial Navigational Swarm was my senior project at
-              UNH. The goal of the project was to create a swarm of robots
-              that would be able to implement any swarming algorithm
-              thrown at it - specifically the Partical Swarm Optimization
-              algorithm. This algorithm would allow the robots to
-              cooperatively search an area to find the highest value (ex:
-              altitude).
-            </p>
-            <p>
-              To achieve the goal, I was in charge of getting all of the
-              devices on the robot to communicate with one another. The
-              Arduino Mega was used to drive the motors and collect
-              locational data. This data needed to be passed to the
-              Raspberry Pi Model B+ for the swarming algorithm. Then a
-              subset of the data needed to be broadcast to the rest of the
-              swarm in mesh networking mode via Zigbee devices.
-            </p>
-            <p>
-              The ET-NavSwarm project was an invaluable experience. The
-              greatest reward to all of the hard work we put into the
-              project was getting to visit NASA's Goddard Space Flight
-              Center. I experienced some amazing things there, including
-              the Hubble Space Telescope Operations Control Center, the
-              assembly of the James Webb Space Telescope in the world's
-              largest clean room, and finally being able to present our
-              research to top NASA engineers.
-            </p>
-            <p>
-              <i>Technologies: Java, C, Google Protocol Buffers</i>
-            </p>
-          </div>
-          <img src="images/etnavswarm-robot.jpg" alt="ET-NavSwarm Robot" height="auto" width="50%"></img>
-        </div>
+        <p>
+          My senior project at UNH was Extraterrestrial Navigational Swarm.
+          The goal of the project was to create a swarm of robots that would
+          be able to implement any swarming algorithm thrown at it -
+          specifically the Partical Swarm Optimization algorithm. This
+          algorithm would allow the robots to cooperatively search an area
+          to find the lowest altitude.
+        </p>
+        <img src="images/etnavswarm-robot.jpg" title="ET-NavSwarm Robot" alt="ET-NavSwarm Robot"></img>
+        <p>
+          To achieve the goal, I was in charge of getting all of the
+          devices on the robot to communicate with one another. The
+          Arduino Mega was used to drive the motors and collect
+          locational data. This data needed to be passed to the
+          Raspberry Pi Model B+ for the swarming algorithm. Then a
+          subset of the data needed to be broadcast to the rest of the
+          swarm in mesh networking mode via Zigbee devices.
+        </p>
+        <p>
+          The ET-NavSwarm project was an invaluable experience. The
+          greatest reward to all of the hard work we put into the
+          project was getting to visit NASA's Goddard Space Flight
+          Center. I experienced some amazing things there, including
+          the Hubble Space Telescope Operations Control Center, the
+          assembly of the James Webb Space Telescope in the world's
+          largest clean room, and finally being able to present our
+          research to top NASA engineers.
+        </p>
+        <p>
+          <i>Technologies: Java, C, Google Protocol Buffers</i>
+        </p>
 
         <div class="triangleLeft"></div>
         <h2>
           kappafeed
-          <a class="linkIcon icon" href="http://kappafeed.com" target="_blank"></a>
+          <a class="githubIcon icon" title="Github" href="https://github.com/mupchrch/kappafeed_overwolf" target="_blank"></a>
+          <a class="githubIcon icon" title="Github" href="https://github.com/mupchrch/kappafeed" target="_blank"></a>
         </h2>
         <p>
-          Kappafeed listens in top
+          Kappafeed is a program that listens in top
           <a href="http://www.twitch.tv" target="_blank">Twitch.tv</a>
           channels for specified emoticons and displays them in one collective
           feed. It integrates with Twitch APIs and IRC servers in order to
           merge the top chat channels into one.
         </p>
         <p>
+          At one point, I created a Kappafeed
+          <a href="https://www.overwolf.com/app/Michael_Upchurch-Kappafeed" target="_blank">Overwolf app</a>
+          for a contest they were hosting and actually won a gaming headset.
+        </p>
+        <img src="images/kappafeed-overwolf.jpg" title="Kappafeed Overwolf" alt="Kappafeed Overwolf"></img>
+        <p>
           I learned a lot from this project about maintaining servers and
-          keeping a service running reliably 24/7. Admittedly, the code for
-          this project quickly grew out of control as more features were added
-          and bugs that would cause the service to crash were fixed. I
-          think at this point, the effort of code refactor would outweigh the
-          benefits. I am not ashamed to admit how monstrous this code became
-          because it taught me valuable lessons for future projects.
+          keeping a service running reliably 24/7. The code for this project got
+          a bit unruly as more features were added and bugs that would cause the
+          service to crash were fixed. I learned valuable lessons about code
+          refactor and structure for future projects.
         </p>
         <p>
           <i>Technologies: Python, Tornado Web Server, IRC, Websockets, HTML, JQuery, CSS</i>
