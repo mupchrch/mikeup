@@ -32,6 +32,7 @@ html, body {
   position: relative;
   transition: height 0.75s;
   border-bottom: 3px solid gray;
+  overflow: hidden;
 }
 
 .loadHeader {
