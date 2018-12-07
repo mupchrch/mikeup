@@ -21,6 +21,7 @@ function initializePage() {
 function loadHeader() {
   $(".header").addClass("loadHeader");
   $(".belowHeader").addClass("loadOpacity");
+  $(".myName").addClass("loadOpacity");
   $(".menuItems").addClass("loadOpacity");
   $(".backgroundImage").addClass("loadOpacity");
 }
