@@ -135,7 +135,6 @@ html, body {
   height: 100%;
   background-image: url("../images/myself_afar.jpeg");
   background-size: cover;
-  filter: blur(1px);
 }
 
 .loadImageRight {
