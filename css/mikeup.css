@@ -504,8 +504,12 @@ html, body {
   }
 
   /* background image shouldn't move when in phone mode */
-  .backgroundImage {
-    right: 0 !important;
+  .loadImageLeft {
+    transform: none;
+  }
+  /* background image shouldn't move when in phone mode */
+  .loadImageRight {
+    transform: none;
   }
 
   .myFaceHolder {
