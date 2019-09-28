@@ -14,29 +14,31 @@ html, body {
   color: #eaeaea;
   font-size: 2em;
   font-weight: bold;
-  padding: 5px;
+  padding-left: 5px;
   font-family: 'Lobster', Verdana, Geneva, sans-serif;
   opacity: 0;
-  transition: opacity 0.5s;
-  transition-delay: 0.25s;
+  animation: opacityAnim 0.5s 0.25s;
+  animation-fill-mode: forwards;
+  line-height: 47px; /* account for 3px bottom border */
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: stretch;
   width: 100%;
-  height: 0px;
+  height: 50px;
   background-color: #33363b;
   position: relative;
-  transition: height 0.75s;
   border-bottom: 3px solid gray;
   overflow: hidden;
+  animation: headerAnim 0.75s;
 }
 
-.loadHeader {
-  height: 50px;
+@keyframes headerAnim {
+  from { transform: translateY(-50px); }
+  to { transform: translateY(0); }
 }
 
 .belowHeader {
@@ -48,23 +50,19 @@ html, body {
   background-color: gray;
 }
 
-.headerHolder {
-  width: 100%;
-  height: 50px;
-}
-
 .menuItems {
   padding: 0;
   margin: 0;
   opacity: 0;
-  transition: opacity 0.5s;
-  transition-delay: 0.25s;
+  animation: opacityAnim 0.5s 0.25s;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: stretch;
 }
 
 .menuItem {
   cursor: pointer;
   display: inline-block;
-  height: 30px;
   width: 80px;
   text-align: center;
   position: relative;
@@ -73,7 +71,7 @@ html, body {
 }
 
 .itemBig {
-  display: block;
+  display: flex;
 }
 
 .itemSmall {
@@ -89,6 +87,8 @@ html, body {
   color: #eaeaea;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuItem > a:hover {
@@ -133,7 +133,7 @@ html, body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/myself_afar.jpeg");
+  /*background-image: url("../images/myself_afar.jpeg");*/
   background-size: cover;
 }
 
@@ -273,7 +273,7 @@ html, body {
 }
 
 .githubIcon {
-  background-image: url("../images/GitHub-Mark-32px.png");
+  /*background-image: url("../images/GitHub-Mark-32px.png");*/
   opacity: 0.3;
 }
 
@@ -282,7 +282,7 @@ html, body {
 }
 
 .atomIcon {
-  background-image: url("../images/atom_logo.png");
+  /*background-image: url("../images/atom_logo.png");*/
   opacity: 0.6;
 }
 
@@ -291,7 +291,7 @@ html, body {
 }
 
 .linkIcon {
-  background-image: url("../images/link.png");
+  /*background-image: url("../images/link.png");*/
   opacity: 0.3;
 }
 
@@ -322,6 +322,12 @@ html, body {
   animation-name: contactPanelAnim;
   animation-duration: 0.8s;
   transform: translateX(0) scaleY(1);
+}
+
+@keyframes contactPanelAnim {
+  0%   { transform: translateX(calc(100% - 80px)) scaleY(0); }
+  33%  { transform: translateX(calc(100% - 80px)) scaleY(1); }
+  100% { transform: translateX(0); }
 }
 
 .myContactName {
@@ -525,7 +531,7 @@ html, body {
   }
 
   .itemSmall {
-    display: block;
+    display: flex;
   }
 
   .menuItem {
@@ -537,8 +543,7 @@ html, body {
   }
 }
 
-@keyframes contactPanelAnim {
-  0%   { transform: translateX(calc(100% - 80px)) scaleY(0); }
-  33%  { transform: translateX(calc(100% - 80px)) scaleY(1); }
-  100% { transform: translateX(0); }
+@keyframes opacityAnim {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
