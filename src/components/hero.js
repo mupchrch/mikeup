@@ -2,7 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-const Content = () => {
+const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "myself_afar.jpg" }) {
@@ -17,7 +17,7 @@ const Content = () => {
 
   return (
     <div className="backgroundImageHolder">
-      <a className="home backgroundImageCover" href="#home"></a>
+      <div className="backgroundImageCover"></div>
       <BackgroundImage
         className="backgroundImage"
         fluid={data.file.childImageSharp.fluid}
@@ -30,4 +30,4 @@ const Content = () => {
   );
 }
 
-export default Content;
+export default Hero;
