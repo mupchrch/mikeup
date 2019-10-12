@@ -7,7 +7,7 @@ const Header = () => {
       <div className="myName">
         Michael Upchurch
       </div>
-      <ul className="menuItems">
+      <ul className="menu">
         <MenuItem text="Home" link="/" emoji="🏡" />
         <MenuItem text="About" link="/about" emoji="📰" />
         <MenuItem text="Contact" link="/contact" emoji="👋" />

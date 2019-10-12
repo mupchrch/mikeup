@@ -40,16 +40,7 @@ html, body {
   to { transform: translateY(0); }
 }
 
-.belowHeader {
-  opacity: 0;
-  transition: opacity 0.25s;
-  transition-delay: 0.25s;
-  width: 100%;
-  height: 3px;
-  background-color: gray;
-}
-
-.menuItems {
+.menu {
   padding: 0;
   margin: 0;
   opacity: 0;
@@ -115,7 +106,7 @@ html, body {
 
 /*** Home Classes ***/
 
-.backgroundImageHolder {
+.hero {
   overflow: hidden;
   position: absolute;
   top: 50px;
@@ -126,7 +117,7 @@ html, body {
   animation-fill-mode: forwards;
 }
 
-.backgroundImage {
+.heroImage {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -135,17 +126,7 @@ html, body {
   background-size: cover;
 }
 
-.loadImageRight {
-  transform: translateX(20%);
-}
-
-.loadImageLeft {
-  transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.3s;
-  transform: translateX(-10%);
-}
-
-.backgroundImageCover {
-  opacity: 0;
+.heroMask {
   transition: opacity 0.5s;
   position: absolute;
   top: 0;
@@ -154,7 +135,8 @@ html, body {
   width: 100%;
   background-color: black;
   display: block;
-  cursor: default;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .bigText {
@@ -168,7 +150,7 @@ html, body {
   top: 42%;
   left: 8%;
   text-transform: uppercase;
-  transition: left 0.5s;
+  transition: left 0.25s;
   color: white;
   text-shadow: 2px 2px 8px #33363b;
   animation: bigTextAnim 0.5s 1s, opacityAnim 0.5s 1s;
@@ -178,15 +160,6 @@ html, body {
 @keyframes bigTextAnim {
   from { top: 42%; }
   to { top: 37%; }
-}
-
-.loadBigText {
-  top: 37%;
-}
-
-.moveBigTextLeft {
-  transition: top 0.5s ease 1s, opacity 0.5s ease 1s, left 0.5s ease 0.3s;
-  left: 3%;
 }
 
 /*** About Panel Classes ***/
@@ -333,13 +306,18 @@ html, body {
   animation: contactPanelAnim 0.5s;
 }
 
+.contactPanel.page-enter-active {
+  animation: contactPanelAnim 0.5s;
+}
+
 .contactPanel.page-exit {
   animation: contactPanelAnim 0.5s;
   animation-direction: reverse;
+  animation-fill-mode: forwards;
 }
 
 @keyframes contactPanelAnim {
-  0%   { transform: translateX(calc(100% - 80px)) scaleY(0); }
+  0%   { transform: translateX(calc(100% - 80px)) scaleY(0); display: none; }
   50%  { transform: translateX(calc(100% - 80px)) scaleY(1); }
   100% { transform: translateX(0); }
 }
@@ -457,20 +435,6 @@ html, body {
 .myInstagram:hover,
 .myLinkedin:hover,
 .myGithub:hover {
-  opacity: 1;
-}
-
-/*** General Transition Classes ***/
-
-.loadOverflowAuto {
-  overflow: auto;
-}
-
-.loadHalfOpacity {
-  opacity: 0.5;
-}
-
-.loadOpacity{
   opacity: 1;
 }
 

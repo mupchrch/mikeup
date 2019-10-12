@@ -22,10 +22,22 @@ class Transition extends React.PureComponent {
 }
 
 const PageLayout = ({ children, location }) => {
+  let heroMovement;
+  switch(location.pathname) {
+    case "/about":
+      heroMovement = "right";
+      break;
+    case "/contact":
+      heroMovement = "left";
+      break;
+    default:
+      heroMovement = null;
+  }
+
   return (
     <>
       <Header />
-      <Hero />
+      <Hero movement={heroMovement} />
       <Transition location={location}>{children}</Transition>
     </>
   );
