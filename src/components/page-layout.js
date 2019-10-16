@@ -13,6 +13,7 @@ class Transition extends React.PureComponent {
           key={location.pathname}
           timeout={500}
           classNames="page"
+          appear
         >
           {children}
         </CSSTransition>
