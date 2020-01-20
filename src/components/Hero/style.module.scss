@@ -1,0 +1,30 @@
+@import '../mixins.scss';
+
+.hero {
+  flex-grow: 1;
+}
+
+.bigText {
+  font-weight: 900; /* firefox fix */
+  letter-spacing: 0.0571429em;
+  opacity: 0;
+  font-size: 2.5em;
+  font-size: 2.5vw;
+  position: absolute;
+  top: 42%;
+  left: 8%;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 8px #33363b;
+
+  @include animateForward(animateBigText, 0.5s, 1s) {
+    from {
+      top: 42%;
+      opacity: 0;
+    }
+    to {
+      top: 37%;
+      opacity: 1;
+    }
+  }
+}

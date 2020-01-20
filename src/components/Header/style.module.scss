@@ -1,0 +1,98 @@
+@import '../mixins.scss';
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #33363b;
+  box-shadow: #33363b 0 0 6px;
+
+  @include animateForward(animateHeader, 0.75s, 0s) {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+}
+
+.name {
+  color: #eaeaea;
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 1rem;
+  line-height: 50px;
+
+  opacity: 0;
+  @include animateOpacity(0.5s, 0.25s);
+}
+
+.menu {
+  margin: 0;
+  opacity: 0;
+  display: flex;
+
+  @include animateOpacity(0.5s, 0.25s);
+}
+
+.menuItem {
+  display: inline-block;
+  margin: 0;
+
+  & > a,
+  & > a:link,
+  & > a:visited,
+  & > a:active {
+    padding: 0 1rem;
+    transition: color 0.5s;
+    text-decoration: none;
+    color: #eaeaea;
+    height: 100%;
+    align-items: center;
+  }
+
+  & > a:hover {
+    color: #61A0D2;
+  }
+
+  &:hover .menuHighlight {
+    opacity: 1;
+    bottom: 2px;
+  }
+}
+
+.itemBig {
+  display: flex;
+}
+
+.itemSmall {
+  display: none;
+}
+
+.menuHighlight {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  opacity: 0;
+  background-color: #61A0D2;
+  transition: all 0.25s;
+  pointer-events: none;
+}
+
+/* manage the top bar so it doesn't wrap */
+@media only screen and (max-width: 650px) {
+  .itemBig {
+    display: none;
+  }
+
+  .itemSmall {
+    display: flex;
+  }
+
+  .menuItem {
+    width: 40px;
+  }
+
+  .name{
+    font-size: 1em;
+  }
+}

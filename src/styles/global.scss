@@ -1,0 +1,17 @@
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+@keyframes opacityAnim {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* For portrait mode */
+@media only screen and (orientation: portrait) {
+  /* TODO */
+}

@@ -1,0 +1,15 @@
+@mixin animateForward($name, $duration, $delay: 0) {
+  animation: $name $duration $delay;
+  animation-fill-mode: forwards;
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animateOpacity($duration, $delay) {
+  @include animateForward(animateOpacity, $duration, $delay) {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}

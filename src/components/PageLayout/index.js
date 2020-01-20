@@ -1,7 +1,8 @@
-import React from "react";
-import Header from "./header";
-import Hero from "./hero";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import React from 'react';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import Header from '../Header';
+import Hero from '../Hero';
+import styles from './style.module.scss';
 
 class Transition extends React.PureComponent {
   render() {
@@ -12,7 +13,7 @@ class Transition extends React.PureComponent {
         <CSSTransition
           key={location.pathname}
           timeout={500}
-          classNames="page"
+          classNames='page'
           appear
         >
           {children}
@@ -23,24 +24,12 @@ class Transition extends React.PureComponent {
 }
 
 const PageLayout = ({ children, location }) => {
-  let heroMovement;
-  switch(location.pathname) {
-    case "/about":
-      heroMovement = "right";
-      break;
-    case "/contact":
-      heroMovement = "left";
-      break;
-    default:
-      heroMovement = null;
-  }
-
   return (
-    <>
+    <div className={styles.pageLayout}>
       <Header />
-      <Hero movement={heroMovement} />
+      <Hero />
       <Transition location={location}>{children}</Transition>
-    </>
+    </div>
   );
 }
 
