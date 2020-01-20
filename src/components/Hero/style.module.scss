@@ -2,6 +2,11 @@
 
 .hero {
   flex-grow: 1;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+  opacity: 0;
+
+  @include animateOpacity(0.5s, 0.5s);
 }
 
 .bigText {
@@ -26,5 +31,95 @@
       top: 37%;
       opacity: 1;
     }
+  }
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+/*** STARS ***/
+
+$screenSize: 4000;
+$totalPixels: $screenSize * $screenSize;
+$numFarStars:  0.00003 * $totalPixels;
+$numMidStars:  0.000006 * $totalPixels;
+$numNearStars: 0.000003 * $totalPixels;
+
+@function generateBoxShadowDots ($numDots) {
+  $value: '#{random($screenSize)}px #{random($screenSize)}px #FFF';
+  @for $i from 2 through $numDots {
+    $value: '#{$value} , #{random($screenSize)}px #{random($screenSize)}px #FFF';
+  }
+
+  @return unquote($value);
+}
+
+.farStars {
+  $starsBoxShadow: generateBoxShadowDots($numFarStars);
+  $starSize: 1px;
+
+  width: $starSize;
+  height: $starSize;
+  box-shadow: $starsBoxShadow;
+
+  @include animateLoop(farStars, #{$screenSize/20}s) {
+    from { transform: translateY(0); }
+    to { transform: translateY(-#{$screenSize}px); }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: #{$screenSize}px;
+    width: $starSize;
+    height: $starSize;
+    box-shadow: $starsBoxShadow;
+  }
+}
+
+.midStars {
+  $starsBoxShadow: generateBoxShadowDots($numMidStars);
+  $starSize: 2px;
+
+  width: $starSize;
+  height: $starSize;
+  box-shadow: $starsBoxShadow;
+
+  @include animateLoop(farStars, #{$screenSize/40}s) {
+    from { transform: translateY(0); }
+    to { transform: translateY(-#{$screenSize}px); }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: #{$screenSize}px;
+    width: $starSize;
+    height: $starSize;
+    box-shadow: $starsBoxShadow;
+  }
+}
+
+.nearStars {
+  $starsBoxShadow: generateBoxShadowDots($numNearStars);
+  $starSize: 3px;
+
+  width: $starSize;
+  height: $starSize;
+  box-shadow: $starsBoxShadow;
+
+  @include animateLoop(farStars, #{$screenSize/60}s) {
+    from { transform: translateY(0); }
+    to { transform: translateY(-#{$screenSize}px); }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: #{$screenSize}px;
+    width: $starSize;
+    height: $starSize;
+    box-shadow: $starsBoxShadow;
   }
 }

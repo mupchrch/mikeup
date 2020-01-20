@@ -1,3 +1,11 @@
+@mixin animateLoop($name, $duration) {
+  animation: $name $duration linear infinite;
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
 @mixin animateForward($name, $duration, $delay: 0) {
   animation: $name $duration $delay;
   animation-fill-mode: forwards;
