@@ -9,7 +9,7 @@
   box-shadow: #33363b 0 0 6px;
   z-index: 10; // appear above background stars
 
-  @include animateForward(animateHeader, 0.75s, 0s) {
+  @include animateForward(animateHeader, 0.75s) {
     from { transform: translateY(-100%); }
     to { transform: translateY(0); }
   }

@@ -6,9 +6,10 @@
   }
 }
 
-@mixin animateForward($name, $duration, $delay: 0) {
+@mixin animateForward($name, $duration, $delay: 0s, $timingFn: ease) {
   animation: $name $duration $delay;
   animation-fill-mode: forwards;
+  animation-timing-function: $timingFn;
 
   @keyframes #{$name} {
     @content;

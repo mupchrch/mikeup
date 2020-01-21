@@ -7,6 +7,16 @@
   opacity: 0;
 
   @include animateOpacity(0.5s, 0.5s);
+
+  button {
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+  }
 }
 
 .bigText {
@@ -17,20 +27,28 @@
   font-size: 2.5vw;
   position: absolute;
   top: 42%;
-  left: 8%;
+  left: 50%;
   text-transform: uppercase;
   color: white;
   text-shadow: 2px 2px 8px #33363b;
 
-  @include animateForward(animateBigText, 0.5s, 1s) {
-    from {
-      top: 42%;
-      opacity: 0;
-    }
+  @include animateForward(animateBigText, 1s, 1s) {
     to {
       top: 37%;
       opacity: 1;
     }
+  }
+}
+
+.earth {
+  position: relative;
+  width: 200%;
+  top: 100vh;
+  left: -50vw;
+  z-index: 10;
+
+  @include animateForward(animateEarth, 3s, 0.5s, ease-out) {
+    to { top: 75vh; }
   }
 }
 
