@@ -26,7 +26,7 @@ class Transition extends React.PureComponent {
 const PageLayout = ({ children, location }) => {
   return (
     <div className={styles.pageLayout}>
-      <Header />
+      <Header currentPath={location.pathname} />
       <Hero />
       <Transition location={location}>{children}</Transition>
     </div>

@@ -8,7 +8,7 @@ const About = ({ data }) => {
   return (
     <div className='aboutPanel'>
       <Seo title='About' />
-      <div class='aboutPanelContent'>
+      <div className='aboutPanelContent'>
         {sections.map(section => (
           <>
             <div className='headerAccent' />

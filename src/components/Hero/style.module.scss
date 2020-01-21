@@ -1,12 +1,11 @@
 @import '../mixins.scss';
 
 .hero {
-  flex-grow: 1;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
   opacity: 0;
 
-  @include animateOpacity(0.5s, 0.5s);
+  @include animateOpacity(0.5s);
 
   button {
     background: none;
@@ -47,8 +46,8 @@
   left: -50vw;
   z-index: 10;
 
-  @include animateForward(animateEarth, 3s, 0.5s, ease-out) {
-    to { top: 75vh; }
+  @include animateForward(animateEarth, 3s, 2s, ease-out) {
+    to { top: 85vh; }
   }
 }
 

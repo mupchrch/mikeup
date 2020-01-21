@@ -16,7 +16,7 @@
   }
 }
 
-@mixin animateOpacity($duration, $delay) {
+@mixin animateOpacity($duration, $delay: 0s) {
   @include animateForward(animateOpacity, $duration, $delay) {
     from { opacity: 0; }
     to { opacity: 1; }

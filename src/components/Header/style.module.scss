@@ -1,12 +1,11 @@
 @import '../mixins.scss';
 
 .header {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  background-color: #33363b;
-  box-shadow: #33363b 0 0 6px;
   z-index: 10; // appear above background stars
 
   @include animateForward(animateHeader, 0.75s) {
@@ -27,6 +26,7 @@
 }
 
 .menu {
+  position: relative;
   margin: 0;
   opacity: 0;
   display: flex;
@@ -49,15 +49,6 @@
     height: 100%;
     align-items: center;
   }
-
-  & > a:hover {
-    color: #61A0D2;
-  }
-
-  &:hover .menuHighlight {
-    opacity: 1;
-    bottom: 2px;
-  }
 }
 
 .itemBig {
@@ -68,13 +59,12 @@
   display: none;
 }
 
-.menuHighlight {
+.selectedDecorator {
   height: 4px;
   width: 100%;
-  position: relative;
+  position: absolute;
   bottom: 0;
-  opacity: 0;
-  background-color: #61A0D2;
+  background-color: white;
   transition: all 0.25s;
   pointer-events: none;
 }
