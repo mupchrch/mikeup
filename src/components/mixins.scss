@@ -1,3 +1,11 @@
+@mixin animate($name, $duration) {
+  animation: $name $duration;
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
 @mixin animateLoop($name, $duration) {
   animation: $name $duration linear infinite;
 

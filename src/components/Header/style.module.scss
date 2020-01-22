@@ -43,7 +43,6 @@
   & > a:visited,
   & > a:active {
     padding: 0 1rem;
-    transition: color 0.5s;
     text-decoration: none;
     color: #eaeaea;
     height: 100%;
@@ -57,6 +56,47 @@
 
 .itemSmall {
   display: none;
+}
+
+.itemBig,
+.itemSmall {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    display: none;
+    opacity: 0;
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    
+    /* Center the ripple */
+    top: 50%;
+    left: 50%;
+
+    @include animate(menuItemRipple, 1s) {
+      from {
+        opacity: 1;
+        transform: scale(0);
+      }
+      to {
+        opacity: 0;
+        transform: scale(10);
+      }
+    }
+  }
+
+  &:focus:not(:active)::after {
+    display: block;
+  }
 }
 
 .selectedDecorator {
@@ -79,11 +119,7 @@
     display: flex;
   }
 
-  .menuItem {
-    width: 40px;
-  }
-
-  .name{
+  .name {
     font-size: 1em;
   }
 }
