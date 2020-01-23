@@ -16,6 +16,9 @@ const Hero = () => {
       <div className={`${styles.farStars} ${animationClassName}`} />
       <div className={`${styles.midStars} ${animationClassName}`} />
       <div className={`${styles.nearStars} ${animationClassName}`} />
+      <svg viewBox="0 0 100 100" className={styles.moon}>
+        <circle cx="50" cy="50" r="50" fill="lightgray" />
+      </svg>
       <div className={styles.bigText}>
         Software Developer
       </div>

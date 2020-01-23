@@ -39,6 +39,16 @@
   }
 }
 
+.moon {
+  position: absolute;
+  width: 50%;
+  transform: translate(-100%, -25%);
+
+  @include animateForward(animateMoon, 5s, 1s, cubic-bezier(0.165, 0.84, 0.44, 1)) {
+    to { transform: translate(-45%, -45%); }
+  }
+}
+
 .earth {
   position: relative;
   width: 200%;
