@@ -6,17 +6,15 @@ const About = ({ data }) => {
   const sections = data.allMarkdownRemark.edges;
 
   return (
-    <div className='aboutPanel'>
+    <div className='about'>
       <Seo title='About' />
-      <div className='aboutPanelContent'>
-        {sections.map(section => (
-          <>
-            <div className='headerAccent' />
-            <h2>{section.node.frontmatter.title}</h2>
-            <p>{section.node.frontmatter.description}</p>
-          </>
-        ))}
-      </div>
+      {sections.map(section => (
+        <React.Fragment key={section.node.id}>
+          <div className='headerAccent' />
+          <h2>{section.node.frontmatter.title}</h2>
+          <p>{section.node.frontmatter.description}</p>
+        </React.Fragment>
+      ))}
     </div>
   );
 };
@@ -35,6 +33,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          id
           frontmatter {
             title
             description

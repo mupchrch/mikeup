@@ -1,7 +1,6 @@
 @import '../mixins.scss';
 
 .header {
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,14 +14,20 @@
 }
 
 .name {
-  color: #0D0E15;
+  color: white;
   font-size: 2.5vw;
   font-weight: bold;
   padding-left: 1rem;
   line-height: 50px;
+  transition: color 1s;
 
   opacity: 0;
   @include animateOpacity(0.5s, 0.25s);
+}
+
+.nameHome {
+  @extend .name;
+  color: #0D0E15;
 }
 
 .menu {

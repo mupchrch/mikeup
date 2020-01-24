@@ -1,6 +1,9 @@
 @import '../mixins.scss';
 
 .hero {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
   opacity: 0;
@@ -22,81 +25,13 @@
   font-weight: 900; /* firefox fix */
   letter-spacing: 0.0571429em;
   opacity: 0;
-  font-size: 2.5em;
   font-size: 2.5vw;
   position: absolute;
-  top: 42%;
+  top: 0;
   left: 50%;
+  transform: translateY(42vh);
   text-transform: uppercase;
   color: white;
-  text-shadow: 2px 2px 8px #33363b;
-
-  @include animateForward(animateBigText, 1s, 1s) {
-    to {
-      top: 37%;
-      opacity: 1;
-    }
-  }
-}
-
-:global(.hero-appear) {
-  .moon {
-    transition: 5s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform: translate(-100%, -25%);
-  }
-
-  .earth {
-    transition: transform 3s 2s ease-out;
-    transform: translateY(100vh);
-  }
-}
-
-:global(.hero-appear-active),
-:global(.hero-appear-done),
-:global(.hero-enter-active),
-:global(.hero-enter-done) {
-  .moon {
-    transform: translate(-45%, -45%) !important;
-  }
-
-  .earth {
-    transform: translateY(85vh) !important;
-  }
-}
-
-:global(.hero-exit) {
-  .moon {
-    transition: 1s;
-    transform: translate(-45%, -45%);
-  }
-
-  .earth {
-    transition: transform 1s;
-    transform: translateY(85vh);
-  }
-}
-
-:global(.hero-exit-active),
-:global(.hero-exit-done) {
-  .moon {
-    transform: translate(-100%, -100%);
-  }
-
-  .earth {
-    transform: translateY(100vh);
-  }
-}
-
-:global(.hero-enter:not(.hero-appear)) {
-  .moon {
-    transition: transform 1s;
-    transform: translate(-100%, -100%);
-  }
-
-  .earth {
-    transition: transform 1s;
-    transform: translateY(100vh);
-  }
 }
 
 .moon {
@@ -201,5 +136,95 @@ $numNearStars: 0.000003 * $totalPixels;
     width: $starSize;
     height: $starSize;
     box-shadow: $starsBoxShadow;
+  }
+}
+
+/*** TRANSITIONS ***/
+
+:global(.hero-appear) {
+  .bigText {
+    transition: transform 1s 3s, opacity 1s 3s;
+    transform: translateY(37vh);
+    opacity: 1;
+  }
+
+  .moon {
+    transition: 5s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translate(-100%, -25%);
+  }
+
+  .earth {
+    transition: transform 3s 2s ease-out;
+    transform: translateY(100vh);
+  }
+}
+
+:global(.hero-appear-active),
+:global(.hero-appear-done),
+:global(.hero-enter-active),
+:global(.hero-enter-done) {
+  .bigText {
+    transform: translateY(37vh);
+    opacity: 1;
+  }
+
+  .moon {
+    transform: translate(-45%, -45%) !important;
+  }
+
+  .earth {
+    transform: translateY(85vh) !important;
+  }
+}
+
+:global(.hero-exit) {
+  .bigText {
+    transition: transform 1s, opacity 1s;
+    transform: translateY(37vh);
+    opacity: 1;
+  }
+
+  .moon {
+    transition: transform 1s;
+    transform: translate(-45%, -45%);
+  }
+
+  .earth {
+    transition: transform 1s;
+    transform: translateY(85vh);
+  }
+}
+
+:global(.hero-exit-active),
+:global(.hero-exit-done) {
+  .bigText {
+    transform: translateY(42vh);
+    opacity: 0;
+  }
+
+  .moon {
+    transform: translate(-100%, -100%);
+  }
+
+  .earth {
+    transform: translateY(100vh);
+  }
+}
+
+:global(.hero-enter:not(.hero-appear)) {
+  .bigText {
+    transition: transform 1s, opacity 1s;
+    transform: translateY(37vh);
+    opacity: 1;
+  }
+
+  .moon {
+    transition: transform 1s;
+    transform: translate(-100%, -100%);
+  }
+
+  .earth {
+    transition: transform 1s;
+    transform: translateY(100vh);
   }
 }

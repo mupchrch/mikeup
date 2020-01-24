@@ -13,7 +13,7 @@ class Transition extends React.PureComponent {
         <CSSTransition
           key={location.pathname}
           timeout={500}
-          classNames='page'
+          classNames={`${styles.page} page`} // 1st: general ".pageLayout" class, 2nd: "page-*" transition classes
           appear
         >
           {children}

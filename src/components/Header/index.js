@@ -28,7 +28,7 @@ const Header = ({ currentPath }) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.name}>Mike Upchurch</div>
+      <div className={currentPath === '/' ? styles.nameHome : styles.name}>Mike Upchurch</div>
       <ul className={styles.menu}>
         {menuItems.map(({ text, link, emoji }) => (
           <MenuItem key={link} text={text} link={link} emoji={emoji} ref={link === currentPath ? selectedItemCallbackRef : null} />
