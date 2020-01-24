@@ -27,7 +27,7 @@ const PageLayout = ({ children, location }) => {
   return (
     <div className={styles.pageLayout}>
       <Header currentPath={location.pathname} />
-      <Hero />
+      <Hero isHome={location.pathname === '/'} />
       <Transition location={location}>{children}</Transition>
     </div>
   );

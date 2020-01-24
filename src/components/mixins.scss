@@ -1,5 +1,6 @@
-@mixin animate($name, $duration) {
-  animation: $name $duration;
+@mixin animate($name, $duration, $delay: 0s, $timingFn: ease) {
+  animation: $name $duration $delay;
+  animation-timing-function: $timingFn;
 
   @keyframes #{$name} {
     @content;
