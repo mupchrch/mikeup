@@ -4,21 +4,25 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
   opacity: 0;
 
   @include animateOpacity(0.5s);
 
-  button {
-    background: none;
-    border: none;
-    color: white;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-  }
+}
+.playPause {
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.5s;
+  z-index: 100;
+  opacity: 0;
 }
 
 .bigText {
@@ -142,6 +146,8 @@ $numNearStars: 0.000003 * $totalPixels;
 /*** TRANSITIONS ***/
 
 :global(.hero-appear) {
+  opacity: 1;
+
   .bigText {
     transition: transform 1s 3s, opacity 1s 3s;
     transform: translateY(37vh);
@@ -227,4 +233,9 @@ $numNearStars: 0.000003 * $totalPixels;
     transition: transform 1s;
     transform: translateY(100vh);
   }
+}
+
+:global(.playPause-enter-active),
+:global(.playPause-enter-done) {
+  opacity: 1;
 }

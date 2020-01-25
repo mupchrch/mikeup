@@ -4,8 +4,28 @@
   flex-direction: column;
 }
 
-.page {
+.pageWrapper {
   position: relative;
   overflow: auto;
   flex-grow: 1;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+:global(.page-enter),
+:global(.page-enter-active),
+:global(.page-enter-done) {
+  opacity: 1;
+}
+
+:global(.page-exit),
+:global(.page-exit-active),
+:global(.page-exit-done) {
+  opacity: 0;
 }

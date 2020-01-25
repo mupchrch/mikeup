@@ -13,10 +13,10 @@ class Transition extends React.PureComponent {
         <CSSTransition
           key={location.pathname}
           timeout={500}
-          classNames={`${styles.page} page`} // 1st: general ".pageLayout" class, 2nd: "page-*" transition classes
+          classNames='page'
           appear
         >
-          {children}
+          <div className={styles.page}>{children}</div>
         </CSSTransition>
       </TransitionGroup>
     );
@@ -28,7 +28,9 @@ const PageLayout = ({ children, location }) => {
     <div className={styles.pageLayout}>
       <Header currentPath={location.pathname} />
       <Hero isHome={location.pathname === '/'} />
-      <Transition location={location}>{children}</Transition>
+      <div className={styles.pageWrapper}>
+        <Transition location={location}>{children}</Transition>
+      </div>
     </div>
   );
 }
