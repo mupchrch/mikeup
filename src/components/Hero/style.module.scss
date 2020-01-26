@@ -13,6 +13,7 @@
   @include animateOpacity(0.5s);
 
 }
+
 .playPause {
   background: none;
   border: none;
@@ -25,6 +26,8 @@
   opacity: 0;
 }
 
+$bigTextStart: translateY(42vh);
+$bigTextEnd: translateY(37vh);
 .bigText {
   font-weight: 900; /* firefox fix */
   letter-spacing: 0.0571429em;
@@ -33,22 +36,27 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateY(42vh);
+  transform: $bigTextStart;
   text-transform: uppercase;
   color: white;
 }
 
+$moonStart: translate(-100%, -25%);
+$moonEnd: translate(-45%, -45%);
+$moonHide: translate(-100%, -100%);
 .moon {
   position: absolute;
   width: 50%;
   min-width: 300px;
-  transform: translate(-100%, -25%);
+  transform: $moonStart;
 }
 
+$earthStart: translateY(100vh);
+$earthEnd: translateY(85vh);
 .earth {
   position: relative;
   width: 200%;
-  transform: translateY(100vh);
+  transform: $earthStart;
   left: -50vw;
   z-index: 10;
 }
@@ -145,23 +153,27 @@ $numNearStars: 0.000003 * $totalPixels;
 
 /*** TRANSITIONS ***/
 
+$enterExitSpeed: 1s;
+$planetEnterExitTransition: transform $enterExitSpeed;
+$bigTextEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed;
+
 :global(.hero-appear) {
   opacity: 1;
 
   .bigText {
     transition: transform 1s 3s, opacity 1s 3s;
-    transform: translateY(37vh);
+    transform: $bigTextEnd;
     opacity: 1;
   }
 
   .moon {
     transition: 5s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform: translate(-100%, -25%);
+    transform: $moonStart;
   }
 
   .earth {
     transition: transform 3s 2s ease-out;
-    transform: translateY(100vh);
+    transform: $earthStart;
   }
 }
 
@@ -170,68 +182,68 @@ $numNearStars: 0.000003 * $totalPixels;
 :global(.hero-enter-active),
 :global(.hero-enter-done) {
   .bigText {
-    transform: translateY(37vh);
+    transform: $bigTextEnd;
     opacity: 1;
   }
 
   .moon {
-    transform: translate(-45%, -45%) !important;
+    transform: $moonEnd !important;
   }
 
   .earth {
-    transform: translateY(85vh) !important;
+    transform: $earthEnd !important;
   }
 }
 
 :global(.hero-exit) {
   .bigText {
-    transition: transform 1s, opacity 1s;
-    transform: translateY(37vh);
+    transition: $bigTextEnterExitTransition;
+    transform: $bigTextEnd;
     opacity: 1;
   }
 
   .moon {
-    transition: transform 1s;
-    transform: translate(-45%, -45%);
+    transition: $planetEnterExitTransition;
+    transform: $moonEnd;
   }
 
   .earth {
-    transition: transform 1s;
-    transform: translateY(85vh);
+    transition: $planetEnterExitTransition;
+    transform: $earthEnd;
   }
 }
 
 :global(.hero-exit-active),
 :global(.hero-exit-done) {
   .bigText {
-    transform: translateY(42vh);
+    transform: $bigTextStart;
     opacity: 0;
   }
 
   .moon {
-    transform: translate(-100%, -100%);
+    transform: $moonHide;
   }
 
   .earth {
-    transform: translateY(100vh);
+    transform: $earthStart;
   }
 }
 
 :global(.hero-enter:not(.hero-appear)) {
   .bigText {
-    transition: transform 1s, opacity 1s;
-    transform: translateY(37vh);
+    transition: $bigTextEnterExitTransition;
+    transform: $bigTextEnd;
     opacity: 1;
   }
 
   .moon {
-    transition: transform 1s;
-    transform: translate(-100%, -100%);
+    transition: $planetEnterExitTransition;
+    transform: $moonHide;
   }
 
   .earth {
-    transition: transform 1s;
-    transform: translateY(100vh);
+    transition: $planetEnterExitTransition;
+    transform: $earthStart;
   }
 }
 
