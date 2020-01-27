@@ -1,5 +1,6 @@
 import React, { forwardRef, useCallback, useState, useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
+import { rhythm } from '../../utils/typography';
 import styles from './style.module.scss';
 
 const menuItems = [{ text: 'Home', link: '/', emoji: '🏡' }, { text: 'About', link: '/about', emoji: '📰' }, { text: 'Contact', link: '/contact', emoji: '👋' }];
@@ -28,7 +29,7 @@ const Header = ({ currentPath }) => {
 
   return (
     <header className={styles.header}>
-      <div className={currentPath === '/' ? styles.nameHome : styles.name}>Mike Upchurch</div>
+      <div className={currentPath === '/' ? styles.nameHome : styles.name} style={{ paddingLeft: rhythm(1) }}>Mike Upchurch</div>
       <ul className={styles.menu}>
         {menuItems.map(({ text, link, emoji }) => (
           <MenuItem key={link} text={text} link={link} emoji={emoji} ref={link === currentPath ? selectedItemCallbackRef : null} />

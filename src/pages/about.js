@@ -9,21 +9,27 @@ const About = ({ data }) => {
 
   const verticalLine = (
     <svg viewBox='0 0 1 20' style={{ height: rhythm(4)}}>
-      <path d='M.5 0 L.5 20' stroke='#FFFFFF' strokeWidth='2' vector-effect='non-scaling-stroke' />
+      <path d='M.5 0 L.5 20' className={styles.line} />
     </svg>
   );
 
   const horizontalLine = (
     <svg viewBox='0 0 20 1' className={styles.horizontalLine}>
-      <path d='M0 .5 L20 .5' stroke='#FFFFFF' strokeWidth='2' vector-effect='non-scaling-stroke' />
+      <path d='M0 .5 L20 .5' className={styles.line} />
     </svg>
   );
 
   return (
-    <div className={styles.about} style={{ marginTop: rhythm(1) }}>
+    <div className={styles.about}>
       <Seo title='About' />
-      <h1>about me</h1>
-      <div className={styles.timeline}>
+      <h1>About</h1>
+      <p>
+        I am a Software Developer who graduated in 2015 from the
+        University of New Hampshire with a B.S. in Computer Science. I live
+        in Manchester, NH and I am currently employed with Pegasystems Inc.
+      </p>
+      <h2>Projects</h2>
+      <div className={styles.timeline} style={{ marginTop: rhythm(4), marginBottom: rhythm(2) }}>
         {sections.map((section, i) => {
             const projectYear = (new Date(section.node.frontmatter.date)).getFullYear();
 

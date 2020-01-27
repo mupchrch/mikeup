@@ -2,6 +2,7 @@ import React from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header from '../Header';
 import Hero from '../Hero';
+import { rhythm } from '../../utils/typography';
 import styles from './style.module.scss';
 
 class Transition extends React.PureComponent {
@@ -16,7 +17,15 @@ class Transition extends React.PureComponent {
           classNames='page'
           appear
         >
-          <div className={styles.page}>{children}</div>
+          <div
+            className={styles.page}
+            style={{
+              maxWidth: rhythm(24),
+              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            }}
+          >
+            {children}
+          </div>
         </CSSTransition>
       </TransitionGroup>
     );
@@ -28,9 +37,9 @@ const PageLayout = ({ children, location }) => {
     <div className={styles.pageLayout}>
       <Header currentPath={location.pathname} />
       <Hero isHome={location.pathname === '/'} />
-      <div className={styles.pageWrapper}>
+      <main className={styles.pageWrapper}>
         <Transition location={location}>{children}</Transition>
-      </div>
+      </main>
     </div>
   );
 }

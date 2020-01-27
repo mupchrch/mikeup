@@ -11,11 +11,13 @@
 }
 
 .page {
-  position: absolute;
+  position: absolute; // so pages don't jump when navigating between
   left: 0;
   right: 0;
   opacity: 0;
   transition: opacity 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 :global(.page-enter),
