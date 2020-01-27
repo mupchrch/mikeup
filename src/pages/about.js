@@ -7,17 +7,46 @@ import styles from './about.module.scss';
 const About = ({ data }) => {
   const sections = data.allMarkdownRemark.edges;
 
+  const verticalLine = (
+    <svg viewBox='0 0 1 20' style={{ height: rhythm(4)}}>
+      <path d='M.5 0 L.5 20' stroke='#FFFFFF' strokeWidth='2' vector-effect='non-scaling-stroke' />
+    </svg>
+  );
+
+  const horizontalLine = (
+    <svg viewBox='0 0 20 1' className={styles.horizontalLine}>
+      <path d='M0 .5 L20 .5' stroke='#FFFFFF' strokeWidth='2' vector-effect='non-scaling-stroke' />
+    </svg>
+  );
+
   return (
     <div className={styles.about} style={{ marginTop: rhythm(1) }}>
       <Seo title='About' />
       <h1>about me</h1>
-        {sections.map(section => (
-          <div key={section.node.id} className={styles.projectCard} style={{ marginBottom: rhythm(1), padding: rhythm(1) }}>
-            <div className='headerAccent' />
-            <h2>{section.node.frontmatter.title}</h2>
-            <p style={{ marginBottom: rhythm(0) }}>{section.node.frontmatter.description}</p>
-          </div>
-        ))}
+      <div className={styles.timeline}>
+        {sections.map((section, i) => {
+            const projectYear = (new Date(section.node.frontmatter.date)).getFullYear();
+
+            return (
+              <React.Fragment key={section.node.id}>
+                {i !== 0 && verticalLine}
+                <div className={styles.projectContainer}>
+                  <h2 className={styles.projectYear} style={{ margin: rhythm(0) }}>{projectYear}</h2>
+                  <div className={styles.projectYearCenterPoint}>
+                    <div
+                      className={`${styles.projectCard} ${i % 2 ? styles.evenCard : styles.oddCard}`}
+                      style={{ margin: rhythm(0), padding: rhythm(1) }}
+                    >
+                      {horizontalLine}
+                      <h3>{section.node.frontmatter.title}</h3>
+                      <p style={{ marginBottom: rhythm(0) }}>{section.node.frontmatter.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </React.Fragment>
+            );
+          })}
+      </div>
     </div>
   );
 };
@@ -33,6 +62,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/(about)/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {
@@ -40,6 +70,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
+            date
           }
         }
       }
