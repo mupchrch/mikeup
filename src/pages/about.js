@@ -37,14 +37,14 @@ const About = ({ data }) => {
               <React.Fragment key={section.node.id}>
                 {i !== 0 && verticalLine}
                 <div className={`${i % 2 ? styles.projectContainerEven : styles.projectContainerOdd}`}>
-                  <h2 className={styles.projectYear} style={{ margin: rhythm(0) }}>{projectYear}</h2>
+                  <h3 className={styles.projectYear} style={{ margin: rhythm(0) }}>{projectYear}</h3>
                   <div className={styles.projectCardWrapper}>
                     <div
                       className={styles.projectCard}
                       style={{ margin: rhythm(0) }}
                     >
                       <div style={{ margin: rhythm(1/2) }}>
-                        <h3>{section.node.frontmatter.title}</h3>
+                        <h4>{section.node.frontmatter.title}</h4>
                         <p style={{ marginBottom: rhythm(0) }}>{section.node.frontmatter.description}</p>
                       </div>
                     </div>
