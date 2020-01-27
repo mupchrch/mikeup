@@ -1,3 +1,5 @@
+@import '../styles/mixins.scss';
+
 .about {
   color: white;
 }
@@ -9,49 +11,43 @@
   text-align: center;
 }
 
-.projectContainer {
+.projectContainerOdd {
   position: relative;
+  width: 100%;
+}
+
+.projectContainerEven {
+  @extend .projectContainerOdd;
+
+  .projectCardWrapper {
+    transform: translate(100%, -50%);
+    flex-direction: row-reverse;
+  }
+}
+
+.projectCardWrapper {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+
+  svg {
+    flex: 1 0 75px;
+  }
 }
 
 .projectCard {
-  position: absolute;
-  width: 20vw;
   border: 2px solid white;
   border-radius: 7px;
-
-  .horizontalLine {
-    position: absolute;
-    width: 50%;
-    top: 50%;
-  }
-
-  &.evenCard {
-    transform: translate(50%, -50%);
-
-    .horizontalLine {
-      transform: translateX(-200%);
-    }
-  }
-  
-  &.oddCard {
-    transform: translate(-150%, -50%);
-
-    .horizontalLine {
-      transform: translateX(100%);
-    }
-  }
+  word-wrap: anywhere;
+  flex: 1 1 auto;
 }
 
 .line {
   stroke-width: 1;
   stroke: white;
   vector-effect: non-scaling-stroke;
-}
-
-.projectYearCenterPoint {
-  position: absolute;
-  left: 50%;
-  top: 50%;
 }
 
 .projectYear {
@@ -71,5 +67,22 @@
     float: left;
     width: auto;
     padding-bottom: 100%;
+  }
+}
+
+@include smallScreen {
+  .timeline {
+    svg {
+      display: none;
+    }
+  }
+
+  .projectCardWrapper {
+    position: static;
+    display: block;
+    top: none;
+    transform: none !important;
+    width: 100%;
+    padding: 1em;
   }
 }

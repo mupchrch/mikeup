@@ -20,7 +20,7 @@ class Transition extends React.PureComponent {
           <div
             className={styles.page}
             style={{
-              maxWidth: rhythm(24),
+              maxWidth: rhythm(36),
               padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             }}
           >

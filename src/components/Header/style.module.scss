@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import '../../styles/mixins.scss';
 
 .header {
   display: flex;
@@ -113,8 +113,8 @@
   pointer-events: none;
 }
 
-/* manage the top bar so it doesn't wrap */
-@media only screen and (max-width: 650px) {
+// manage sizing of items in the top bar
+@include smallScreen {
   .itemBig {
     display: none;
   }
@@ -123,12 +123,14 @@
     display: flex;
   }
 
+  // don't allow font size to shrink past small screen size
   .name {
     font-size: 1em;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@include largeScreen{
+  // don't allow font size to grow past large screen size
   .name {
     font-size: 50px;
   }

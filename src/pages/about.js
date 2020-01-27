@@ -29,24 +29,26 @@ const About = ({ data }) => {
         in Manchester, NH and I am currently employed with Pegasystems Inc.
       </p>
       <h2>Projects</h2>
-      <div className={styles.timeline} style={{ marginTop: rhythm(4), marginBottom: rhythm(2) }}>
+      <div className={styles.timeline} style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
         {sections.map((section, i) => {
             const projectYear = (new Date(section.node.frontmatter.date)).getFullYear();
 
             return (
               <React.Fragment key={section.node.id}>
                 {i !== 0 && verticalLine}
-                <div className={styles.projectContainer}>
+                <div className={`${i % 2 ? styles.projectContainerEven : styles.projectContainerOdd}`}>
                   <h2 className={styles.projectYear} style={{ margin: rhythm(0) }}>{projectYear}</h2>
-                  <div className={styles.projectYearCenterPoint}>
+                  <div className={styles.projectCardWrapper}>
                     <div
-                      className={`${styles.projectCard} ${i % 2 ? styles.evenCard : styles.oddCard}`}
-                      style={{ margin: rhythm(0), padding: rhythm(1) }}
+                      className={styles.projectCard}
+                      style={{ margin: rhythm(0) }}
                     >
-                      {horizontalLine}
-                      <h3>{section.node.frontmatter.title}</h3>
-                      <p style={{ marginBottom: rhythm(0) }}>{section.node.frontmatter.description}</p>
+                      <div style={{ margin: rhythm(1/2) }}>
+                        <h3>{section.node.frontmatter.title}</h3>
+                        <p style={{ marginBottom: rhythm(0) }}>{section.node.frontmatter.description}</p>
+                      </div>
                     </div>
+                    {horizontalLine}
                   </div>
                 </div>
               </React.Fragment>
