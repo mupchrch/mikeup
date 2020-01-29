@@ -1,6 +1,6 @@
 ---
 title: upchat
-description: A slack-inspired chat app.
+description: A Slack-inspired chat app.
 date: "2018-02-02T00:00:00.000Z"
 ---
 

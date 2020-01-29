@@ -1,11 +1,11 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const result = await graphql(
+  const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const blogPostResult = await graphql(
     `
       {
         allMarkdownRemark(
@@ -26,18 +26,18 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     `
-  )
+  );
 
-  if (result.errors) {
-    throw result.errors
+  if (blogPostResult.errors) {
+    throw blogPostResult.errors;
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges
+  const posts = blogPostResult.data.allMarkdownRemark.edges;
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+    const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
       path: post.node.fields.slug,
@@ -47,19 +47,66 @@ exports.createPages = async ({ graphql, actions }) => {
         previous,
         next,
       },
-    })
-  })
+    });
+  });
+
+  const projectResult = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/(about)/" } }
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  if (projectResult.errors) {
+    throw projectResult.errors;
+  }
+
+  // Create projects pages.
+  const projects = projectResult.data.allMarkdownRemark.edges;
+
+  projects.forEach((project, index) => {
+    const previous = index === projects.length - 1 ? null : projects[index + 1].node;
+    const next = index === 0 ? null : projects[index - 1].node;
+
+    createPage({
+      path: project.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: project.node.fields.slug,
+        previous,
+        next,
+      },
+    });
+  });
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
+  const { createNodeField } = actions;
+  
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const fileNode = getNode(node.parent);
+    const relativeFilePath = createFilePath({ node, getNode });
+
     createNodeField({
       name: `slug`,
       node,
-      value,
-    })
+      value: `/${fileNode.sourceInstanceName}${relativeFilePath}`,
+    });
   }
 }

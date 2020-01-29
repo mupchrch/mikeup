@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Seo from '../components/seo';
 import { rhythm } from '../utils/typography';
 import styles from './about.module.scss';
@@ -44,7 +44,7 @@ const About = ({ data }) => {
                       style={{ margin: rhythm(0) }}
                     >
                       <div style={{ margin: rhythm(1/2) }}>
-                        <h4>{section.node.frontmatter.title}</h4>
+                        <h4><Link to={section.node.fields.slug}>{section.node.frontmatter.title}</Link></h4>
                         <p style={{ marginBottom: rhythm(0) }}>{section.node.frontmatter.description}</p>
                       </div>
                     </div>
@@ -75,6 +75,9 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             description
