@@ -19,6 +19,8 @@ I have encountered and overcome a fair amount of interesting problems as I devel
 - Adding empty lines, so the diff chunks stay visibly next to each other, despite having differing amounts of lines. There was no API for doing so at the time, but I was able to refactor at some point to use a newly released API for specifically this reason.
 - Running the diffing calculations on a separate child process, so the UI wouldn't lock up.
 
+[View the source on Github.](https://github.com/mupchrch/split-diff)
+
 I have also developed two other smaller Atom packages: [`minimap-split-diff`](https://atom.io/packages/minimap-split-diff) and [`outline-selection`](https://atom.io/packages/outline-selection).
 
 ### Technologies

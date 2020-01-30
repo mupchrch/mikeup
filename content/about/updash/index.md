@@ -14,6 +14,8 @@ Updash is a personalized information dashboard for my home. It displays helpful 
 
 It is built using Smashing (a Ruby-based framework for quickly constructing dashboards) and runs on a Raspberry Pi connected to a monitor. I had to customize many of the widgets as they were either no longer working or did not exist.
 
+[View the source on Github.](https://github.com/mupchrch/updash)
+
 ### Technologies
 
 _Smashing, Ruby, Coffeescript, CSS_

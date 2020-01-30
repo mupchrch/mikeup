@@ -12,6 +12,8 @@ A personal website where I can showcase projects and write blog posts.
 
 TODO
 
+[View the source on Github.](https://github.com/mupchrch/mikeup.church)
+
 ### Technologies
 
 _Gatsby, React, Sass_
