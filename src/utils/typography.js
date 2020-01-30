@@ -6,7 +6,7 @@ const typography = new Typography({
   ...fairyGatesTheme,
   headerColor,
   bodyColor,
-  overrideThemeStyles: () => ({
+  overrideThemeStyles: ({ adjustFontSizeTo }) => ({
     'h1,h2': {
       borderBottom: 'none'
     },
@@ -15,6 +15,12 @@ const typography = new Typography({
     },
     a: {
       color: linkColor
+    },
+    figcaption: {
+      textAlign: 'center',
+      ...adjustFontSizeTo('14px'),
+      fontStyle: 'italic',
+      color: headerColor
     }
   })
 });

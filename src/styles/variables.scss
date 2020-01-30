@@ -1,11 +1,11 @@
 $backgroundColor: #1c1c1c;
-$baseFontColor: white;
+$baseFontColor: darken(white, 5%);
 $linkColor: #7aa9e6;
 
 // for use in JS
 :export {
   bodyColor: $baseFontColor;
-  headerColor: darken($baseFontColor, 10%);
+  headerColor: darken($baseFontColor, 15%);
   backgroundColor: $backgroundColor;
   linkColor: $linkColor;
 }
