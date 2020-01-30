@@ -1,4 +1,5 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .header {
   display: flex;
@@ -15,7 +16,7 @@
 
 .name {
   color: white;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: bold;
   line-height: 50px;
   transition: color 1s;
@@ -26,7 +27,7 @@
 
 .nameHome {
   @extend .name;
-  color: #0D0E15;
+  color: $backgroundColor;
 }
 
 .menu {

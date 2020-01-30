@@ -1,4 +1,5 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .hero {
   position: absolute;
@@ -6,18 +7,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(circle at bottom, lighten($backgroundColor, 5%) 0%, $backgroundColor 100%); // after #18202B // before #1B2735
   overflow: hidden;
   opacity: 0;
 
   @include animateOpacity(0.5s);
-
 }
 
 .playPause {
   background: none;
   border: none;
-  color: white;
+  color: $baseFontColor;
   position: absolute;
   right: 1em;
   bottom: 1em;
@@ -38,7 +38,6 @@ $bigTextEnd: translateY(37vh);
   left: 50%;
   transform: $bigTextStart;
   text-transform: uppercase;
-  color: white;
 }
 
 $moonStart: translate(-100%, -25%);

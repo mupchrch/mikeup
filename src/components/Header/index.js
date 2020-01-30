@@ -28,12 +28,15 @@ const Header = ({ currentPath }) => {
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} style={{ boxShadow: currentPath === '/' ? null : '0 0 10px rgba(0, 0, 0, 0.7)' }}>
       <div className={currentPath === '/' ? styles.nameHome : styles.name} style={{ paddingLeft: rhythm(1) }}>Mike Upchurch</div>
       <ul className={styles.menu}>
-        {menuItems.map(({ text, link, emoji }) => (
-          <MenuItem key={link} text={text} link={link} emoji={emoji} ref={link === currentPath ? selectedItemCallbackRef : null} />
-        ))}
+        {menuItems.map(({ text, link, emoji }) => {
+          const isWithinPath = (currentPath === '/' && link === '/') || (link !== '/' && currentPath.startsWith(link));
+          return (
+            <MenuItem key={link} text={text} link={link} emoji={emoji} ref={isWithinPath ? selectedItemCallbackRef : null} />
+          );
+        })}
         <div className={styles.selectedDecorator} style={selectedDecoratorStyles} />
       </ul>
     </header>

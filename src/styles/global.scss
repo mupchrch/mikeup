@@ -1,10 +1,12 @@
+@import './variables.scss';
+
 html, body, #___gatsby, #gatsby-focus-wrapper {
   height: 100%;
   overflow: hidden;
 }
 
 body {
-  background-color: black;
+  background-color: $backgroundColor;
 }
 
 .sr-only:not(:focus):not(:active) {

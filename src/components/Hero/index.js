@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
+import { backgroundColor } from '../../styles/variables.scss';
 import styles from './style.module.scss';
 
 const Hero = ({ isHome }) => {
@@ -20,10 +21,10 @@ const Hero = ({ isHome }) => {
         appear
         in={isHome}
       >
-        <div className={styles.hero}>
-          <div className={`${styles.farStars} ${animationClassName}`} />
-          <div className={`${styles.midStars} ${animationClassName}`} />
-          <div className={`${styles.nearStars} ${animationClassName}`} />
+        <div className={styles.hero} style={{ background: isHome ? null : backgroundColor }}>
+          {isHome && <div className={`${styles.farStars} ${animationClassName}`} />}
+          {isHome && <div className={`${styles.midStars} ${animationClassName}`} />}
+          {isHome && <div className={`${styles.nearStars} ${animationClassName}`} />}
           <svg viewBox='0 0 100 100' className={styles.moon}>
             <circle cx='50' cy='50' r='50' fill='lightgray' />
           </svg>
@@ -37,7 +38,7 @@ const Hero = ({ isHome }) => {
       <CSSTransition
         timeout={500}
         classNames='playPause'
-        in={true}
+        in={isHome}
         appear
       >
         <button className={styles.playPause} onClick={()=> setAnimating(!isAnimating)}>

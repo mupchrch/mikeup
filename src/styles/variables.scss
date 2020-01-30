@@ -1,0 +1,9 @@
+$backgroundColor: #1c1c1c;
+$baseFontColor: white;
+
+// for use in JS
+:export {
+  bodyColor: $baseFontColor;
+  headerColor: darken($baseFontColor, 10%);
+  backgroundColor: $backgroundColor;
+}

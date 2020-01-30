@@ -20,7 +20,7 @@ const About = ({ data }) => {
   );
 
   return (
-    <div className={styles.about}>
+    <>
       <Seo title='About' />
       <h1>About</h1>
       <p>
@@ -55,7 +55,7 @@ const About = ({ data }) => {
             );
           })}
       </div>
-    </div>
+    </>
   );
 };
 
