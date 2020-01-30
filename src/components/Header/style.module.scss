@@ -15,19 +15,25 @@
 }
 
 .name {
-  color: white;
   font-size: 2vw;
   font-weight: bold;
   line-height: 50px;
-  transition: color 1s;
 
   opacity: 0;
   @include animateOpacity(0.5s, 0.25s);
+
+  a {
+    transition: color 1s;
+    color: white;
+  }
 }
 
 .nameHome {
   @extend .name;
-  color: $backgroundColor;
+
+  a {
+    color: $backgroundColor;
+  }
 }
 
 .menu {
@@ -42,6 +48,10 @@
 .menuItem {
   display: inline-block;
   margin: 0;
+
+  &:hover {
+    background-color: hsla(0, 0%, 50%, 0.1);
+  }
 
   & > a,
   & > a:link,

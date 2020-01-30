@@ -44,7 +44,10 @@ const About = ({ data }) => {
                       style={{ margin: rhythm(0) }}
                     >
                       <div style={{ margin: rhythm(1/2) }}>
-                        <h4><Link to={section.node.fields.slug}>{section.node.frontmatter.title}</Link></h4>
+                        <h4 style={{ marginTop: rhythm(0) }}>
+                          <Link to={section.node.fields.slug}>
+                            {section.node.frontmatter.title}
+                          </Link></h4>
                         <p style={{ marginBottom: rhythm(0) }}>{section.node.frontmatter.description}</p>
                       </div>
                     </div>

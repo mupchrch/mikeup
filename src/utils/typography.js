@@ -1,16 +1,22 @@
 import Typography from 'typography';
 import fairyGatesTheme from 'typography-theme-github';
-import { bodyColor, headerColor } from '../styles/variables.scss';
+import { bodyColor, headerColor, linkColor } from '../styles/variables.scss';
 
 const typography = new Typography({
   ...fairyGatesTheme,
   headerColor,
   bodyColor,
-  overrideThemeStyles: (bleh, options, styles) => {console.log(bleh, options, styles); return {
+  overrideThemeStyles: () => ({
     'h1,h2': {
       borderBottom: 'none'
+    },
+    hr: {
+      background: 'hsla(0, 0%, 65%, 0.2)'
+    },
+    a: {
+      color: linkColor
     }
-  }}
+  })
 });
 
 // Hot reload typography in development.
