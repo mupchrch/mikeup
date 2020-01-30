@@ -13,7 +13,7 @@ class Transition extends React.PureComponent {
       <TransitionGroup component={null}>
         <CSSTransition
           key={location.pathname}
-          timeout={500}
+          timeout={250}
           classNames='page'
           appear
         >
