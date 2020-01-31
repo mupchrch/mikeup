@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
 import { backgroundColor } from '../../styles/variables.scss';
+import Moon from './moon';
+import Earth from './earth';
 import styles from './style.module.scss';
 
 const Hero = ({ isHome }) => {
@@ -25,12 +27,8 @@ const Hero = ({ isHome }) => {
           {isHome && <div className={`${styles.farStars} ${animationClassName}`} />}
           {isHome && <div className={`${styles.midStars} ${animationClassName}`} />}
           {isHome && <div className={`${styles.nearStars} ${animationClassName}`} />}
-          <svg viewBox='0 0 100 100' className={styles.moon}>
-            <circle cx='50' cy='50' r='50' fill='lightgray' />
-          </svg>
-          <svg viewBox='0 0 100 100' className={styles.earth}>
-            <circle cx='50' cy='50' r='50' fill='lightblue' />
-          </svg>
+          <Moon className={styles.moon} />
+          <Earth className={styles.earth} />
           <div className={styles.bigText}>Software Developer</div>
         </div>
       </CSSTransition>

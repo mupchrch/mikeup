@@ -50,8 +50,8 @@ $moonHide: translate(-100%, -100%);
   transform: $moonStart;
 }
 
-$earthStart: translateY(100vh);
-$earthEnd: translateY(85vh);
+$earthStart: translateY(100vh) rotateZ(299deg);
+$earthEnd: translateY(85vh) rotateZ(295deg);
 .earth {
   position: relative;
   width: 200%;

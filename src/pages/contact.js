@@ -40,9 +40,8 @@ const Contact = () => {
       <div className={styles.imageAndNameCard} style={{ margin: rhythm(2) }}>
         <Image
           fixed={data.avatar.childImageSharp.fixed}
-          alt={'meh'}
+          alt={author}
           style={{
-            marginRight: rhythm(1 / 2),
             marginBottom: 0,
             minWidth: 50,
             borderRadius: `100%`,
@@ -51,23 +50,27 @@ const Contact = () => {
             borderRadius: `50%`,
           }}
         />
-        <h2>Hello, I'm {author}.</h2>
+        <div>
+          <h2>Hello, I'm {author}.</h2>
+          <a href='mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#105;&#107;&#101;&#117;&#112;&#046;&#099;&#104;&#117;&#114;&#099;&#104;'>
+            &#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#105;&#107;&#101;&#117;&#112;&#046;&#099;&#104;&#117;&#114;&#099;&#104;
+          </a>
+        </div>
       </div>
-      <a href='mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#105;&#107;&#101;&#117;&#112;&#046;&#099;&#104;&#117;&#114;&#099;&#104;'>
-        &#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#105;&#107;&#101;&#117;&#112;&#046;&#099;&#104;&#117;&#114;&#099;&#104;
-      </a>
-      <a href={social.github}>
-        <FontAwesomeIcon icon={faGithubSquare} /> Github
-      </a>
-      <a href={social.instagram}>
-        <FontAwesomeIcon icon={faInstagram} /> Instagram
-      </a>
-      <a href={social.twitter}>
-        <FontAwesomeIcon icon={faTwitterSquare} /> Twitter
-      </a>
-      <a href={social.linkedin}>
-        <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-      </a>
+      <div className={styles.socialLinks}>
+        <a href={social.github}>
+          <FontAwesomeIcon icon={faGithubSquare} /> Github
+        </a>
+        <a href={social.instagram}>
+          <FontAwesomeIcon icon={faInstagram} /> Instagram
+        </a>
+        <a href={social.twitter}>
+          <FontAwesomeIcon icon={faTwitterSquare} /> Twitter
+        </a>
+        <a href={social.linkedin}>
+          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+        </a>
+      </div>
     </>
   );
 };
