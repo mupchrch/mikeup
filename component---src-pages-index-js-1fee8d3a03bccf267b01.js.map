@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["Index","title"],"mappings":"0FAAA,oCAKeA,UAFD,kBAAM,kBAAC,IAAD,CAAKC,MAAM","file":"component---src-pages-index-js-1fee8d3a03bccf267b01.js","sourcesContent":["import React from 'react';\nimport Seo from '../components/seo';\n\nconst Index = () => <Seo title='Home' />;\n\nexport default Index;"],"sourceRoot":""}

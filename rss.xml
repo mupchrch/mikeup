@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mike Upchurch]]></title><description><![CDATA[A personal website/blog for Mike Upchurch.]]></description><link>https://www.mikeup.church</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jan 2020 17:58:13 GMT</lastBuildDate><item><title><![CDATA[mikeup.church]]></title><description><![CDATA[What is it? A personal website where I can showcase projects and write blog posts.  What did I learn? TODO View the source on Github…]]></description><link>https://www.mikeup.church/about/mikeup.church/</link><guid isPermaLink="false">https://www.mikeup.church/about/mikeup.church/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;A personal website where I can showcase projects and write blog posts.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/630102876c10c3913f0a71f613f11f4d/72480/mikeup-home.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.49382716049382%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABz0lEQVQoz22SPU/CUBSG+w/4GIDQVkq/QYnGwcGkFYQVE00YNDExmhgHjQ5E46Dt4MIgicTEwR/g4KCiP8DZxcDE7iBfAUTjRMSXXluI+ubm3NPb+9z7npNLVSqVUqlULpdrtVq/3zdN0+128zwf+qMxW4qiSJKEPVS32202m/V6vdFo9Hq9bDbr8XjwgxvRryMQWZZlGIZqWALcarUQNU0LBoOjcNjSr4OIBaparQJut9vwnMvlfD6fIAjYzVsi+3APiRBWyBED+MtSp9PJ5/M0TQMDTEgksVhs0lLMlmMKPFUoFAzDSKVSfr/fIUlEV3RdTyQSyWQSSTweR8SiUwLl9XpdLlcgEHAwSLSEZLRCYptURLpAYSL7CCnakmzJsuzkWCcVkS5SZBolpf/keCHXDOGhW0mU8QLUiBqJqtHxSHQCA8ngU1XkwdMQnXYOYawqqgKLQpjjOZbnGD6EQduD5UJ8mBNAK6osyeIPTI5hGY4O0DA3NTM3t7CWXj/O7J4t71+u7F9mds+XNg8WV/RZfQrlB/1jLBNyYNwsaPGJ1b3trdPHw6uX45uOcftmFt/N+w/z/t24+zx5eC0+G8WnnYvrjb2jtDY/DfNo5Ddx+cFD5dhZeQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The space-themed homepage of mikeup.church.&quot;
+        title=&quot;The space-themed homepage of mikeup.church.&quot;
+        src=&quot;/static/630102876c10c3913f0a71f613f11f4d/e11df/mikeup-home.png&quot;
+        srcset=&quot;/static/630102876c10c3913f0a71f613f11f4d/5039d/mikeup-home.png 250w,
+/static/630102876c10c3913f0a71f613f11f4d/d19c0/mikeup-home.png 500w,
+/static/630102876c10c3913f0a71f613f11f4d/e11df/mikeup-home.png 1000w,
+/static/630102876c10c3913f0a71f613f11f4d/8e846/mikeup-home.png 1500w,
+/static/630102876c10c3913f0a71f613f11f4d/72480/mikeup-home.png 1620w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The space-themed homepage of mikeup.church.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;What did I learn?&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mupchrch/mikeup.church&quot;&gt;View the source on Github.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Gatsby, React, Sass&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[First thing’s first Hello, this is my first post. This is a quote. Welp, see ya later!]]></description><link>https://www.mikeup.church/blog/hello-world/</link><guid isPermaLink="false">https://www.mikeup.church/blog/hello-world/</guid><pubDate>Fri, 31 Jan 2020 12:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;First thing’s first&lt;/h2&gt;
+&lt;p&gt;Hello, this is my first post.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; code &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;here is some code&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// nice&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Welp, see ya later!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[updash]]></title><description><![CDATA[What is it? Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time…]]></description><link>https://www.mikeup.church/about/updash/</link><guid isPermaLink="false">https://www.mikeup.church/about/updash/</guid><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time, currently playing music, weather, calendar, Instagram photos, etc.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/68b76/updash.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.3254593175853%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAADHElEQVQozyWS22+TdRjH+w+YqIlhhguTQZyMFdmhe9u3577t2+Pbt82k21jZCINtTlQq505TG9DBDBcugbmt2QzoDrBuwNq5sY0x1GjkYIyQaAxebJpgjIgQDcaLjz/x4nvx3Hye7/f5PoYvGkx812Lh+221fNnsoPTETZ7J/cqagV9Ye+oH7EODKOfO4MiPEBzsZaryKXR5M6ppE0XTE7w+pLD3YpyD03Fa+zwY7rzs44+uBA/TddxJxXkht4J3CWyz8NzoQ3zn89RdnSP6+RLJsRzdusSa7Ns8feANToXK6c9pnLi5h94bu0nnt2JY3aPx97ut/JNN8tOhRko/+BnHItQUoeTjR6gXJoktzxL+bJFGARyJVLCu9xglPVnGQ+s5+ZHOydsHGby9j/T5Bgz5tgDzu8MsdAaYekXnxd4Znh++TvnwV1QMLKMPD7F1cpzGC3nqc32MSs9SnwzxUl2Akcon2d6j0JaL0t6v0XDEjcE1MYJ3voDnUhFvYZxUXuOtxTDphTCHp2MMDJ2mUFxifKLAYG4Uk1/D7PJSvdlOmcnNxhoP5mgEo6RQZrRi8E6Ooi4WUBeK+ItjdBWa6buWou/6Xo7MttB19B3SmR72ZY7z2v43qXQruJoTVHuCVMherIEIVl1HCkUoq7ILoGgvcfUSieX5x8DUXBPdX3fQ/U0nqZkE3i0Jdh44Suq9fiSvxvoKiUpFxRQMYDQrYoFKlTtAjRoWUP//Dhs+nRdaIFw4y/tZL6e7nQwfd5PLOtlvLycTkDkWc/Gq1cjGTTakYARHUxyj7MMinEnBEA79v1nBELt4Dv3yJ8SuzFFfzHNrm40/xV/ea5a5v8POX51OHuyy8Kjdwo87BEx2UhvWRMwYG6rdSL6IcOynNhBmbZkFg29qjODlGVQB1abP8u0uAeiwce9QnPuZRn7PNPHb4S08aLdxq0XGISKaIzomJYgcjWIRcLMWwRQIUrJOwuAZ+xBVOFOKk4QmznBtu527rTIrbQ5W25ysdnhYEbq7U+ZG0oIkuanxh6hy+akWt3Mn448LsgY1SkXL/wJq1P2KVaNLCQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The updash dashboard, displaying personalized information.&quot;
+        title=&quot;The updash dashboard, displaying personalized information.&quot;
+        src=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/e11df/updash.png&quot;
+        srcset=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/5039d/updash.png 250w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/d19c0/updash.png 500w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/e11df/updash.png 1000w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/8e846/updash.png 1500w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/68b76/updash.png 1905w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The updash dashboard, displaying personalized information.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;What did I learn?&lt;/h2&gt;
+&lt;p&gt;It is built using Smashing (a Ruby-based framework for quickly constructing dashboards) and runs on a Raspberry Pi connected to a monitor. I had to customize many of the widgets as they were either no longer working or did not exist.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mupchrch/updash&quot;&gt;View the source on Github.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Smashing, Ruby, Coffeescript, CSS&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[upchat]]></title><description><![CDATA[What is it? Upchat is a web app heavily inspired by Slack. It supports channels, nested sub-channels, single/multi user direct messages…]]></description><link>https://www.mikeup.church/about/upchat/</link><guid isPermaLink="false">https://www.mikeup.church/about/upchat/</guid><pubDate>Fri, 02 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Upchat is a web app &lt;em&gt;heavily&lt;/em&gt; inspired by &lt;a href=&quot;https://slack.com&quot;&gt;Slack&lt;/a&gt;. It supports channels, nested sub-channels, single/multi user direct messages, channel/user mentions, profile pictures, and more.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/818e5/upchat.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.57399103139014%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAB2HAAAdhwGP5fFlAAABaElEQVQ4y5XTPU/CUBQG4P5Gf5aLi4uLm7qog7qwKAQjtqU0bW/bVEhJE+hNP6BfMligr+0VoohgOcnZznn6JveUe7i/Q7v9DMuyYBgGpK6Et2MT/U4fZt/EeDRGkiR7O45jzGYzDIdDcK+dF/A8zzDHcWDbNs6pg0E0QRSGyLJ31K3pZALu9uYajUYDrVYLsiwznLoUSflV3/cxnUYoimJvL5dLBgZBAK7ZfIIoitA0jXWVNDh9hE9sjDyKLE3ZElbLf9UaDCuw15Og6zpUVWVNCIFz4iIwQtCQIk1SNlzUBburdD9B79xFaAWIshh5nh8IdkuwRNZglTb/yDcWdkE7QfILnM/nW6lqJxQEYRvMv0EUByYUeOHfhHXP5guUBGh6+SiaCkVToBubYJ1azzFQbAowFRNEJiA9DaZqbL1s7cMufwROORIxOLNAL8fwLyi8KxexFyFOY3aDi8WCLezraqYq3/fwCesp2IitwdbjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The messaging interface of upchat.&quot;
+        title=&quot;The messaging interface of upchat.&quot;
+        src=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/e11df/upchat.png&quot;
+        srcset=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/5039d/upchat.png 250w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/d19c0/upchat.png 500w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/e11df/upchat.png 1000w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/8e846/upchat.png 1500w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/818e5/upchat.png 1784w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The messaging interface of upchat.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;What did I learn?&lt;/h2&gt;
+&lt;p&gt;This project started as an excuse to learn Node.js, then exploded into an opportunity to learn many more aspects of creating and running a web app:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I began with MongoDB and Mongoose, which I eventually outgrew. I realized what I actually needed was a relational database, so I chose Postgres with &lt;code class=&quot;language-text&quot;&gt;node-postgres&lt;/code&gt;. Choosing a lower level library like &lt;code class=&quot;language-text&quot;&gt;node-postgres&lt;/code&gt; allowed me to gain more experience writing SQL queries.&lt;/li&gt;
+&lt;li&gt;I chose to roll my own user authentication via JSON Web Tokens, as this was another aspect of web apps that I wanted to learn more about.&lt;/li&gt;
+&lt;li&gt;All server APIs are unit tested. All unit tests run with each commit via CircleCI.&lt;/li&gt;
+&lt;li&gt;I learned how to set up a production Node.js server running via PM2 on a Digital Ocean droplet with an SSL certificate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Webpack, Node.js, Express, Websockets, JWT, Postgres, React, Sass, Mocha, Chai, CircleCI&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[split-diff]]></title><description><![CDATA[What is it?  is an Atom text editor package that compares files side-by-side and highlights any differences. When I began using Atom, it was…]]></description><link>https://www.mikeup.church/about/split-diff/</link><guid isPermaLink="false">https://www.mikeup.church/about/split-diff/</guid><pubDate>Tue, 02 Feb 2016 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://atom.io/packages/split-diff&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;split-diff&lt;/code&gt;&lt;/a&gt; is an Atom text editor package that compares files side-by-side and highlights any differences. When I began using Atom, it was freshly out of beta and I noticed there was no package available to diff files.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/dba95540f2620e292119d6be92719606/split-diff.gif&quot; alt=&quot;The split-diff Atom package, showing side-by-side comparison and synchronized scrolling.&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;What did I learn?&lt;/h2&gt;
+&lt;p&gt;Developing &lt;code class=&quot;language-text&quot;&gt;split-diff&lt;/code&gt; provided a great stepping stone into the open source community. Another popular Atom package, &lt;a href=&quot;https://atom.io/packages/git-time-machine&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git-time-machine&lt;/code&gt;&lt;/a&gt;, is built on top of &lt;code class=&quot;language-text&quot;&gt;split-diff&lt;/code&gt;. I worked with the package maintainer to provide an API so that &lt;code class=&quot;language-text&quot;&gt;split-diff&lt;/code&gt; could be easily used as a dependency. Even though I don’t use the package as much anymore, I have continued to support it, as it still has a significant userbase, and I enjoy contributing back to open source.&lt;/p&gt;
+&lt;p&gt;I have encountered and overcome a fair amount of interesting problems as I developed &lt;code class=&quot;language-text&quot;&gt;split-diff&lt;/code&gt;, and maintained it over the years:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keeping the two editor scroll positions in sync, both vertically and horizontally, and handle files with different line counts and widths. There was, and still is, no provided API for doing this.&lt;/li&gt;
+&lt;li&gt;Adding empty lines, so the diff chunks stay visibly next to each other, despite having differing amounts of lines. There was no API for doing so at the time, but I was able to refactor at some point to use a newly released API for specifically this reason.&lt;/li&gt;
+&lt;li&gt;Running the diffing calculations on a separate child process, so the UI wouldn’t lock up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mupchrch/split-diff&quot;&gt;View the source on Github.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have also developed two other smaller Atom packages: &lt;a href=&quot;https://atom.io/packages/minimap-split-diff&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;minimap-split-diff&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://atom.io/packages/outline-selection&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;outline-selection&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Coffeescript, Javascript, Less&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ET-NavSwarm]]></title><description><![CDATA[What is it? My senior project at UNH was Extraterrestrial Navigational Swarm. The goal of the project was to create a swarm of robots that…]]></description><link>https://www.mikeup.church/about/et-navswarm/</link><guid isPermaLink="false">https://www.mikeup.church/about/et-navswarm/</guid><pubDate>Mon, 02 Feb 2015 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;My senior project at UNH was Extraterrestrial Navigational Swarm. The goal of the project was to create a swarm of robots that would be able to implement any swarming algorithm thrown at it - specifically the Partical Swarm Optimization algorithm. This algorithm would allow the robots to cooperatively search an area to find the lowest altitude.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 820px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a88bd8278255e3b6646dedd66a285197/1b844/et-navswarm.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 71.95121951219512%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdMl1Vz0YnB//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAECAxIR/9oACAEBAAEFAnaJ29Mr6i9Dti1Z/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABkQAAIDAQAAAAAAAAAAAAAAAAABAhAxIv/aAAgBAQAGPwJo5E5bW1//xAAYEAEBAQEBAAAAAAAAAAAAAAABEQAhMf/aAAgBAQABPyG1WBlCCIUvckQLJfMPOuaH3f/aAAwDAQACAAMAAAAQpN//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCK/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Qo//EABsQAQADAQEBAQAAAAAAAAAAAAEAESFBMVFx/9oACAEBAAE/EKfyjbZbe6cnyeojXOTdsPMEvGN8L/Im6FWJyNOp/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A rendering of an ET-NavSwarm robot.&quot;
+        title=&quot;A rendering of an ET-NavSwarm robot.&quot;
+        src=&quot;/static/a88bd8278255e3b6646dedd66a285197/1b844/et-navswarm.jpg&quot;
+        srcset=&quot;/static/a88bd8278255e3b6646dedd66a285197/9fb78/et-navswarm.jpg 250w,
+/static/a88bd8278255e3b6646dedd66a285197/48a11/et-navswarm.jpg 500w,
+/static/a88bd8278255e3b6646dedd66a285197/1b844/et-navswarm.jpg 820w&quot;
+        sizes=&quot;(max-width: 820px) 100vw, 820px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;A rendering of an ET-NavSwarm robot.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;To achieve the goal, I was tasked with getting all of the devices on the robot to communicate with one another. The Arduino Mega was used to drive the motors and collect locational data. This data needed to be passed to the Raspberry Pi Model B+ for the swarming algorithm. Then a subset of the data needed to be broadcast to the rest of the swarm in mesh networking mode via Zigbee devices.&lt;/p&gt;
+&lt;h2&gt;What did I learn?&lt;/h2&gt;
+&lt;p&gt;The ET-NavSwarm project was an invaluable experience - we were given the opportunity to visit NASA’s Goddard Space Flight Center and present our research to NASA engineers. We were also given a tour including the Hubble Space Telescope Operations Control Center and the assembly of the James Webb Space Telescope in the world’s largest clean room.&lt;/p&gt;
+&lt;h3&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Java, C, Google Protocol Buffers&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[kappafeed]]></title><description><![CDATA[What is it? Kappafeed is a program that listens in top Twitch.tv channel chatrooms for whichever emoticon the user has selected, and…]]></description><link>https://www.mikeup.church/about/kappafeed/</link><guid isPermaLink="false">https://www.mikeup.church/about/kappafeed/</guid><pubDate>Sun, 02 Feb 2014 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Kappafeed is a program that listens in top &lt;a href=&quot;http://www.twitch.tv/&quot;&gt;Twitch.tv&lt;/a&gt; channel chatrooms for whichever emoticon the user has selected, and displays all messages in one collective feed. It integrates with Twitch APIs and IRC servers in order to merge the top chat channels into one feed.&lt;/p&gt;
+&lt;p&gt;I also created a Kappafeed Overwolf app for a contest they were hosting and won a gaming headset. &lt;a href=&quot;https://github.com/mupchrch/kappafeed_overwolf&quot;&gt;Overwolf app source.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 656px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/5683b/kappafeed-overwolf.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAFGtj0BGKI//8QAGxAAAQUBAQAAAAAAAAAAAAAAAgABAwQREjH/2gAIAQEAAQUCrgJzPFGw+qsfDnbfN1f/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRABAAMBAQAAAAAAAAAAAAAAAQAQIRIi/9oACAEBAAY/AtMj5MpYnJX/xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhMUH/2gAIAQEAAT8hIBsvHNIaGZqq9yQbDzfWYnuMf//aAAwDAQACAAMAAAAQvB//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8Q3SHf/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EByVv//EABsQAQADAQEBAQAAAAAAAAAAAAEAESExQWFx/9oACAEBAAE/ENiq/wAIpOqnRDPZeanewBjvXt/ZTJDXUulRbIVWdn//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The Kappafeed Overwolf app running over League of Legends.&quot;
+        title=&quot;The Kappafeed Overwolf app running over League of Legends.&quot;
+        src=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/5683b/kappafeed-overwolf.jpg&quot;
+        srcset=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/9fb78/kappafeed-overwolf.jpg 250w,
+/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/48a11/kappafeed-overwolf.jpg 500w,
+/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/5683b/kappafeed-overwolf.jpg 656w&quot;
+        sizes=&quot;(max-width: 656px) 100vw, 656px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The Kappafeed Overwolf app running over League of Legends.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;What did I learn?&lt;/h2&gt;
+&lt;p&gt;I learned a lot about maintaining servers and keeping a service running reliably 24/7. Admittedly, the code for this project got a bit unruly as more features were added and more error handling of edge cases was added. I learned valuable lessons about code refactor and structure for future projects.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mupchrch/kappafeed&quot;&gt;View the source on Github.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Technologies&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Python, Tornado Web Server, IRC, Websockets, HTML, JQuery, CSS&lt;/em&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
