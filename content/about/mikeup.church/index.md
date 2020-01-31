@@ -8,6 +8,8 @@ date: "2020-02-02T00:00:00.000Z"
 
 A personal website where I can showcase projects and write blog posts.
 
+![The space-themed homepage of mikeup.church.](./mikeup-home.png)
+
 ## What did I learn?
 
 TODO
