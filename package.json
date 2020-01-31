@@ -37,8 +37,6 @@
     "react-helmet": "^5.2.1",
     "react-transition-group": "^4.3.0",
     "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19"
   },
@@ -59,9 +57,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "serve": "gatsby serve"
   }
 }
