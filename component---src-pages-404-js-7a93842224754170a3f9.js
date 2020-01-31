@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{240:function(e,t,a){"use strict";a.r(t);var n=a(0),r=a.n(n),l=a(59),o=a(236);t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(o.a,{title:"404"}),r.a.createElement("h1",null,"404 Error"),r.a.createElement("p",null,"Houston, we have a problem."),r.a.createElement(l.Link,{to:"/"},"Back to safety"))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-7a93842224754170a3f9.js.map
