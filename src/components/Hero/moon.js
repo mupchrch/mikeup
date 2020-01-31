@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Moon = ({ className }) => (
-  <svg viewBox='90 90 320 320' className={className}>
+const Moon = ({ className, style }) => (
+  <svg viewBox='90 90 320 320' className={className} style={style}>
     <g>
       <circle style={{ fill: '#EEEEEE' }} cx='249.6' cy='250' r='160' />
     </g>

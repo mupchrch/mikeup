@@ -33,12 +33,14 @@ class Transition extends React.PureComponent {
   }
 }
 
-const PageLayout = ({ children, location }) => {
+const PageLayout = ({ children, location, pageResources }) => {
+  const is404 = pageResources.page.path === '/404.html';
+
   return (
     <div className={styles.pageLayout}>
-      <Header currentPath={location.pathname} />
-      <Hero isHome={location.pathname === '/'} />
-      <main className={styles.pageWrapper}>
+      <Header currentPath={location.pathname} is404={is404} />
+      <Hero isHome={location.pathname === '/'} is404={is404} />
+      <main className={styles.pageWrapper} style={{ textAlign: is404 ? 'center' : null }}>
         <Transition location={location}>{children}</Transition>
       </main>
     </div>

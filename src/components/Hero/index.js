@@ -7,7 +7,7 @@ import Moon from './moon';
 import Earth from './earth';
 import styles from './style.module.scss';
 
-const Hero = ({ isHome }) => {
+const Hero = ({ isHome, is404 }) => {
   const [isAnimating, setAnimating] = useLocalStorage('isBackgroundAnimating', true);
   const animationClassName = isAnimating ? '' : styles.paused;
 
@@ -23,10 +23,13 @@ const Hero = ({ isHome }) => {
         appear
         in={isHome}
       >
-        <div className={styles.hero} style={{ background: isHome ? null : backgroundColor }}>
-          {isHome && <div className={`${styles.farStars} ${animationClassName}`} />}
-          {isHome && <div className={`${styles.midStars} ${animationClassName}`} />}
-          {isHome && <div className={`${styles.nearStars} ${animationClassName}`} />}
+        <div className={styles.hero} style={{ background: isHome || is404 ? null : backgroundColor }}>
+          {(isHome || is404) &&
+          <>
+            <div className={`${styles.farStars} ${animationClassName}`} />
+            <div className={`${styles.midStars} ${animationClassName}`} />
+            <div className={`${styles.nearStars} ${animationClassName}`} />
+          </>}
           <Moon className={styles.moon} />
           <Earth className={styles.earth} />
           <div className={styles.bigText}>Software Developer</div>
@@ -36,7 +39,7 @@ const Hero = ({ isHome }) => {
       <CSSTransition
         timeout={500}
         classNames='playPause'
-        in={isHome}
+        in={isHome || is404}
         appear
       >
         <button className={styles.playPause} onClick={()=> setAnimating(!isAnimating)}>
