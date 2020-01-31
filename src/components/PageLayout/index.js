@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header from '../Header';
 import Hero from '../Hero';
@@ -34,13 +34,25 @@ class Transition extends React.PureComponent {
 }
 
 const PageLayout = ({ children, location, pageResources }) => {
+  const scrollRef = useRef(null);
+  const didMountRef = useRef(false);
   const is404 = pageResources.page.path === '/404.html';
+
+  useEffect(() => {
+    if (didMountRef.current && scrollRef.current) {
+      // only scroll to top on navigation, not on refresh
+      scrollRef.current.scrollTop = 0;
+    } else {
+      // allow scroll to top on navigation from now on
+      didMountRef.current = true;
+    }
+  });
 
   return (
     <div className={styles.pageLayout}>
       <Header currentPath={location.pathname} is404={is404} />
       <Hero isHome={location.pathname === '/'} is404={is404} />
-      <main className={styles.pageWrapper} style={{ textAlign: is404 ? 'center' : null }}>
+      <main className={styles.pageWrapper} style={{ textAlign: is404 ? 'center' : null }} ref={scrollRef}>
         <Transition location={location}>{children}</Transition>
       </main>
     </div>
