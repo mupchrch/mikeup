@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket, faMeteor } from '@fortawesome/free-solid-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import Seo from '../components/seo';
 
 const iconStyle = { maxHeight: '1rem', marginRight: '1rem', marginLeft: '1rem' };

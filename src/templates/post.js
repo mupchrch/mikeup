@@ -1,31 +1,23 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Seo from '../components/seo';
+import Bio from '../components/Bio';
+import { rhythm, scale } from '../utils/typography';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
-
-class BlogPostTemplate extends React.Component {
+class ProjectTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const post = this.props.data.markdownRemark;
+    const { previous, next, isBlog } = this.props.pageContext;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+      <>
+        <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
+            <h1 style={{ marginBottom: 0 }}>
               {post.frontmatter.title}
             </h1>
             <p
@@ -35,7 +27,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
+              {new Date(post.frontmatter.date).getFullYear()}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -44,9 +36,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
+          {isBlog && <footer><Bio cardMargin={rhythm(1)}/></footer>}
         </article>
 
         <nav>
@@ -57,33 +47,34 @@ class BlogPostTemplate extends React.Component {
               justifyContent: `space-between`,
               listStyle: `none`,
               padding: 0,
+              margin: `${rhythm(1)} 0`
             }}
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <Link to={previous.fields.slug} rel="next">
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <Link to={next.fields.slug} rel="prev">
                   {next.frontmatter.title} →
                 </Link>
               )}
             </li>
           </ul>
         </nav>
-      </Layout>
+      </>
     )
   }
 }
 
-export default BlogPostTemplate
+export default ProjectTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ProjectBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -101,4 +92,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

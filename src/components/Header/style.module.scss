@@ -1,6 +1,8 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.module.scss';
 
+$lineHeight: 50px;
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +19,7 @@
 .name {
   font-size: 2vw;
   font-weight: bold;
-  line-height: 50px;
+  line-height: $lineHeight;
 
   opacity: 0;
   @include animateOpacity(0.5s, 0.25s);
@@ -36,11 +38,16 @@
   }
 }
 
+.nav {
+  margin-left: auto;
+}
+
 .menu {
   position: relative;
   margin: 0;
   opacity: 0;
   display: flex;
+  height: $lineHeight;
 
   @include animateOpacity(0.5s, 0.25s);
 }
@@ -143,6 +150,6 @@
 @include largeScreen{
   // don't allow font size to grow past large screen size
   .name {
-    font-size: 50px;
+    font-size: 36px;
   }
 }
