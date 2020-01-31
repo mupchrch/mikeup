@@ -1,12 +1,16 @@
 $bodyColor: darken(white, 5%);
 $headerColor: darken($bodyColor, 15%);
+$quoteColor: darken($bodyColor, 30%);
 $backgroundColor: #1c1c1c;
+$foregroundColor: lighten($backgroundColor, 2.5%);
 $linkColor: #7aa9e6;
 
 // for use in JS
 :export {
   bodyColor: $bodyColor;
   headerColor: $headerColor;
+  quoteColor: $quoteColor;
   backgroundColor: $backgroundColor;
+  foregroundColor: $foregroundColor;
   linkColor: $linkColor;
 }

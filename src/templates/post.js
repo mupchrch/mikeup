@@ -9,6 +9,8 @@ class ProjectTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const { previous, next, isBlog } = this.props.pageContext;
 
+    const date = isBlog ? post.frontmatter.date : new Date(post.frontmatter.date).getFullYear();
+
     return (
       <>
         <Seo
@@ -27,7 +29,7 @@ class ProjectTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {new Date(post.frontmatter.date).getFullYear()}
+              {date}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
