@@ -1,5 +1,5 @@
 import React from 'react';
-import { linkColor } from '../../styles/variables.scss';
+import { linkColor } from '../../styles/variables.module.scss';
 
 const landColor = '#b1ca70';
 

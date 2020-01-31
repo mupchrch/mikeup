@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
-import { backgroundColor } from '../../styles/variables.scss';
+import { backgroundColor } from '../../styles/variables.module.scss';
 import Moon from './moon';
 import Earth from './earth';
 import styles from './style.module.scss';

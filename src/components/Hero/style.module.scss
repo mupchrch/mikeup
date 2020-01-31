@@ -1,5 +1,5 @@
 @import '../../styles/mixins.scss';
-@import '../../styles/variables.scss';
+@import '../../styles/variables.module.scss';
 
 .hero {
   position: absolute;
@@ -17,7 +17,7 @@
 .playPause {
   background: none;
   border: none;
-  color: $baseFontColor;
+  color: $bodyColor;
   position: absolute;
   right: 1em;
   bottom: 1em;

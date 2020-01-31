@@ -1,6 +1,6 @@
 import Typography from 'typography';
 import fairyGatesTheme from 'typography-theme-github';
-import { bodyColor, headerColor, linkColor } from '../styles/variables.scss';
+import { bodyColor, headerColor, linkColor } from '../styles/variables.module.scss';
 
 const typography = new Typography({
   ...fairyGatesTheme,
