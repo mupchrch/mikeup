@@ -1,11 +1,16 @@
+const username = 'mupchrch';
+
 module.exports = {
   siteMetadata: {
-    title: `Mike Upchurch`,
-    author: `Mike Upchurch`,
-    description: `A personal website/blog for Mike Upchurch.`,
-    siteUrl: `https://www.mikeup.church`,
+    title: 'Mike Upchurch',
+    author: 'Mike Upchurch',
+    description: 'A personal website/blog for Mike Upchurch.',
+    siteUrl: 'https://www.mikeup.church',
     social: {
-      twitter: `mupchrch`,
+      twitter: `https://twitter.com/${username}`,
+      instagram: `https://www.instagram.com/${username}`,
+      github: `https://github.com/${username}`,
+      linkedin: `https://www.linkedin.com/in/${username}`
     },
   },
   plugins: [
