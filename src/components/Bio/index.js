@@ -6,7 +6,7 @@ import { faTwitterSquare, faInstagram, faGithubSquare, faLinkedin } from '@forta
 import { rhythm } from '../../utils/typography';
 import styles from './style.module.scss';
 
-const Bio = ({ cardMargin }) => {
+const Bio = () => {
   const data = useStaticQuery(graphql`
     query {
       avatar: file(absolutePath: { regex: "/headshot.jpg/" }) {
@@ -34,7 +34,7 @@ const Bio = ({ cardMargin }) => {
 
   return (
     <>
-      <div className={styles.imageAndNameCard} style={{ margin: cardMargin ? cardMargin : rhythm(2) }}>
+      <div className={styles.imageAndNameCard} style={{ margin: rhythm(1) }}>
         <Image
           fixed={data.avatar.childImageSharp.fixed}
           alt={author}

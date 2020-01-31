@@ -14,7 +14,7 @@ class Blog extends React.Component {
       <>
         <SEO title='Blog' />
         <h1>Blog</h1>
-        <Bio cardMargin={rhythm(1)} />
+        <Bio />
         <h2>Posts</h2>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

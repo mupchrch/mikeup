@@ -36,7 +36,7 @@ class ProjectTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          {isBlog && <footer><Bio cardMargin={rhythm(1)}/></footer>}
+          {isBlog && <footer><Bio /></footer>}
         </article>
 
         <nav>
