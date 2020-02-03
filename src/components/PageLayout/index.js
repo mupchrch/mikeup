@@ -36,7 +36,7 @@ class Transition extends React.PureComponent {
 const PageLayout = ({ children, location, pageResources }) => {
   const scrollRef = useRef(null);
   const didMountRef = useRef(false);
-  const is404 = pageResources.page.path === '/404.html';
+  const is404 = pageResources ? pageResources.page.path === '/404.html' : false;
 
   useEffect(() => {
     if (didMountRef.current && scrollRef.current) {

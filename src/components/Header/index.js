@@ -30,8 +30,8 @@ const Header = ({ currentPath, is404 }) => {
     const handleWindowResize = () => {
       setSelectedDecoratorStyles({ transform: `translateX(${selectedItemRef.current.offsetLeft}px)`, width: selectedItemRef.current.offsetWidth });
     };
-    window.addEventListener('resize', handleWindowResize);
-    return () => window.removeEventListener('resize', handleWindowResize);
+    if (typeof window !== 'undefined') window.addEventListener('resize', handleWindowResize);
+    return () => { if (typeof window !== 'undefined') window.removeEventListener('resize', handleWindowResize); };
   }, []);
 
   return (
