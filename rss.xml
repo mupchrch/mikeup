@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mike Upchurch]]></title><description><![CDATA[A personal website/blog for Mike Upchurch.]]></description><link>https://www.mikeup.church</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jan 2020 21:05:08 GMT</lastBuildDate><item><title><![CDATA[mikeup.church]]></title><description><![CDATA[What is it? A personal website where I can showcase projects and write blog posts.  What did I learn? TODO View the source on Github…]]></description><link>https://www.mikeup.church/about/mikeup.church/</link><guid isPermaLink="false">https://www.mikeup.church/about/mikeup.church/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mike Upchurch]]></title><description><![CDATA[A personal website/blog for Mike Upchurch.]]></description><link>https://www.mikeup.church</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Feb 2020 01:47:42 GMT</lastBuildDate><item><title><![CDATA[mikeup.church]]></title><description><![CDATA[What is it? A personal website where I can showcase projects and write blog posts.  What did I learn? I used this as an opportunity to learn…]]></description><link>https://www.mikeup.church/about/mikeup.church/</link><guid isPermaLink="false">https://www.mikeup.church/about/mikeup.church/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;A personal website where I can showcase projects and write blog posts.&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
@@ -7,25 +7,25 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/630102876c10c3913f0a71f613f11f4d/72480/mikeup-home.png&quot;
+    href=&quot;/static/d46599718d5b7d3156a662da8639ed01/7d0a0/mikeup-home.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 65.49382716049382%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABz0lEQVQoz22SPU/CUBSG+w/4GIDQVkq/QYnGwcGkFYQVE00YNDExmhgHjQ5E46Dt4MIgicTEwR/g4KCiP8DZxcDE7iBfAUTjRMSXXluI+ubm3NPb+9z7npNLVSqVUqlULpdrtVq/3zdN0+128zwf+qMxW4qiSJKEPVS32202m/V6vdFo9Hq9bDbr8XjwgxvRryMQWZZlGIZqWALcarUQNU0LBoOjcNjSr4OIBaparQJut9vwnMvlfD6fIAjYzVsi+3APiRBWyBED+MtSp9PJ5/M0TQMDTEgksVhs0lLMlmMKPFUoFAzDSKVSfr/fIUlEV3RdTyQSyWQSSTweR8SiUwLl9XpdLlcgEHAwSLSEZLRCYptURLpAYSL7CCnakmzJsuzkWCcVkS5SZBolpf/keCHXDOGhW0mU8QLUiBqJqtHxSHQCA8ngU1XkwdMQnXYOYawqqgKLQpjjOZbnGD6EQduD5UJ8mBNAK6osyeIPTI5hGY4O0DA3NTM3t7CWXj/O7J4t71+u7F9mds+XNg8WV/RZfQrlB/1jLBNyYNwsaPGJ1b3trdPHw6uX45uOcftmFt/N+w/z/t24+zx5eC0+G8WnnYvrjb2jtDY/DfNo5Ddx+cFD5dhZeQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 67.25978647686833%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABz0lEQVQoz22SPU/CUBSG+w/4GIDQVkq/QYnGwcGkFYQVE00YNDExmhgHjQ5E46Dt4MIgicTEwR/g4KCiP8DZxcDE7iBfAUTjRMSXXluI+ubm3NPb+9z7npNLVSqVUqlULpdrtVq/3zdN0+128zwf+qMxW4qiSJKEPVS32202m/V6vdFo9Hq9bDbr8XjwgxvRryMQWZZlGIZqWALcarUQNU0LBoOjcNjSr4OIBaparQJut9vwnMvlfD6fIAjYzVsi+3APiRBWyBED+MtSp9PJ5/M0TQMDTEgksVhs0lLMlmMKPFUoFAzDSKVSfr/fIUlEV3RdTyQSyWQSSTweR8SiUwLl9XpdLlcgEHAwSLSEZLRCYptURLpAYSL7CCnakmzJsuzkWCcVkS5SZBolpf/keCHXDOGhW0mU8QLUiBqJqtHxSHQCA8ngU1XkwdMQnXYOYawqqgKLQpjjOZbnGD6EQduD5UJ8mBNAK6osyeIPTI5hGY4O0DA3NTM3t7CWXj/O7J4t71+u7F9mds+XNg8WV/RZfQrlB/1jLBNyYNwsaPGJ1b3trdPHw6uX45uOcftmFt/N+w/z/t24+zx5eC0+G8WnnYvrjb2jtDY/DfNo5Ddx+cFD5dhZeQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The space-themed homepage of mikeup.church.&quot;
         title=&quot;The space-themed homepage of mikeup.church.&quot;
-        src=&quot;/static/630102876c10c3913f0a71f613f11f4d/e11df/mikeup-home.png&quot;
-        srcset=&quot;/static/630102876c10c3913f0a71f613f11f4d/5039d/mikeup-home.png 250w,
-/static/630102876c10c3913f0a71f613f11f4d/d19c0/mikeup-home.png 500w,
-/static/630102876c10c3913f0a71f613f11f4d/e11df/mikeup-home.png 1000w,
-/static/630102876c10c3913f0a71f613f11f4d/8e846/mikeup-home.png 1500w,
-/static/630102876c10c3913f0a71f613f11f4d/72480/mikeup-home.png 1620w&quot;
+        src=&quot;/static/d46599718d5b7d3156a662da8639ed01/e11df/mikeup-home.png&quot;
+        srcset=&quot;/static/d46599718d5b7d3156a662da8639ed01/5039d/mikeup-home.png 250w,
+/static/d46599718d5b7d3156a662da8639ed01/d19c0/mikeup-home.png 500w,
+/static/d46599718d5b7d3156a662da8639ed01/e11df/mikeup-home.png 1000w,
+/static/d46599718d5b7d3156a662da8639ed01/8e846/mikeup-home.png 1500w,
+/static/d46599718d5b7d3156a662da8639ed01/7d0a0/mikeup-home.png 1686w&quot;
         sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -34,48 +34,47 @@
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The space-themed homepage of mikeup.church.&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;What did I learn?&lt;/h2&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;I used this as an opportunity to learn Gatsby. I appreciated the opportunity to write my personal website in React, and also wanted the ability to write blog posts using Markdown.&lt;/p&gt;
+&lt;p&gt;I wanted to improve the design for this latest iteration and spent a lot of time researching, learning, and sketching.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/mupchrch/mikeup.church&quot;&gt;View the source on Github.&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Technologies&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Gatsby, React, Sass&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[First thing’s first Hello, this is my first post. This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. This…]]></description><link>https://www.mikeup.church/blog/hello-world/</link><guid isPermaLink="false">https://www.mikeup.church/blog/hello-world/</guid><pubDate>Fri, 31 Jan 2020 12:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;First thing’s first&lt;/h2&gt;
-&lt;p&gt;Hello, &lt;em&gt;this&lt;/em&gt; is my &lt;strong&gt;first&lt;/strong&gt; post.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. This is a quote.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; code &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;here is some code&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// nice&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;h1&lt;/h1&gt;
-&lt;h2&gt;h2&lt;/h2&gt;
-&lt;h3&gt;h3&lt;/h3&gt;
-&lt;h4&gt;h4&lt;/h4&gt;
-&lt;h5&gt;h5&lt;/h5&gt;
-&lt;h6&gt;h6&lt;/h6&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;Are&lt;/th&gt;
-&lt;th align=&quot;right&quot;&gt;Cool&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;hello&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;I am&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;a table&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;isn’t this&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;nice?&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;my dude&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Welp, see ya later!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[updash]]></title><description><![CDATA[What is it? Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time…]]></description><link>https://www.mikeup.church/about/updash/</link><guid isPermaLink="false">https://www.mikeup.church/about/updash/</guid><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Gatsby, React, Sass&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[Hello, I’m not quite sure what to say. I’m sure I’ll have a real blog post up here soon enough. Until then, enjoy this picture of me…]]></description><link>https://www.mikeup.church/blog/hello-world/</link><guid isPermaLink="false">https://www.mikeup.church/blog/hello-world/</guid><pubDate>Fri, 31 Jan 2020 12:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Hello, I’m not quite sure what to say. I’m sure I’ll have a real blog post up here soon enough.&lt;/p&gt;
+&lt;p&gt;Until then, enjoy this picture of me enjoying a beer at the Blue Lagoon in Iceland.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c8330ab4064b56457ca512f74f8b580d/c2b56/happy-place.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHpoUVNzKa0RKyAf//EABsQAAIBBQAAAAAAAAAAAAAAAAECEAADEiAh/9oACAEBAAEFAoyEL2jaXT//xAAWEQEBAQAAAAAAAAAAAAAAAAARABD/2gAIAQMBAT8BZ3//xAAWEQADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8BI//EABcQAAMBAAAAAAAAAAAAAAAAAAERIFH/2gAIAQEABj8CgvZ//8QAHRABAAIABwAAAAAAAAAAAAAAAQARICExQWFxkf/aAAgBAQABPyEeZcSc09hU3azR1Ft1g//aAAwDAQACAAMAAAAQKP8Awv/EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQMBAT8QVKk7/8QAFhEAAwAAAAAAAAAAAAAAAAAAESAh/9oACAECAQE/EBUf/8QAGhABAQEBAAMAAAAAAAAAAAAAAQARIVFhgf/aAAgBAQABPxDwB+yiyA32JHqHI9XZb1IrR7bBm5Lf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Me, the happiest I&amp;#39;ll ever be.&quot;
+        title=&quot;Me, the happiest I&amp;#39;ll ever be.&quot;
+        src=&quot;/static/c8330ab4064b56457ca512f74f8b580d/971c4/happy-place.jpg&quot;
+        srcset=&quot;/static/c8330ab4064b56457ca512f74f8b580d/9fb78/happy-place.jpg 250w,
+/static/c8330ab4064b56457ca512f74f8b580d/48a11/happy-place.jpg 500w,
+/static/c8330ab4064b56457ca512f74f8b580d/971c4/happy-place.jpg 1000w,
+/static/c8330ab4064b56457ca512f74f8b580d/45751/happy-place.jpg 1500w,
+/static/c8330ab4064b56457ca512f74f8b580d/4aca8/happy-place.jpg 2000w,
+/static/c8330ab4064b56457ca512f74f8b580d/c2b56/happy-place.jpg 3024w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Me, the happiest I&amp;#39;ll ever be.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;See you around.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[updash]]></title><description><![CDATA[What is it? Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time…]]></description><link>https://www.mikeup.church/about/updash/</link><guid isPermaLink="false">https://www.mikeup.church/about/updash/</guid><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time, currently playing music, weather, calendar, Instagram photos, etc.&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
