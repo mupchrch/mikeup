@@ -32,7 +32,6 @@ const Hero = ({ isHome, is404 }) => {
           </>}
           <Moon className={styles.moon} />
           <Earth className={styles.earth} />
-          <div className={styles.bigText}>Software Developer</div>
         </div>
       </CSSTransition>
       {/* Play/Pause button is separate so it can float above any overlaying page */}

@@ -26,20 +26,6 @@
   opacity: 0;
 }
 
-$bigTextStart: translateY(42vh);
-$bigTextEnd: translateY(37vh);
-.bigText {
-  font-weight: 900; /* firefox fix */
-  letter-spacing: 0.0571429em;
-  opacity: 0;
-  font-size: 2.5vw;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: $bigTextStart;
-  text-transform: uppercase;
-}
-
 $moonStart: translate(-100%, -25%);
 $moonEnd: translate(-45%, -45%);
 $moonHide: translate(-100%, -100%);
@@ -154,16 +140,9 @@ $numNearStars: 0.000003 * $totalPixels;
 
 $enterExitSpeed: 1s;
 $planetEnterExitTransition: transform $enterExitSpeed;
-$bigTextEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed;
 
 :global(.hero-appear) {
   opacity: 1;
-
-  .bigText {
-    transition: transform 1s 3s, opacity 1s 3s;
-    transform: $bigTextEnd;
-    opacity: 1;
-  }
 
   .moon {
     transition: 5s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -180,11 +159,6 @@ $bigTextEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed;
 :global(.hero-appear-done),
 :global(.hero-enter-active),
 :global(.hero-enter-done) {
-  .bigText {
-    transform: $bigTextEnd;
-    opacity: 1;
-  }
-
   .moon {
     transform: $moonEnd !important;
   }
@@ -195,12 +169,6 @@ $bigTextEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed;
 }
 
 :global(.hero-exit) {
-  .bigText {
-    transition: $bigTextEnterExitTransition;
-    transform: $bigTextEnd;
-    opacity: 1;
-  }
-
   .moon {
     transition: $planetEnterExitTransition;
     transform: $moonEnd;
@@ -214,11 +182,6 @@ $bigTextEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed;
 
 :global(.hero-exit-active),
 :global(.hero-exit-done) {
-  .bigText {
-    transform: $bigTextStart;
-    opacity: 0;
-  }
-
   .moon {
     transform: $moonHide;
   }
@@ -229,12 +192,6 @@ $bigTextEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed;
 }
 
 :global(.hero-enter:not(.hero-appear)) {
-  .bigText {
-    transition: $bigTextEnterExitTransition;
-    transform: $bigTextEnd;
-    opacity: 1;
-  }
-
   .moon {
     transition: $planetEnterExitTransition;
     transform: $moonHide;
