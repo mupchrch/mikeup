@@ -4,27 +4,10 @@ date: "2020-01-31T12:12:03.284Z"
 #description: "Hello World"
 ---
 
-## First thing's first
+Hello, I'm not quite sure what to say. I'm sure I'll have a real blog post up here soon enough.
 
-Hello, _this_ is my **first** post.
+Until then, enjoy this picture of me enjoying a beer at the Blue Lagoon in Iceland.
 
-> This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. This is a quote.
+![Me, the happiest I'll ever be.](./happy-place.jpg)
 
-```js
-const code = 'here is some code'; // nice
-```
-
-# h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
-
-| Tables        | Are           | Cool    |
-| ------------- |:-------------:| -------:|
-| hello         | I am          | a table |
-| isn't this    | nice?         | my dude |
-| 1             | 2             | 3       |
-
-Welp, see ya later!
+See you around.

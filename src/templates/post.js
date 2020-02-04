@@ -4,7 +4,7 @@ import Seo from '../components/seo';
 import Bio from '../components/Bio';
 import { rhythm, scale } from '../utils/typography';
 
-class ProjectTemplate extends React.Component {
+class PostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const { previous, next, isBlog } = this.props.pageContext;
@@ -73,10 +73,10 @@ class ProjectTemplate extends React.Component {
   }
 }
 
-export default ProjectTemplate;
+export default PostTemplate;
 
 export const pageQuery = graphql`
-  query ProjectBySlug($slug: String!) {
+  query PostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
