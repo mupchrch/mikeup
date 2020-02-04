@@ -5,6 +5,8 @@ import { rhythm } from '../utils/typography';
 import styles from './about.module.scss';
 
 const About = ({ data }) => {
+  const skillsList = ['Javascript / ES6', 'React', 'Sass / CSS', 'Git', 'Webpack', 'Node.js', 'Mocha / Chai / Jasmine / Jest', 'Puppeteer', 'Scrum Certified'];
+  const skillStyles = { margin: `${rhythm(0.5)} ${rhythm(1)}` };
   const sections = data.allMarkdownRemark.edges;
 
   const verticalLine = (
@@ -24,10 +26,15 @@ const About = ({ data }) => {
       <Seo title='About' />
       <h1>About</h1>
       <p>
-        I am a Software Developer who graduated in 2015 from the
-        University of New Hampshire with a B.S. in Computer Science. I live
-        in Manchester, NH and I am currently employed with Pegasystems Inc.
+        I am a Software Developer who graduated in 2015 from the <a href='https://www.unh.edu/'>University of New Hampshire</a> with a B.S. in Computer Science.
       </p>
+      <p>
+        I live in Manchester, NH, and I have worked at <a href='https://www.pega.com/'>Pegasystems</a> since 2015.
+      </p>
+      <h2>Skills</h2>
+      <ul className={styles.skillsList}>
+        {skillsList.map(skill => <li style={skillStyles}>{skill}</li>)}
+      </ul>
       <h2>Projects</h2>
       <div className={styles.timeline} style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
         {sections.map((section, i) => {

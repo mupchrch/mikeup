@@ -1,6 +1,12 @@
 @import '../styles/mixins.scss';
 @import '../styles/variables.module.scss';
 
+.skillsList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
