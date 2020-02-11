@@ -46,15 +46,28 @@ module.exports = {
               showCaptions: true
             },
           },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-embedded-codesandbox`,
+            options: {
+              directory: `${__dirname}/content/blog/`,
+              protocol: 'embed-code://',
+              embedOptions: {
+                fontsize: 14,
+                codemirror: 1,
+                hidenavigation: 1
+              },
+              getIframe: url => `<iframe src="${url}" width="3" height="2" class="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`
+            }
+          },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
         ],
       },
     },
@@ -73,8 +86,8 @@ module.exports = {
         name: `Mike Upchurch`,
         short_name: `Upchurch`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#1c1c1c`,
+        theme_color: `#7aa9e6`,
         display: `minimal-ui`,
         icon: `static/favicon.png`,
       },
