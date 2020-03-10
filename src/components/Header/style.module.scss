@@ -9,11 +9,6 @@ $lineHeight: 50px;
   justify-content: space-between;
   width: 100%;
   z-index: 10; // appear above background stars
-
-  @include animateForward(animateHeader, 0.75s) {
-    from { transform: translateY(-100%); }
-    to { transform: translateY(0); }
-  }
 }
 
 .name {
@@ -22,7 +17,7 @@ $lineHeight: 50px;
   line-height: $lineHeight;
 
   opacity: 0;
-  @include animateOpacity(0.5s, 0.25s);
+  @include animateOpacity(0.5s);
 
   a {
     transition: color 1s;
@@ -49,7 +44,7 @@ $lineHeight: 50px;
   display: flex;
   height: $lineHeight;
 
-  @include animateOpacity(0.5s, 0.25s);
+  @include animateOpacity(0.5s);
 }
 
 .menuItem {
