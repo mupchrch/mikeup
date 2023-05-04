@@ -1,6 +1,12 @@
 import Typography from 'typography';
 import fairyGatesTheme from 'typography-theme-github';
-import { bodyColor, headerColor, linkColor, quoteColor, foregroundColor } from '../styles/variables.module.scss';
+import {
+  bodyColor,
+  headerColor,
+  linkColor,
+  quoteColor,
+  foregroundColor,
+} from '../styles/variables.module.scss';
 
 const typography = new Typography({
   ...fairyGatesTheme,
@@ -8,44 +14,45 @@ const typography = new Typography({
   bodyColor,
   overrideThemeStyles: ({ adjustFontSizeTo, rhythm }) => ({
     'h1,h2': {
-      borderBottom: 'none'
+      borderBottom: 'none',
     },
     h6: {
-      color: headerColor
+      color: headerColor,
     },
     'th,td': {
-      border: '1px solid hsla(0, 0%, 65%, 0.2)'
+      border: '1px solid hsla(0, 0%, 65%, 0.2)',
     },
     'th:first-child,td:first-child': {
-      paddingLeft: rhythm(2/3)
+      paddingLeft: rhythm(2 / 3),
     },
     'th:last-child,td:last-child': {
-      paddingRight: rhythm(2/3)
+      paddingRight: rhythm(2 / 3),
     },
     'tr:nth-child(even)': {
-      background: foregroundColor
+      background: foregroundColor,
     },
     hr: {
-      background: 'hsla(0, 0%, 65%, 0.2)'
+      background: 'hsla(0, 0%, 65%, 0.2)',
     },
     a: {
-      color: linkColor
+      color: linkColor,
     },
     figcaption: {
       textAlign: 'center',
       ...adjustFontSizeTo('14px'),
       fontStyle: 'italic',
-      color: headerColor
+      color: headerColor,
     },
     blockquote: {
       color: quoteColor,
-      borderLeft: `4px solid ${quoteColor}` //'4px solid hsla(0,0%,0%,0.13)'
-    }
-  })
+      borderLeft: `4px solid ${quoteColor}`, //'4px solid hsla(0,0%,0%,0.13)'
+    },
+  }),
 });
 
 // Hot reload typography in development.
-if (process.env.NODE_ENV !== `production`) {
+// eslint-disable-next-line no-undef
+if (process.env.NODE_ENV !== 'production') {
   typography.injectStyles();
 }
 

@@ -1,10 +1,10 @@
-const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const postTemplate = path.resolve(`./src/templates/post.js`);
+  const postTemplate = path.resolve('./src/templates/post.jsx');
 
   const blogPostResult = await graphql(
     `
@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   );
 
   if (blogPostResult.errors) {
@@ -47,7 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
-        isBlog: true
+        isBlog: true,
       },
     });
   });
@@ -72,7 +72,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   );
 
   if (projectResult.errors) {
@@ -83,7 +83,8 @@ exports.createPages = async ({ graphql, actions }) => {
   const projects = projectResult.data.allMarkdownRemark.edges;
 
   projects.forEach((project, index) => {
-    const previous = index === projects.length - 1 ? null : projects[index + 1].node;
+    const previous =
+      index === projects.length - 1 ? null : projects[index + 1].node;
     const next = index === 0 ? null : projects[index - 1].node;
 
     createPage({
@@ -96,19 +97,19 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-}
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-  
-  if (node.internal.type === `MarkdownRemark`) {
+
+  if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
     const relativeFilePath = createFilePath({ node, getNode });
 
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
       value: `/${fileNode.sourceInstanceName}${relativeFilePath}`,
     });
   }
-}
+};

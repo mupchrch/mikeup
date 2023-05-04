@@ -3,6 +3,8 @@
 
 $greetingStart: translateY(42vh);
 $greetingEnd: translateY(37vh);
+$enterExitSpeed: 1s;
+
 .greeting {
   position: fixed;
   opacity: 0;
@@ -10,6 +12,7 @@ $greetingEnd: translateY(37vh);
   left: 50%;
   transform: $greetingStart;
   font-weight: 900; /* firefox fix */
+  transition: transform $enterExitSpeed, opacity $enterExitSpeed;;
 }
 
 .bigText {
@@ -74,11 +77,6 @@ $earthEnd: translateY(85vh) rotateZ(295deg);
   z-index: 10;
 }
 
-$enterExitSpeed: 1s;
-$planetEnterExitTransition: transform $enterExitSpeed;
-$greetingEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed;
-
-
 :global(.page-appear) {
   opacity: 1;
 
@@ -117,9 +115,10 @@ $greetingEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed
   }
 }
 
+$planetEnterExitTransition: transform $enterExitSpeed;
+
 :global(.page-exit) {
   .greeting {
-    transition: $greetingEnterExitTransition;
     transform: $greetingEnd;
     opacity: 1;
   }
@@ -153,7 +152,6 @@ $greetingEnterExitTransition: transform $enterExitSpeed, opacity $enterExitSpeed
 
 :global(.page-enter:not(.page-appear)) {
   .greeting {
-    transition: $greetingEnterExitTransition;
     transform: $greetingEnd;
     opacity: 1;
   }

@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
 import { backgroundColor } from '../../styles/variables.module.scss';
 import Moon from './moon';
 import Earth from './earth';
-import styles from './style.module.scss';
+import * as styles from './style.module.scss';
 
 const Hero = ({ isHome, is404 }) => {
-  const [isAnimating, setAnimating] = useLocalStorage('isBackgroundAnimating', true);
+  const [isAnimating, setAnimating] = useLocalStorage(
+    'isBackgroundAnimating',
+    true,
+  );
   const animationClassName = isAnimating ? '' : styles.paused;
 
   return (
@@ -17,19 +20,23 @@ const Hero = ({ isHome, is404 }) => {
         timeout={{
           appear: 6000,
           enter: 1000,
-          exit: 1000
+          exit: 1000,
         }}
         classNames='hero'
         appear
         in={isHome}
       >
-        <div className={styles.hero} style={{ background: isHome || is404 ? null : backgroundColor }}>
-          {(isHome || is404) &&
-          <>
-            <div className={`${styles.farStars} ${animationClassName}`} />
-            <div className={`${styles.midStars} ${animationClassName}`} />
-            <div className={`${styles.nearStars} ${animationClassName}`} />
-          </>}
+        <div
+          className={styles.hero}
+          style={{ background: isHome || is404 ? null : backgroundColor }}
+        >
+          {(isHome || is404) && (
+            <>
+              <div className={`${styles.farStars} ${animationClassName}`} />
+              <div className={`${styles.midStars} ${animationClassName}`} />
+              <div className={`${styles.nearStars} ${animationClassName}`} />
+            </>
+          )}
           <Moon className={styles.moon} />
           <Earth className={styles.earth} />
         </div>
@@ -41,14 +48,19 @@ const Hero = ({ isHome, is404 }) => {
         in={isHome || is404}
         appear
       >
-        <button className={styles.playPause} onClick={()=> setAnimating(!isAnimating)}>
+        <button
+          className={styles.playPause}
+          onClick={() => setAnimating(!isAnimating)}
+        >
           <FontAwesomeIcon icon={isAnimating ? faPause : faPlay} />
-          <span className='sr-only'>{isAnimating ? 'Pause animations' : 'Play animations'}</span>
+          <span className='sr-only'>
+            {isAnimating ? 'Pause animations' : 'Play animations'}
+          </span>
         </button>
       </CSSTransition>
     </>
   );
-}
+};
 
 // https://usehooks.com/useLocalStorage/
 function useLocalStorage(key, initialValue) {
@@ -57,7 +69,8 @@ function useLocalStorage(key, initialValue) {
   const [storedValue, setStoredValue] = useState(() => {
     try {
       // Get from local storage by key
-      const item = (typeof window !== 'undefined') ? window.localStorage.getItem(key) : null;
+      const item =
+        typeof window !== 'undefined' ? window.localStorage.getItem(key) : null;
       // Parse stored json or if none return initialValue
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
@@ -69,7 +82,7 @@ function useLocalStorage(key, initialValue) {
 
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
-  const setValue = value => {
+  const setValue = (value) => {
     try {
       // Allow value to be a function so we have same API as useState
       const valueToStore =
@@ -77,7 +90,8 @@ function useLocalStorage(key, initialValue) {
       // Save state
       setStoredValue(valueToStore);
       // Save to local storage
-      if (typeof window !== 'undefined') window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      if (typeof window !== 'undefined')
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
       // A more advanced implementation would handle the error case
       console.log(error);

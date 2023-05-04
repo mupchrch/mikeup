@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { Link, graphql } from 'gatsby';
 import Seo from '../components/seo';
 import Bio from '../components/Bio';
@@ -8,12 +8,16 @@ const PostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const { previous, next, isBlog } = pageContext;
 
-  const date = isBlog ? post.frontmatter.date : new Date(post.frontmatter.date).getFullYear();
+  const date = isBlog
+    ? post.frontmatter.date
+    : new Date(post.frontmatter.date).getFullYear();
 
   const postBodyRef = useRef(null);
   useLayoutEffect(() => {
     if (postBodyRef.current) {
-      const unsupportedImages = postBodyRef.current.querySelectorAll(':not(figure) > img[src$=".gif"]');
+      const unsupportedImages = postBodyRef.current.querySelectorAll(
+        ':not(figure) > img[src$=".gif"]',
+      );
 
       for (let img of unsupportedImages) {
         img.style = 'margin: 0';
@@ -39,49 +43,54 @@ const PostTemplate = ({ data, pageContext }) => {
       />
       <article>
         <header>
-          <h1 style={{ marginBottom: 0 }}>
-            {post.frontmatter.title}
-          </h1>
+          <h1 style={{ marginBottom: 0 }}>{post.frontmatter.title}</h1>
           <p
             style={{
               ...scale(-1 / 5),
-              display: `block`,
+              display: 'block',
               marginBottom: rhythm(1),
             }}
           >
             {date}
           </p>
         </header>
-        <section ref={postBodyRef} dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          ref={postBodyRef}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        {isBlog && <footer><Bio /></footer>}
+        {isBlog && (
+          <footer>
+            <Bio />
+          </footer>
+        )}
       </article>
 
       <nav>
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            listStyle: 'none',
             padding: 0,
-            margin: `${rhythm(1)} 0`
+            margin: `${rhythm(1)} 0`,
           }}
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="next">
+              <Link to={previous.fields.slug} rel='next'>
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="prev">
+              <Link to={next.fields.slug} rel='prev'>
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -90,7 +99,7 @@ const PostTemplate = ({ data, pageContext }) => {
       </nav>
     </>
   );
-}
+};
 
 export default PostTemplate;
 

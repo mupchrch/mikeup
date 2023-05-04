@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Moon = ({ className, style }) => (
   <svg viewBox='90 90 320 320' className={className} style={style}>
     <g>

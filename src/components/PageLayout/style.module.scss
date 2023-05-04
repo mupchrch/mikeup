@@ -1,17 +1,4 @@
-.pageLayout {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.pageWrapper {
-  position: relative;
-  overflow: auto;
-  flex-grow: 1;
-}
-
 .page {
-  position: absolute; // so pages don't jump when navigating between
   left: 0;
   right: 0;
   opacity: 0;

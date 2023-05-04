@@ -1,8 +1,10 @@
+@use 'sass:math';
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.module.scss';
 
 .hero {
   position: absolute;
+  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
@@ -75,7 +77,7 @@ $numNearStars: 0.000003 * $totalPixels;
   height: $starSize;
   box-shadow: $starsBoxShadow;
 
-  @include animateLoop(farStars, #{$screenSize/20}s) {
+  @include animateLoop(farStars, #{math.div($screenSize, 20)}s) {
     from { transform: translateY(0); }
     to { transform: translateY(-#{$screenSize}px); }
   }
@@ -98,7 +100,7 @@ $numNearStars: 0.000003 * $totalPixels;
   height: $starSize;
   box-shadow: $starsBoxShadow;
 
-  @include animateLoop(farStars, #{$screenSize/40}s) {
+  @include animateLoop(farStars, #{math.div($screenSize, 40)}s) {
     from { transform: translateY(0); }
     to { transform: translateY(-#{$screenSize}px); }
   }
@@ -121,7 +123,7 @@ $numNearStars: 0.000003 * $totalPixels;
   height: $starSize;
   box-shadow: $starsBoxShadow;
 
-  @include animateLoop(farStars, #{$screenSize/60}s) {
+  @include animateLoop(farStars, #{math.div($screenSize, 60)}s) {
     from { transform: translateY(0); }
     to { transform: translateY(-#{$screenSize}px); }
   }

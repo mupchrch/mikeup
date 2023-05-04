@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../components/Bio';
@@ -23,7 +22,7 @@ const Blog = ({ data }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
@@ -39,7 +38,7 @@ const Blog = ({ data }) => {
           </article>
         );
       })}
-      <hr/>
+      <hr />
       <Bio />
     </>
   );
@@ -73,4 +72,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

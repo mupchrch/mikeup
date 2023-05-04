@@ -1,6 +1,6 @@
 # mikeup.church
 
-A personal website for myself, Mike Upchurch. Visit it [here](http://wwwmikeup.church).
+A personal website for myself, Mike Upchurch. Visit it [here](http://www.mikeup.church).
 
 ![The space-themed homepage of mikeup.church.](./content/about/mikeup.church/mikeup-home.png)
 
@@ -10,7 +10,7 @@ Built using Gatsby.
 
 First time setup: `npm install`
 
-`npm run develop` - pages will hot reload on edit of any file
+`npm run dev` - pages will hot reload on edit of any file
 
 ### Updating content
 

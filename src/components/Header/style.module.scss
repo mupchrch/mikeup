@@ -4,11 +4,21 @@
 $lineHeight: 50px;
 
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  z-index: 10; // appear above background stars
+  z-index: 100; // appear above background stars
+  transition: background .25s, box-shadow .25s;
+  background: $backgroundColor;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.transparentHeader {
+  background: transparent;
+  box-shadow: none;
 }
 
 .name {
