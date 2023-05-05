@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
-import { backgroundColor } from '../../styles/variables.module.scss';
-import Moon from './moon';
+import Mun from './mun';
 import Earth from './earth';
 import * as styles from './style.module.scss';
 
@@ -28,7 +27,9 @@ const Hero = ({ isHome, is404 }) => {
       >
         <div
           className={styles.hero}
-          style={{ background: isHome || is404 ? null : backgroundColor }}
+          style={{
+            background: isHome || is404 ? null : 'var(--background-color)',
+          }}
         >
           {(isHome || is404) && (
             <>
@@ -37,7 +38,7 @@ const Hero = ({ isHome, is404 }) => {
               <div className={`${styles.nearStars} ${animationClassName}`} />
             </>
           )}
-          <Moon className={styles.moon} />
+          <Mun className={styles.mun} />
           <Earth className={styles.earth} />
         </div>
       </CSSTransition>

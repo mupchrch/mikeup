@@ -1,6 +1,5 @@
 @use 'sass:math';
 @import '../../styles/mixins.scss';
-@import '../../styles/variables.module.scss';
 
 .hero {
   position: absolute;
@@ -9,7 +8,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: radial-gradient(circle at bottom, lighten($backgroundColor, 5%) 0%, $backgroundColor 100%); // after #18202B // before #1B2735
+  background: radial-gradient(circle at bottom, var(--foreground-color) 0%, var(--background-color) 100%);
   overflow: hidden;
   opacity: 0;
 
@@ -19,7 +18,7 @@
 .playPause {
   background: none;
   border: none;
-  color: $bodyColor;
+  color: var(--body-color);
   position: absolute;
   right: 1em;
   bottom: 1em;
@@ -28,14 +27,14 @@
   opacity: 0;
 }
 
-$moonStart: translate(-100%, -25%);
-$moonEnd: translate(-45%, -45%);
-$moonHide: translate(-100%, -100%);
-.moon {
+$munStart: translate(-100%, -25%);
+$munEnd: translate(-45%, -45%);
+$munHide: translate(-100%, -100%);
+.mun {
   position: absolute;
   width: 50%;
   min-width: 300px;
-  transform: $moonStart;
+  transform: $munStart;
 }
 
 $earthStart: translateY(100vh) rotateZ(299deg);
@@ -61,9 +60,9 @@ $numMidStars:  0.000006 * $totalPixels;
 $numNearStars: 0.000003 * $totalPixels;
 
 @function generateBoxShadowDots ($numDots) {
-  $value: '#{random($screenSize)}px #{random($screenSize)}px #FFF';
+  $value: '#{random($screenSize)}px #{random($screenSize)}px var(--body-color)';
   @for $i from 2 through $numDots {
-    $value: '#{$value} , #{random($screenSize)}px #{random($screenSize)}px #FFF';
+    $value: '#{$value} , #{random($screenSize)}px #{random($screenSize)}px var(--body-color)';
   }
 
   @return unquote($value);
@@ -146,9 +145,9 @@ $planetEnterExitTransition: transform $enterExitSpeed;
 :global(.hero-appear) {
   opacity: 1;
 
-  .moon {
+  .mun {
     transition: 5s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform: $moonStart;
+    transform: $munStart;
   }
 
   .earth {
@@ -161,8 +160,8 @@ $planetEnterExitTransition: transform $enterExitSpeed;
 :global(.hero-appear-done),
 :global(.hero-enter-active),
 :global(.hero-enter-done) {
-  .moon {
-    transform: $moonEnd !important;
+  .mun {
+    transform: $munEnd !important;
   }
 
   .earth {
@@ -171,9 +170,9 @@ $planetEnterExitTransition: transform $enterExitSpeed;
 }
 
 :global(.hero-exit) {
-  .moon {
+  .mun {
     transition: $planetEnterExitTransition;
-    transform: $moonEnd;
+    transform: $munEnd;
   }
 
   .earth {
@@ -184,8 +183,8 @@ $planetEnterExitTransition: transform $enterExitSpeed;
 
 :global(.hero-exit-active),
 :global(.hero-exit-done) {
-  .moon {
-    transform: $moonHide;
+  .mun {
+    transform: $munHide;
   }
 
   .earth {
@@ -194,9 +193,9 @@ $planetEnterExitTransition: transform $enterExitSpeed;
 }
 
 :global(.hero-enter:not(.hero-appear)) {
-  .moon {
+  .mun {
     transition: $planetEnterExitTransition;
-    transform: $moonHide;
+    transform: $munHide;
   }
 
   .earth {

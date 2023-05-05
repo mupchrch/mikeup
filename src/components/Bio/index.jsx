@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
-import { StaticImage as Image } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTwitterSquare,
@@ -32,10 +32,9 @@ const Bio = () => {
   return (
     <>
       <div className={styles.imageAndNameCard} style={{ margin: rhythm(1) }}>
-        <Image
+        <StaticImage
           src='./headshot.jpg'
           alt={author}
-          loading='eager'
           placeholder='none'
           style={{
             marginBottom: 0,
@@ -49,9 +48,7 @@ const Bio = () => {
           height={180}
         />
         <div>
-          <h2>
-            Hello, I{"'"}m {author}.
-          </h2>
+          <h2>Hello, I&apos;m {author}.</h2>
           <p>I live and work in New Hampshire as a Software Developer.</p>
           <a href='mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#105;&#107;&#101;&#117;&#112;&#046;&#099;&#104;&#117;&#114;&#099;&#104;'>
             &#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#105;&#107;&#101;&#117;&#112;&#046;&#099;&#104;&#117;&#114;&#099;&#104;

@@ -1,0 +1,75 @@
+@import '../../styles/mixins.scss';
+
+$radius: 1000px; // Big value to round all corners evenly to pill shape
+
+.toggle {
+  border-radius: $radius;
+  border: 2px solid var(--theme-toggle-background-color);
+  color: var(--theme-toggle-text-color);
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1vw;
+  line-height: 1vw;
+  font-weight: 300;
+  box-shadow: 0 0 5px var(--theme-toggle-background-color);
+
+  &, & > * {
+    cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 5px var(--theme-toggle-background-color);
+  }
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background: var(--theme-toggle-foreground-color);
+  z-index: -1;
+  transition: transform 0.5s;
+  border-radius: $radius;
+}
+
+.checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  &:checked ~ .slider {
+    transform: translateX(100%);
+  }
+}
+
+.option {
+  padding: 0.25vw 0.5vw;
+
+  &:not(.selected) {
+    color: var(--theme-toggle-foreground-color);
+    font-weight: 500;
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: var(--theme-toggle-background-color);
+  border-radius: $radius;
+  transition: background .5s;
+}
+
+@include smallScreen {
+  // don't allow font size to shrink past small screen size
+  .toggle {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
+}

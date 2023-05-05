@@ -13,8 +13,8 @@ const NotFoundPage = () => (
   <>
     <Seo title='404' />
     <h1>404</h1>
-    <p>Looks like you{"'"}re lost in space.</p>
-    <Link to={'/'}>
+    <p>Looks like you&apos;re lost in space.</p>
+    <Link to='/'>
       <FontAwesomeIcon icon={faRocket} style={iconStyle} />
       Back to safety
       <FontAwesomeIcon icon={faRocket} style={iconStyle} />

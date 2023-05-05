@@ -8,6 +8,7 @@ import {
   faRss,
 } from '@fortawesome/free-solid-svg-icons';
 import { rhythm } from '../../utils/typography';
+import ThemeToggle from './theme-toggle';
 import * as styles from './style.module.scss';
 
 const menuItems = [
@@ -73,16 +74,17 @@ const Header = ({ currentPath, is404 }) => {
       }`}
       style={{
         boxShadow:
-          currentPath === '/' || is404 ? null : '0 0 10px rgba(0, 0, 0, 0.7)',
+          currentPath === '/' || is404 ? null : '0 0 10px var(--shadow-color)',
       }}
     >
       <div
         className={currentPath === '/' ? styles.nameHome : styles.name}
         style={{ paddingLeft: rhythm(1) }}
       >
-        <Link to={'/'}>Mike Upchurch</Link>
+        <Link to='/'>Mike Upchurch</Link>
+        <ThemeToggle />
       </div>
-      <nav className={styles.nav}>
+      <nav>
         <ul className={styles.menu}>
           {menuItems.map(({ text, link, icon }) => {
             const isWithinPath =

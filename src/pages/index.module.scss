@@ -1,5 +1,4 @@
 @import '../styles/mixins.scss';
-@import '../styles/variables.module.scss';
 
 $greetingStart: translateY(42vh);
 $greetingEnd: translateY(37vh);
@@ -48,23 +47,23 @@ $enterExitSpeed: 1s;
 
 .aboutLink {
   display: inline-block;
-  color: $backgroundColor;
-  background-color: $linkColor;
+  color: var(--foreground-color);
+  background-color: var(--link-color);
 }
 
 .contactLink {
   display: inline-block;
-  border: 1px solid $linkColor;
+  border: 1px solid var(--link-color);
 }
 
-$moonStart: translate(-100%, -25%);
-$moonEnd: translate(-45%, -45%);
-$moonHide: translate(-100%, -100%);
-.moon {
+$munStart: translate(-100%, -25%);
+$munEnd: translate(-45%, -45%);
+$munHide: translate(-100%, -100%);
+.mun {
   position: absolute;
   width: 50%;
   min-width: 300px;
-  transform: $moonStart;
+  transform: $munStart;
 }
 
 $earthStart: translateY(100vh) rotateZ(299deg);
@@ -86,9 +85,9 @@ $earthEnd: translateY(85vh) rotateZ(295deg);
     opacity: 1;
   }
 
-  .moon {
+  .mun {
     transition: 5s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform: $moonStart;
+    transform: $munStart;
   }
 
   .earth {
@@ -106,8 +105,8 @@ $earthEnd: translateY(85vh) rotateZ(295deg);
     opacity: 1;
   }
 
-  .moon {
-    transform: $moonEnd !important;
+  .mun {
+    transform: $munEnd !important;
   }
 
   .earth {
@@ -123,9 +122,9 @@ $planetEnterExitTransition: transform $enterExitSpeed;
     opacity: 1;
   }
 
-  .moon {
+  .mun {
     transition: $planetEnterExitTransition;
-    transform: $moonEnd;
+    transform: $munEnd;
   }
 
   .earth {
@@ -141,8 +140,8 @@ $planetEnterExitTransition: transform $enterExitSpeed;
     opacity: 0;
   }
 
-  .moon {
-    transform: $moonHide;
+  .mun {
+    transform: $munHide;
   }
 
   .earth {
@@ -156,9 +155,9 @@ $planetEnterExitTransition: transform $enterExitSpeed;
     opacity: 1;
   }
 
-  .moon {
+  .mun {
     transition: $planetEnterExitTransition;
-    transform: $moonHide;
+    transform: $munHide;
   }
 
   .earth {

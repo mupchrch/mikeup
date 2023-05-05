@@ -4,19 +4,28 @@ import Seo from '../components/seo';
 import { rhythm } from '../utils/typography';
 import * as styles from './about.module.scss';
 
+const skillsList = [
+  'Tech Lead',
+  'Frontend Architect',
+  'Certified Scrum Master',
+  'Test Driven Development',
+];
+const techList = [
+  'React',
+  'Typescript',
+  'CSS',
+  'styled-components',
+  'D3',
+  'Git',
+  'Webpack / Rollup',
+  'Jest',
+  'Node.js',
+  '@testing-library/react',
+  'Puppeteer',
+];
+
 const About = ({ data }) => {
-  const skillsList = [
-    'Javascript / ES6',
-    'React',
-    'Sass / CSS',
-    'Git',
-    'Webpack',
-    'Node.js',
-    'Mocha / Chai / Jasmine / Jest',
-    'Puppeteer',
-    'Scrum Certified',
-  ];
-  const skillStyles = { margin: `${rhythm(0.5)} ${rhythm(1)}` };
+  const bulletStyles = { margin: `${rhythm(0.5)} ${rhythm(1)}` };
   const sections = data.allMarkdownRemark.edges;
 
   const verticalLine = (
@@ -47,8 +56,16 @@ const About = ({ data }) => {
       <h2>Skills</h2>
       <ul className={styles.skillsList}>
         {skillsList.map((skill) => (
-          <li key={skill} style={skillStyles}>
+          <li key={skill} style={bulletStyles}>
             {skill}
+          </li>
+        ))}
+      </ul>
+      <h2>Technologies</h2>
+      <ul className={styles.skillsList}>
+        {techList.map((tech) => (
+          <li key={tech} style={bulletStyles}>
+            {tech}
           </li>
         ))}
       </ul>
@@ -116,7 +133,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/(about)/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {

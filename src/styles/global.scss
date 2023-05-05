@@ -1,7 +1,7 @@
 @import './variables.module.scss';
 
 body {
-  background-color: $backgroundColor;
+  background-color: var(--background-color);
 }
 
 .sr-only:not(:focus):not(:active) {

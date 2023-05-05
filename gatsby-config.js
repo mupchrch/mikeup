@@ -100,7 +100,7 @@ module.exports = {
             query: `
                 {
                   allMarkdownRemark(
-                    sort: { order: DESC, fields: [frontmatter___date] },
+                    sort: { frontmatter: { date: DESC } },
                   ) {
                     nodes {
                       excerpt
@@ -141,11 +141,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        // implementation: require('node-sass'),
-      },
-    },
+    'gatsby-plugin-sass',
   ],
 };

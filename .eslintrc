@@ -3,13 +3,14 @@
     "browser": true
   },
   "plugins": ["prettier"],
-  "extends": ["prettier", "eslint:recommended", "plugin:react/recommended", "plugin:react/jsx-runtime"],
+  "extends": ["prettier", "eslint:recommended", "plugin:react/recommended", "plugin:react/jsx-runtime", "plugin:react-hooks/recommended"],
   "rules": {
     "prettier/prettier": ["error"],
     "quotes": ["error", "single", { "avoidEscape": true }],
     "react/prop-types": "off",
     "react/jsx-filename-extension": ["error", { "allow": "as-needed" }],
-    "react/jsx-curly-brace-presence": "error"
+    "react/jsx-curly-brace-presence": "error",
+    "react-hooks/exhaustive-deps": "error"
   },
   "parserOptions": {
     "sourceType": "module",
@@ -20,5 +21,10 @@
     "env": {
       "node": true
     }
-  }]
+  }],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
