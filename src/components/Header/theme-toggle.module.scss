@@ -12,7 +12,6 @@ $radius: 1000px; // Big value to round all corners evenly to pill shape
   justify-content: space-around;
   font-size: 1vw;
   line-height: 1vw;
-  font-weight: 300;
   box-shadow: 0 0 5px var(--theme-toggle-background-color);
 
   &, & > * {
@@ -24,13 +23,18 @@ $radius: 1000px; // Big value to round all corners evenly to pill shape
   }
 }
 
+.fadeIn {
+  opacity: 0;
+  @include animateOpacity(1s, 3s);
+}
+
 .slider {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   width: 50%;
-  background: var(--theme-toggle-foreground-color);
+  background: var(--theme-toggle-slider-color);
   z-index: -1;
   transition: transform 0.5s;
   border-radius: $radius;
@@ -52,7 +56,6 @@ $radius: 1000px; // Big value to round all corners evenly to pill shape
 
   &:not(.selected) {
     color: var(--theme-toggle-foreground-color);
-    font-weight: 500;
   }
 }
 

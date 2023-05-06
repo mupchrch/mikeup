@@ -7,3 +7,10 @@ import 'prismjs/themes/prism-tomorrow.css';
 export const wrapPageElement = ({ element, props }) => (
   <PageLayout {...props}>{element}</PageLayout>
 );
+
+export const onRenderBody = ({ setHtmlAttributes }) => {
+  // Initialize to dark theme - less of a jarring flash
+  setHtmlAttributes({
+    'data-theme': 'dark',
+  });
+};

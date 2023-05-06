@@ -25,6 +25,7 @@
   transition: opacity 0.5s;
   z-index: 100;
   opacity: 0;
+  cursor: pointer;
 }
 
 $munStart: translate(-100%, -25%);

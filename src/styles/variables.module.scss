@@ -16,10 +16,10 @@ $sunny: #fffa75;
   --mun-color: #{$sunny};
   --mun-spot-color: #{$sunny};
 
-  // Same for all themes
   --theme-toggle-background-color: #{darken($greige, 10%)};
   --theme-toggle-foreground-color: #{$whitesque};
   --theme-toggle-text-color: #{$blackish};
+  --theme-toggle-slider-color: #{$whitesque};
 }
 
 html[data-theme='dark'] {
@@ -33,4 +33,7 @@ html[data-theme='dark'] {
 
   --mun-color: #{$whitesque};
   --mun-spot-color: #{$greige};
+
+  --theme-toggle-text-color: #{$whitesque};
+  --theme-toggle-slider-color: #{$blackish};
 }

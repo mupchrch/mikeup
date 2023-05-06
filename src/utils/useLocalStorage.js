@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 /**
  * Persist the state with local storage so that it remains after a page refresh.
@@ -28,7 +28,6 @@ export default function useLocalStorage(key, initialValue) {
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
   const setValue = (value) => {
-    console.log('setting ' + value);
     try {
       // Allow value to be a function so we have same API as useState
       const valueToStore =
@@ -48,5 +47,20 @@ export default function useLocalStorage(key, initialValue) {
       console.log(error);
     }
   };
+  // Sync state across tabs
+  useEffect(() => {
+    const onStorage = (e) => {
+      if (e.key === key && e.newValue) setStoredValue(JSON.parse(e.newValue));
+    };
+    if (typeof window !== 'undefined') {
+      window.addEventListener('storage', onStorage);
+    }
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('storage', onStorage);
+      }
+    };
+  }, [key]);
+
   return [storedValue, setValue];
 }

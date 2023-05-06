@@ -1,14 +1,18 @@
+import { useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import useThemeMode from '../../utils/useThemeMode';
 import * as styles from './theme-toggle.module.scss';
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ isHome }) => {
+  const isInitialHomeLoad = useRef(isHome).current;
   const { themeMode, setThemeMode } = useThemeMode();
 
   return (
     <>
       <Helmet htmlAttributes={{ 'data-theme': themeMode }} />
-      <div className={styles.toggle}>
+      <div
+        className={`${styles.toggle} ${isInitialHomeLoad ? styles.fadeIn : ''}`}
+      >
         <input
           type='checkbox'
           className={styles.checkbox}

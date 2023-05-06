@@ -82,7 +82,7 @@ const Header = ({ currentPath, is404 }) => {
         style={{ paddingLeft: rhythm(1) }}
       >
         <Link to='/'>Mike Upchurch</Link>
-        <ThemeToggle />
+        <ThemeToggle isHome={currentPath === '/'} />
       </div>
       <nav>
         <ul className={styles.menu}>

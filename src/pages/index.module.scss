@@ -56,26 +56,6 @@ $enterExitSpeed: 1s;
   border: 1px solid var(--link-color);
 }
 
-$munStart: translate(-100%, -25%);
-$munEnd: translate(-45%, -45%);
-$munHide: translate(-100%, -100%);
-.mun {
-  position: absolute;
-  width: 50%;
-  min-width: 300px;
-  transform: $munStart;
-}
-
-$earthStart: translateY(100vh) rotateZ(299deg);
-$earthEnd: translateY(85vh) rotateZ(295deg);
-.earth {
-  position: relative;
-  width: 200%;
-  transform: $earthStart;
-  left: -50vw;
-  z-index: 10;
-}
-
 :global(.page-appear) {
   opacity: 1;
 
@@ -83,16 +63,6 @@ $earthEnd: translateY(85vh) rotateZ(295deg);
     transition: transform 1s 3s, opacity 1s 3s;
     transform: $greetingEnd;
     opacity: 1;
-  }
-
-  .mun {
-    transition: 5s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform: $munStart;
-  }
-
-  .earth {
-    transition: transform 3s 2s ease-out;
-    transform: $earthStart;
   }
 }
 
@@ -104,32 +74,12 @@ $earthEnd: translateY(85vh) rotateZ(295deg);
     transform: $greetingEnd;
     opacity: 1;
   }
-
-  .mun {
-    transform: $munEnd !important;
-  }
-
-  .earth {
-    transform: $earthEnd !important;
-  }
 }
-
-$planetEnterExitTransition: transform $enterExitSpeed;
 
 :global(.page-exit) {
   .greeting {
     transform: $greetingEnd;
     opacity: 1;
-  }
-
-  .mun {
-    transition: $planetEnterExitTransition;
-    transform: $munEnd;
-  }
-
-  .earth {
-    transition: $planetEnterExitTransition;
-    transform: $earthEnd;
   }
 }
 
@@ -139,14 +89,6 @@ $planetEnterExitTransition: transform $enterExitSpeed;
     transform: $greetingStart;
     opacity: 0;
   }
-
-  .mun {
-    transform: $munHide;
-  }
-
-  .earth {
-    transform: $earthStart;
-  }
 }
 
 :global(.page-enter:not(.page-appear)) {
@@ -154,19 +96,4 @@ $planetEnterExitTransition: transform $enterExitSpeed;
     transform: $greetingEnd;
     opacity: 1;
   }
-
-  .mun {
-    transition: $planetEnterExitTransition;
-    transform: $munHide;
-  }
-
-  .earth {
-    transition: $planetEnterExitTransition;
-    transform: $earthStart;
-  }
-}
-
-:global(.playPause-enter-active),
-:global(.playPause-enter-done) {
-  opacity: 1;
 }

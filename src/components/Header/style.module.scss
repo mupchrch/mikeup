@@ -25,7 +25,6 @@ $lineHeight: 50px;
   align-items: center;
   gap: 1rem;
   font-size: 2vw;
-  font-weight: bold;
   line-height: $lineHeight;
 
   opacity: 0;
@@ -34,6 +33,7 @@ $lineHeight: 50px;
   a {
     transition: color 1s;
     color: var(--body-color);
+    font-weight: bold;
   }
 }
 
