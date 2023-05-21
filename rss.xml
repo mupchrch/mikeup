@@ -1,33 +1,211 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mike Upchurch]]></title><description><![CDATA[A personal website/blog for Mike Upchurch.]]></description><link>https://www.mikeup.church</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2020 01:34:40 GMT</lastBuildDate><item><title><![CDATA[mikeup.church]]></title><description><![CDATA[What is it? A personal website where I can showcase projects and write blog posts.  What did I learn? I used this as an opportunity to learn…]]></description><link>https://www.mikeup.church/about/mikeup.church/</link><guid isPermaLink="false">https://www.mikeup.church/about/mikeup.church/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
-&lt;p&gt;A personal website where I can showcase projects and write blog posts.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[mikeup.church RSS feed]]></title><description><![CDATA[A personal website/blog for Mike Upchurch.]]></description><link>https://www.mikeup.church</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 May 2023 04:39:41 GMT</lastBuildDate><item><title><![CDATA[split-diff: How I fumbled my way to a top Atom package]]></title><description><![CDATA[This post is probably long overdue, but at the same time, it’s not, because I’ve never written a blog post before. Nonetheless, I’d like to…]]></description><link>https://www.mikeup.church/blog/top-atom-package/</link><guid isPermaLink="false">https://www.mikeup.church/blog/top-atom-package/</guid><pubDate>Sat, 20 May 2023 12:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d46599718d5b7d3156a662da8639ed01/7d0a0/mikeup-home.png&quot;
+    href=&quot;/static/60e88872dcf95db2fc9d8ca3496a62fc/2a08f/spacey-meme.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 67.25978647686833%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACE0lEQVQ4y32Sy4oTQRSG+wUCCYHEJJ2+V/eYUQQZvIAGm8aomVGCiOtZKLpQZiFxMRiERBACZhPwBdx4G9/Aha+QrIK4NSFJb7ILIfmtU5lua8Jow991+nSdr/46VcpgMECv10O/38doNAI9rVYLiUQClmVB1/UT0jQtVrFYhOM4YIzBNE0xX5nNZphOpxiPx5hMJpjP56jX60gmk6cCN+E0ElhVVSGFICRyR2Aay+Uy8vm8WNUwjH9q0zFJGQ6Hwl0YhlitVmi328hkMsIdASP9z6EMVpbLJRaLhQB2Oh1hn1aXgRR7nsflwnPZcbxW5DSS0u120Ww2UalUkM1mY5gsxhzc8APcurOHyu1dBEEA3/eFbJv3WWqBkk6nkUqlkMvl+E/7BIi+6RQNvYid61Xce/IW1f0GmFeCt30Blu3wHRhxrwUwKpJhFEf5tWwwl29xqwTXO3ucY3GNfHgKvaI+nQ5b3zMRU14yIJuIoIrceBnGmAuXu3K9Ld78tSimXLSADI04yl+YBYdPZK4rtmhbPG9osHQVpl4QotgydFgmOXU4nIkDk6Ex0DQsaPym6+oZ0a/zFy/jSlCDX3uEmw+fcT3n8WNcq+xh59I5cYUKeR1qQee15ibQRmmbX43qXTw46OLpu+94+eEXDj/9xquvYzSOQjS+TXH4JcTro5/4+OMF3n/eR/1NDbv3r/JaL+7lH/KMvqNImZ7FAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 88.8%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEM0lEQVR42lWS609TdxjHT8/pKSBQdKIoVhc3Y9REh3KbQLi0XEovUG7lTnHJsCIOw2Ux1IoWgYqAzlUKQxiwAeKcDqebYcmmbsliYnxhtrgsvllMZjKzv+GznFPq9MU33+d5fs/zfS7nCMfrD5C6ZyNHGgo4VG3icKOVZqeJ7lYnHS0OclO2UZKzg2tDNpYGi5joyWVuoIz5cxUsDtewOFTBwkABs75CrvrtCEk7NyAIEofdrbhb22hta+fQBx/S1+/npPc0m7a8jVYUuRso5enNJp5928zzX/p48SjAy98WeP7rMH8uN/FosZ6pM1aElN3xvPPuTioqK7HabFiKi7CXlFHlrKahsYn09w+yTh/JSsDCs/tDvPxjmb8eBvnnyQx/P77CiydX+ff3L3myfIy5PgtCZtIWBEFg+2Y9m+NjVTtlTwKJ8TEk797CpvWxxEZHMNpl5OFcFQ+mnTxerObGSCln24yMeWw02pNI32ug1ZmsTLhRFTntzqbXbcSQsJbLJ/IpM+5iuyEBrSQTHSkz2lXM5RMFPP26lhvDJfjbC2mvy2DJX8Gsz8GVXgdBjxmh25VObXESc2dL+WmyiqM1aXhbsvmoNh1j2g7KTbsoN+1mfsDBxe4iZvusnO+w0NmUxViPlf6jJia9NlaC9cwPliLcDdbz81wL14YrWfSXMu1zcDtQw+c+B99cqOHBtIsJr42bo1Xcm3Jx6nA+na5sxj02rg2V09mUyRf9ZXwXqGNBEbw+UskPnzVz61IdI13FjHnsfD9Wy51ALbc+cXL702oCPRbcVam4SvZzrr2AoMfKuKeIkY5c7lxycOZINsfqDvLV+TKEW5eUzof4cdLFvalm7k+7WBlv4G6wgZXxOtWfOVtO4gY9+pgovC15LF+sYeKkhf42IwuDdi50FXCh28z1kTKEmT47QY8CG5d7QlDsEKxMeO34jxdwyp3DZK+dmb5Sxk/a1DNM9dq4+HGRmqP4414zgjljO7IsszY2iuioCBVxMZG8pV+jcuyaSJUT1sewPm4Na2Mj1dwwK7HoKJ36pxhTtiJkJSWqjkajQRA0qyyEoNEgihKSpH0V02hENS+EUEwURZUz9iUi5KUYVEeWJURNSDCcEKfXYzabyc3NIzMri2KzmX379q6KaJAkSWVZG2qYfcCAkJe6VXW0koioEVXB1yHrdGQe2EX6ezvR6SKIiNC92igMpVaJ5SQbEExpIUFZK4WmW50wnKy8bY6PI3HjutfW/l9MEkW1VhVUJsxP26Y6EToZ7eoKYUHFfuOm6iZatWlYWKnRyaGVc5Xz5SSHJ5RXi94UCH0oUW2iFCv3kkQJjSCqrKwbqVu94X4Dws0RC1OnTMz58pnw5DHhMTLpNXLFG+IZX776Nj9QyNI5M0v+Iq4OFjLry+eIM5XOpgzOuLPpaDzI4mAx/wF6Z48asN4fqgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;spacey meme&quot;
+        title=&quot;&quot;
+        src=&quot;/static/60e88872dcf95db2fc9d8ca3496a62fc/00d43/spacey-meme.png&quot;
+        srcset=&quot;/static/60e88872dcf95db2fc9d8ca3496a62fc/63868/spacey-meme.png 250w,
+/static/60e88872dcf95db2fc9d8ca3496a62fc/0b533/spacey-meme.png 500w,
+/static/60e88872dcf95db2fc9d8ca3496a62fc/00d43/spacey-meme.png 1000w,
+/static/60e88872dcf95db2fc9d8ca3496a62fc/2a08f/spacey-meme.png 1422w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This post is probably long overdue, but at the same time, it’s not, because I’ve never written a blog post before. Nonetheless, I’d like to share my rather accidental rise to OSS - Open Source &lt;em&gt;Stardom&lt;/em&gt;. A metric that is, of course, measured in Github stars.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; usurped the &lt;a href=&quot;https://atom.io&quot;&gt;Atom text editor&lt;/a&gt; a while ago now, but there was a long point in time where &lt;strong&gt;if you wanted to compare two files, you had to go through me&lt;/strong&gt;. Or, I don’t know, use another tool or something, I guess.&lt;/p&gt;
+&lt;h2&gt;Up and Atom&lt;/h2&gt;
+&lt;p&gt;I was introduced to Atom at my first full-time job. Within a few months of starting, I was pair programming with my team’s Tech Lead, and he showed me this new text editor he had set up to his liking.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I installed these open source packages to improve my workflow, I can write my own JS snippets to do anything, &lt;em&gt;AND&lt;/em&gt; I can style any part of the UI with CSS. - Mr. Tech Lead, 2015&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I could use skills I had already acquired to customize my work environment. Sold.&lt;/p&gt;
+&lt;p&gt;Immediately, I changed themes and tried out packages and created JS snippets and wrote CSS. I could bend reality to my will - &lt;a href=&quot;https://github.com/mupchrch/outline-selection#outline-selection---&quot;&gt;my power knew no bounds&lt;/a&gt;. Yes, that was an outline/boundary pun about another package I wrote.&lt;/p&gt;
+&lt;p&gt;After about a month, I realized a major issue in my workflow. I use MacOS at work. In order to compare two files, I would &lt;strong&gt;boot up a Windows VM&lt;/strong&gt; just so I could use WinMerge. Kind of like taking a flight because I wanted some peanuts. This realization spurred me to try every single Atom package that dared to mention the words &lt;code class=&quot;language-text&quot;&gt;compare&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;diff&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;merge&lt;/code&gt;. Nothing quite fit the bill.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 957px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5f76636301809df2b273e63a6141df9e/6bff2/package-search.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.6%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKklEQVR42o2SDW+CMBCG+ambUTaVgsy5OZP9WxdG+RZ1LR99l6uUEJVsl7y5Qq7PvXdg+fYCn+sNPlwfmwXDeu7gbcnw7njYuivsPF8/b9kK6+clnIcp2GQGNrHhTmywxxle5w523gu86ROsqqowVF3XOrdtC6VUn5XJSqFpGtzc62RhJIq8QMQ50iRBEsfIswwRjxAG3zifzmPXYJmu5MSI4lAU4GGIIs81NEtT8JDja79HeTjoGlNvGCTtkCyXZdmPQ6IzhbrjwtQRTAiBIAj0qrRD00kKgUrKHoQRkNHwnXHZA4meJqnW6XiElBLiR+juUshLlvIGet28H7mpa70jUswjxNFF9FEo084IfA94DbdMEbnU6n4dUtPloYO/wvpP0dDBvVGHwF+hhPIY4/YRrwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;My very real search for a side-by-side comparison package.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/5f76636301809df2b273e63a6141df9e/6bff2/package-search.png&quot;
+        srcset=&quot;/static/5f76636301809df2b273e63a6141df9e/63868/package-search.png 250w,
+/static/5f76636301809df2b273e63a6141df9e/0b533/package-search.png 500w,
+/static/5f76636301809df2b273e63a6141df9e/6bff2/package-search.png 957w&quot;
+        sizes=&quot;(max-width: 957px) 100vw, 957px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;My very real search for a side-by-side comparison package.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;Hacking the “hackable text editor”&lt;/h2&gt;
+&lt;p&gt;I was floored. How could this free product that just exited Beta not provide exactly what I need? No matter, it should be easy enough to build. I went into research mode. I found a &lt;a href=&quot;https://stackoverflow.com/a/1313218&quot;&gt;StackOverflow post&lt;/a&gt;, which pointed me to a research paper titled &lt;a href=&quot;http://www.xmailserver.org/diff2.pdf&quot;&gt;An O(ND) Difference Algorithm and its Variations&lt;/a&gt;. My eyes glazed over. This was out of my wheelhouse - I could barely vertically align text in a &lt;code class=&quot;language-text&quot;&gt;&amp;lt;div&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;But wait, I’ve seen websites where you can paste in the contents of two files that you want to compare. How do they do it? Hold on, what is &lt;a href=&quot;https://github.com/kpdecker/jsdiff&quot;&gt;jsdiff&lt;/a&gt;? &lt;em&gt;Some poor soul already did the dirty work!&lt;/em&gt; 🎉&lt;/p&gt;
+&lt;p&gt;I followed Atom’s documentation and slapped together a very bare-bones package. At that time, packages were built using &lt;a href=&quot;https://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt;, so I stumbled a bit in the beginning. To be honest, I never fully boarded the CoffeeScript train (and I eventually refactored much of the supporting logic to JavaScript files), but I can appreciate its successful influence on &lt;a href=&quot;https://www.w3schools.com/js/js_es6.asp&quot;&gt;ES6&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Regarding my new package, &lt;a href=&quot;https://github.com/mupchrch/split-diff/commit/59b0676dfa5b53d900ec8fde1c6b833941ffd8c5&quot;&gt;things started out slow&lt;/a&gt;, but I persevered:&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 881px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/15ba18dea388e6e926c458cd78abdafd/96658/important-commit.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 5.6000000000000005%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR42nXBiwkAIAgFwPafM31mEEkUfYSaoLvAEGIgadLMkEioZmsud78fY3ppu/bzAL04OYIUaDo1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The first commit to show signs of life.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/15ba18dea388e6e926c458cd78abdafd/96658/important-commit.png&quot;
+        srcset=&quot;/static/15ba18dea388e6e926c458cd78abdafd/63868/important-commit.png 250w,
+/static/15ba18dea388e6e926c458cd78abdafd/0b533/important-commit.png 500w,
+/static/15ba18dea388e6e926c458cd78abdafd/96658/important-commit.png 881w&quot;
+        sizes=&quot;(max-width: 881px) 100vw, 881px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The first commit to show signs of life.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Cool, I’m done. That was quick and easy… Except everything gets misaligned if the number of lines added doesn’t equal the number of lines removed! I needed some way to insert “fake lines”, so related differences remained properly aligned. The only issue was, at the time, there was &lt;em&gt;zero&lt;/em&gt; support for what eventually became “block decorations”.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6481630553d43395eaa341f0384cf66e/c587f/no-block-decorations.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.199999999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACGklEQVR42m2TW4vTQBTH84F6yXUm92SSTJK22V6p210qdbsuiMrigyC+Cwo++oH/ck7SFsGHH2cmmTm3/xnDiwtMvIyZihxeWMANC5gi5z3hhBXsoOQ1nxU5TKlg+cV1T9hhCcOLG1h+BTeqYcoCllR8uL/cX4yrJayghBVUcELN/0zRn7PIkjO/hGq3MCi6FWo+aAcVJoKc3bD9Aqqs0ak5XteP+Hr/hM+rB3y4e4Pn2Q7Heo2jXuGx2aDUaxj2ENmNNGfUk7EduynbuGhxqhf4c3/G78MZv/Yn/Nyf8GN3xPflAd9WB3zp9lDlEgal7asOWb1BkM/hxTVj+eW1BSJboMsX+Djb4p1e4dys8dJu8NJs8J5oNzg1aySqg0EZULle0rIjkdRwY81rypraIJIWblBCRDVD/bJlcYX66AQVQnJIGTpRBdMfhBBZD5edYipJvQpTWUCqDolegYR0KBgJJAuMvYwhYY183uHt6xnHT0/YPz+ie9j9w91hi0wvYMoSImng5wvItIFIqIqKv3mR5gxlOoNh+Qoel1kxdlBcsdgqqKrmORx7OUZDNrTuyfjbRCokpPLUy2EFGjZFCSsudeSkGBNuipGTwZEx0jhHFNaIgvK/BH7BI2ZQ30hRcnYb6FsPyZJj21dwQ83iELagoc5hD5jDS2NR3Ljl+unFXMbl8lIuAUy/hEuTkM7gxg2LMRlKvljy9Rcjt59Q4GWMwAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Something isn&amp;#39;t quite lining up here...&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6481630553d43395eaa341f0384cf66e/00d43/no-block-decorations.png&quot;
+        srcset=&quot;/static/6481630553d43395eaa341f0384cf66e/63868/no-block-decorations.png 250w,
+/static/6481630553d43395eaa341f0384cf66e/0b533/no-block-decorations.png 500w,
+/static/6481630553d43395eaa341f0384cf66e/00d43/no-block-decorations.png 1000w,
+/static/6481630553d43395eaa341f0384cf66e/aa440/no-block-decorations.png 1500w,
+/static/6481630553d43395eaa341f0384cf66e/c587f/no-block-decorations.png 1863w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Something isn&amp;#39;t quite lining up here...&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;From the eventual block decorations announcement post:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Users and package authors have come up with hacks that circumvent the problem by monkey-patching DisplayBuffer and the way it constructs tokenized lines.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Guilty 🙋‍♂️&lt;/p&gt;
+&lt;p&gt;After 3 days of bashing my head against my keyboard, I finally did it. Just kidding, I took some &lt;a href=&quot;https://github.com/mupchrch/split-diff/blob/9e71b0c53811460d041fa71ab9e5db8820ad61e0/lib/build-lines-helper.js#L5&quot;&gt;&lt;del&gt;slight&lt;/del&gt; heavy influence&lt;/a&gt; from a package that Facebook released called Nuclide. Consider me the Robin Hood of side-by-side file comparison.&lt;/p&gt;
+&lt;p&gt;I also realized how massive of a pain it is to have to scroll both editors separately. Again, &lt;a href=&quot;https://github.com/mupchrch/split-diff/blob/e24b345715b6af26536af59864182c5944a809b8/lib/sync-scroll.js#L5&quot;&gt;I &lt;del&gt;stole&lt;/del&gt; borrowed a file&lt;/a&gt; from Nuclide, and now the editors’ scroll positions were in sync at all times.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/c0933ec7a67141c11639679af57386db/sync-scroll.gif&quot; alt=&quot;Block decorations are working, as is synchronized scrolling!&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Hello, World!&lt;/h2&gt;
+&lt;p&gt;I named this thing &lt;a href=&quot;https://github.com/mupchrch/split-diff#split-diff---&quot;&gt;split-diff&lt;/a&gt; and shipped v0.1.0.&lt;/p&gt;
+&lt;p&gt;I couldn’t believe the kind of traction it gained. Something I had created for myself, slowly but surely started racking up a not insignificant amount of downloads. 1,000… 10,000… 100,000… 500,000… and eventually near the end of Atom’s life - &lt;strong&gt;1,000,000 downloads&lt;/strong&gt; 😱&lt;/p&gt;
+&lt;p&gt;However, let’s not celebrate too soon. Far before all that, myself, and &lt;a href=&quot;https://github.com/mupchrch/split-diff/issues/6#issuecomment-211070405&quot;&gt;at least one person in my growing userbase&lt;/a&gt;, had run into a problem: Diffing large files &lt;strong&gt;completely froze Atom&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I did some research (the Atom API documentation was fantastic) and found my solution: &lt;code class=&quot;language-text&quot;&gt;BufferedNodeProcess&lt;/code&gt;. This is pretty much what it sounds like — I could run arbitrary JavaScript in a separate Node.js process, write its output to the buffer, and parse it back in the main thread. This freed up Atom to continue actually functioning while I computed the diff results asynchronously. &lt;em&gt;More importantly&lt;/em&gt;, I could display a loading indicator if the diff was taking longer than 1 second. &lt;em&gt;MORE importantly&lt;/em&gt;, the user now had the choice to be able to cancel out of this painfully slow package, and even proceed to uninstall it!&lt;/p&gt;
+&lt;h2&gt;Goodbye, World!&lt;/h2&gt;
+&lt;p&gt;Addressing the UI lockup was what I consider the last interesting issue that I fixed. Although I did go on to add quite a few more features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Moving to the next/previous diff “chunk”&lt;/li&gt;
+&lt;li&gt;Quickly moving a “chunk” of changes from one editor to the other&lt;/li&gt;
+&lt;li&gt;A bottom bar in the UI to show the number of differences and also provide easy buttons for the aforementioned features&lt;/li&gt;
+&lt;li&gt;Highlighting which words changed between each line&lt;/li&gt;
+&lt;li&gt;Diffing with the previous git commit (if available)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/73ce6380faddcf40b2acd025a9fea6a1/additional-features.gif&quot; alt=&quot;Using the UI bar to move between diffs and copy one to the other editor, then demonstrating live editing.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Looking back with my current experience level, there was still a lot of performance to be gained. No dig at &lt;code class=&quot;language-text&quot;&gt;jsdiff&lt;/code&gt;, but it might have been a better idea to call a C/C++ module using the &lt;code class=&quot;language-text&quot;&gt;BufferedProcess&lt;/code&gt; API. I also always wanted to just use the info from &lt;code class=&quot;language-text&quot;&gt;git diff&lt;/code&gt; if it was available, but never had the time or ambition to add another fork in the code.&lt;/p&gt;
+&lt;p&gt;I’ll end this post by sharing the best moment to come out of &lt;code class=&quot;language-text&quot;&gt;split-diff&lt;/code&gt;. At work, we had started hearing rumors that my company was thinking of creating an internal Atom package to help our frontend engineers with some development pain points. My team’s Tech Lead (the same one who had introduced me to Atom), was included on a demo of the new package. He noticed the package could compare files… and &lt;strong&gt;it installed &lt;code class=&quot;language-text&quot;&gt;split-diff&lt;/code&gt; to do it&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Wait you guys know Mike made that package, right?!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I had poured countless hours into fixing bugs and creating features. I never expected any money or notoriety - I was doing it for free and for fun. Strangely, I was even yelled when things broke. But as it turns out, it literally ended up paying off. That coincidence at work helped advance my career on more than one occasion.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[mikeup.church]]></title><description><![CDATA[What is it? A personal website where I can showcase projects and write blog posts.  What did I learn? I used this as an opportunity to learn…]]></description><link>https://www.mikeup.church/about/mikeup.church/</link><guid isPermaLink="false">https://www.mikeup.church/about/mikeup.church/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;A personal website where I can showcase projects and write blog posts.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d46599718d5b7d3156a662da8639ed01/3a1b1/mikeup-home.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.19999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKklEQVR42nWSTWsTURSG5xcEEkjSmPm+dyaxJTMJImiwIaEKtgrVLmpQKBVCiaOLilAKgmnAVcGN/QviRhcaXbp05y77uMhC8rVIakwgi7xyr73jpOLi5d6ZM+c57zlnpHa7jVarxdXtdjGfz1Gv1xEKhWCaJjRNW5Cqqr4URQGlFIQQPy6NRiP0ej10Oh30+31Mp1N4nodIJLIA1HX9H7gowMBMsixDYrDBYMCBw+GQO3VdlwcNw+AgJnYXEu9EkaBriYEYcDweYzKZcHexWIy3EYT4bZ5zdH4U0mw2A2u72WyiUqkgHo/zVhlEnAzuOBk4mWU4mRXkcjlksy6y2SyPB0cgVatVlMtlpNNp3xkDBUUpQen6TdzaeoCNO2UUiyUUS2tYLRR4PNi+FA6HEY1G+QPbmIAwMBOlFnRNgXv1BtZ3X2Ct/AwGsUDsZWgaG4fuz5UDRWLQ0V8YPZMFSkyYhsb151cx/bzgsiSxwf/BLMsKyOaniAWN+EBBFzD+sWXBtlOwU2mk0heRYmfgbqcYfBEqOJIPo8SvbrK5qEno8hKXqSW5dGUJmpyAKhswdAJKKAezXAH1gaqiI5mQ+WycS3kUbu9gY+cQW94xtvdPsP30BHe9V9h8uI/Ne9dw+YoDQiguJDSeK7Z91jJBfnUF95/sYe/4Cw7efMfzd13UPp7i6NMv1Bo/cdQ4Ra0xxcvPP/Dh2yHef32M12938ehgHfmCy92xDn8DEzTBlanK6bQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The space-themed homepage of mikeup.church.&quot;
-        title=&quot;The space-themed homepage of mikeup.church.&quot;
-        src=&quot;/static/d46599718d5b7d3156a662da8639ed01/e11df/mikeup-home.png&quot;
-        srcset=&quot;/static/d46599718d5b7d3156a662da8639ed01/5039d/mikeup-home.png 250w,
-/static/d46599718d5b7d3156a662da8639ed01/d19c0/mikeup-home.png 500w,
-/static/d46599718d5b7d3156a662da8639ed01/e11df/mikeup-home.png 1000w,
-/static/d46599718d5b7d3156a662da8639ed01/8e846/mikeup-home.png 1500w,
-/static/d46599718d5b7d3156a662da8639ed01/7d0a0/mikeup-home.png 1686w&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d46599718d5b7d3156a662da8639ed01/00d43/mikeup-home.png&quot;
+        srcset=&quot;/static/d46599718d5b7d3156a662da8639ed01/63868/mikeup-home.png 250w,
+/static/d46599718d5b7d3156a662da8639ed01/0b533/mikeup-home.png 500w,
+/static/d46599718d5b7d3156a662da8639ed01/00d43/mikeup-home.png 1000w,
+/static/d46599718d5b7d3156a662da8639ed01/aa440/mikeup-home.png 1500w,
+/static/d46599718d5b7d3156a662da8639ed01/3a1b1/mikeup-home.png 1686w&quot;
         sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
@@ -38,72 +216,38 @@
 &lt;p&gt;I wanted to improve the design for this latest iteration and spent a lot of time researching, learning, and sketching.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/mupchrch/mikeup.church&quot;&gt;View the source on Github.&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Technologies&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Gatsby, React, Sass&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[Hello, I’m not quite sure what to say. I’m sure I’ll have a real blog post up here soon enough. Until then, enjoy this picture of me…]]></description><link>https://www.mikeup.church/blog/hello-world/</link><guid isPermaLink="false">https://www.mikeup.church/blog/hello-world/</guid><pubDate>Fri, 31 Jan 2020 12:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Hello, I’m not quite sure what to say. I’m sure I’ll have a real blog post up here soon enough.&lt;/p&gt;
-&lt;p&gt;Until then, enjoy this picture of me enjoying a beer at the Blue Lagoon in Iceland.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c8330ab4064b56457ca512f74f8b580d/c2b56/happy-place.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHpoUVNzKa0RKyAf//EABsQAAIBBQAAAAAAAAAAAAAAAAECEAADEiAh/9oACAEBAAEFAoyEL2jaXT//xAAWEQEBAQAAAAAAAAAAAAAAAAARABD/2gAIAQMBAT8BZ3//xAAWEQADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8BI//EABcQAAMBAAAAAAAAAAAAAAAAAAERIFH/2gAIAQEABj8CgvZ//8QAHRABAAIABwAAAAAAAAAAAAAAAQARICExQWFxkf/aAAgBAQABPyEeZcSc09hU3azR1Ft1g//aAAwDAQACAAMAAAAQKP8Awv/EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQMBAT8QVKk7/8QAFhEAAwAAAAAAAAAAAAAAAAAAESAh/9oACAECAQE/EBUf/8QAGhABAQEBAAMAAAAAAAAAAAAAAQARIVFhgf/aAAgBAQABPxDwB+yiyA32JHqHI9XZb1IrR7bBm5Lf/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Me, the happiest I&amp;#39;ll ever be.&quot;
-        title=&quot;Me, the happiest I&amp;#39;ll ever be.&quot;
-        src=&quot;/static/c8330ab4064b56457ca512f74f8b580d/971c4/happy-place.jpg&quot;
-        srcset=&quot;/static/c8330ab4064b56457ca512f74f8b580d/9fb78/happy-place.jpg 250w,
-/static/c8330ab4064b56457ca512f74f8b580d/48a11/happy-place.jpg 500w,
-/static/c8330ab4064b56457ca512f74f8b580d/971c4/happy-place.jpg 1000w,
-/static/c8330ab4064b56457ca512f74f8b580d/45751/happy-place.jpg 1500w,
-/static/c8330ab4064b56457ca512f74f8b580d/4aca8/happy-place.jpg 2000w,
-/static/c8330ab4064b56457ca512f74f8b580d/c2b56/happy-place.jpg 3024w&quot;
-        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Me, the happiest I&amp;#39;ll ever be.&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;See you around.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[updash]]></title><description><![CDATA[What is it? Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time…]]></description><link>https://www.mikeup.church/about/updash/</link><guid isPermaLink="false">https://www.mikeup.church/about/updash/</guid><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Gatsby, React, Sass&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[updash]]></title><description><![CDATA[What is it? Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time…]]></description><link>https://www.mikeup.church/about/updash/</link><guid isPermaLink="false">https://www.mikeup.church/about/updash/</guid><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;Updash is a personalized information dashboard for my home. It displays helpful things about my life such as commute time, currently playing music, weather, calendar, Instagram photos, etc.&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/68b76/updash.png&quot;
+    href=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/f33fc/updash.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.3254593175853%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAADHElEQVQozyWS22+TdRjH+w+YqIlhhguTQZyMFdmhe9u3577t2+Pbt82k21jZCINtTlQq505TG9DBDBcugbmt2QzoDrBuwNq5sY0x1GjkYIyQaAxebJpgjIgQDcaLjz/x4nvx3Hye7/f5PoYvGkx812Lh+221fNnsoPTETZ7J/cqagV9Ye+oH7EODKOfO4MiPEBzsZaryKXR5M6ppE0XTE7w+pLD3YpyD03Fa+zwY7rzs44+uBA/TddxJxXkht4J3CWyz8NzoQ3zn89RdnSP6+RLJsRzdusSa7Ns8feANToXK6c9pnLi5h94bu0nnt2JY3aPx97ut/JNN8tOhRko/+BnHItQUoeTjR6gXJoktzxL+bJFGARyJVLCu9xglPVnGQ+s5+ZHOydsHGby9j/T5Bgz5tgDzu8MsdAaYekXnxd4Znh++TvnwV1QMLKMPD7F1cpzGC3nqc32MSs9SnwzxUl2Akcon2d6j0JaL0t6v0XDEjcE1MYJ3voDnUhFvYZxUXuOtxTDphTCHp2MMDJ2mUFxifKLAYG4Uk1/D7PJSvdlOmcnNxhoP5mgEo6RQZrRi8E6Ooi4WUBeK+ItjdBWa6buWou/6Xo7MttB19B3SmR72ZY7z2v43qXQruJoTVHuCVMherIEIVl1HCkUoq7ILoGgvcfUSieX5x8DUXBPdX3fQ/U0nqZkE3i0Jdh44Suq9fiSvxvoKiUpFxRQMYDQrYoFKlTtAjRoWUP//Dhs+nRdaIFw4y/tZL6e7nQwfd5PLOtlvLycTkDkWc/Gq1cjGTTakYARHUxyj7MMinEnBEA79v1nBELt4Dv3yJ8SuzFFfzHNrm40/xV/ea5a5v8POX51OHuyy8Kjdwo87BEx2UhvWRMwYG6rdSL6IcOynNhBmbZkFg29qjODlGVQB1abP8u0uAeiwce9QnPuZRn7PNPHb4S08aLdxq0XGISKaIzomJYgcjWIRcLMWwRQIUrJOwuAZ+xBVOFOKk4QmznBtu527rTIrbQ5W25ysdnhYEbq7U+ZG0oIkuanxh6hy+akWt3Mn448LsgY1SkXL/wJq1P2KVaNLCQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 56.400000000000006%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADF0lEQVR42h3RXU9bBQCA4fMLjPECXbKY4VwioVika8+hPf3+OLQ9LSVQOiwIlbERJcyMkgZGYc6J80Zc2AwUBFEsyFdbKKMwsm4sMYvOecMujBm6ZLvwQidbjHGavCa7eH7BI9x+08C9mJFf2kRut1kpvXiXF2cec2D6EQdTv2L5chpXdg5rbhF16hJLVS/gcJowywbyhufo+cpFYqOBM4V6OlIuhHvdfvbPx3hyNsrPvRFem7yP/wbYt+DQ3D6e7ArhnU1C317nrXSKcw1mSi58xPPJPj4NaPk8FWLkxx4u3TnFmeUWhIddNTxNNvFffz0Pexp4eew3jm5C+SqUzP6DM7uCev0Kys1tGucnybkPU3bxQw4ND7DmPsjIQpDR3dOM332PRKYeIdXdQLr3GHPxRibiUaTLs1TNrGOYWUOaXKJ5eop3MsuczGWITYzxmbGUSL2TsNfGaGUJ4X4HLZ+oNF/wE4rbEOTsArZiAcu1TewbS8QzPs4VvQwVvQzkA4xPTJHLbpGey5Ian0XrCWJwKlTqrJTqnZTrHIj+ABqDiyNlRgT3Shplew3P1Tw1+TTJ9TbGf4iTupPgfCFG4uz79A4Mc3roY0509/KG1Y4tGqbKqvC6yYXZF8RUW4uoqpTpLQjO5TRNN6/StLONZ32ervUIg7feZvD743Rm6xC9fqKnknQNX0ZjcnG4XETnVBBVHxrJidbiQmdT0Csqkr8GQcnME9nZIrKzTTC/wHSfndVBM5lBC8t9ZkbcFYz69Iypej5waNFoZUQ1gL01jEZyIflVJFXFXFtHmcGOULu6SPDaFYLFAo35RX5qkXnaZuRJTOavDhv/djv4u9ME78rcb5eplu3ofSp6xUdFtQtjTRCtzc1Rj5cDR0QEV/YbvMUNPMUCgfwCux1WHnfK/JEI8WfyGI+Gmvm9v5H9kyZ2W02Y7R4kfxDR7UcKBJB8foyhIAavj5deFRHsX0/hzi3gWF3EN/8Ft1plHsSq2Ws3s3fcwl6H9ZkH7Ua+i1ZjEG1UebxUWtzorArO5rpnQZKi8kqFkf8B9L79F7s1SJkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The updash dashboard, displaying personalized information.&quot;
-        title=&quot;The updash dashboard, displaying personalized information.&quot;
-        src=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/e11df/updash.png&quot;
-        srcset=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/5039d/updash.png 250w,
-/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/d19c0/updash.png 500w,
-/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/e11df/updash.png 1000w,
-/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/8e846/updash.png 1500w,
-/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/68b76/updash.png 1905w&quot;
+        title=&quot;&quot;
+        src=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/00d43/updash.png&quot;
+        srcset=&quot;/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/63868/updash.png 250w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/0b533/updash.png 500w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/00d43/updash.png 1000w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/aa440/updash.png 1500w,
+/static/275e6da5bb35f5c1b12c6d6d90b5cd6a/f33fc/updash.png 1905w&quot;
         sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
@@ -118,31 +262,33 @@
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/818e5/upchat.png&quot;
+    href=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/a9577/upchat.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.57399103139014%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAB2HAAAdhwGP5fFlAAABaElEQVQ4y5XTPU/CUBQG4P5Gf5aLi4uLm7qog7qwKAQjtqU0bW/bVEhJE+hNP6BfMligr+0VoohgOcnZznn6JveUe7i/Q7v9DMuyYBgGpK6Et2MT/U4fZt/EeDRGkiR7O45jzGYzDIdDcK+dF/A8zzDHcWDbNs6pg0E0QRSGyLJ31K3pZALu9uYajUYDrVYLsiwznLoUSflV3/cxnUYoimJvL5dLBgZBAK7ZfIIoitA0jXWVNDh9hE9sjDyKLE3ZElbLf9UaDCuw15Og6zpUVWVNCIFz4iIwQtCQIk1SNlzUBburdD9B79xFaAWIshh5nh8IdkuwRNZglTb/yDcWdkE7QfILnM/nW6lqJxQEYRvMv0EUByYUeOHfhHXP5guUBGh6+SiaCkVToBubYJ1azzFQbAowFRNEJiA9DaZqbL1s7cMufwROORIxOLNAL8fwLyi8KxexFyFOY3aDi8WCLezraqYq3/fwCesp2IitwdbjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 64.4%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAB2HAAAdhwGP5fFlAAABjUlEQVR42p2TTW/aQBiE/Sf7o3rppeqxkXrpMT2kF6RKTajSpMYYvOuPxSS4YBtsbIEpREgF/ERxRFNQGkFHmtvMsyO9Wu3z2RmXl9/xOz6O69C8btJ9regaPqqrGMZDZrPZiy6KguVyiVIK7frqih+6jqcUg34fv9fjfdJnMJ0wyXMWd3ccquEwRvt0ekqtVqNer2OaJrqukyZp9eo4TZlOC8qyfNGbzaYCRmGIdnFxTqNhYNs2wpZ40iF/+5W00ydORizmiyq8LT+nP8AoRGu1TBzHQQiBkALHcgjfjMhucpIsYf5rfhywaRhIKXeA2cmIvJdRzGesfq+OBDYNpG1XUMuy8DyP9Wq9U/gX6GDgNvD3qoMXGo3G40GEeFq4Xj8tK49c2NAfgVJIxDPAQ7wLNHWELbCkRVu0cZVbAbfB8sF75X1vB4ThAK1db+FLH2Up3JZL17nhf5UmCdq3V19ovdPpnNgEHzoEHxVh8JMguCXo3TIaxmTjlGKSM04Toigi3vPDDxmPU8ymwT2/Y9PecatE2AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The messaging interface of upchat.&quot;
-        title=&quot;The messaging interface of upchat.&quot;
-        src=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/e11df/upchat.png&quot;
-        srcset=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/5039d/upchat.png 250w,
-/static/239d0f3fc9076815dfcfd2fc89848f53/d19c0/upchat.png 500w,
-/static/239d0f3fc9076815dfcfd2fc89848f53/e11df/upchat.png 1000w,
-/static/239d0f3fc9076815dfcfd2fc89848f53/8e846/upchat.png 1500w,
-/static/239d0f3fc9076815dfcfd2fc89848f53/818e5/upchat.png 1784w&quot;
+        title=&quot;&quot;
+        src=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/00d43/upchat.png&quot;
+        srcset=&quot;/static/239d0f3fc9076815dfcfd2fc89848f53/63868/upchat.png 250w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/0b533/upchat.png 500w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/00d43/upchat.png 1000w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/aa440/upchat.png 1500w,
+/static/239d0f3fc9076815dfcfd2fc89848f53/a9577/upchat.png 1784w&quot;
         sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
@@ -176,29 +322,31 @@
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 820px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 820px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a88bd8278255e3b6646dedd66a285197/1b844/et-navswarm.jpg&quot;
+    href=&quot;/static/a88bd8278255e3b6646dedd66a285197/de5ef/et-navswarm.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 71.95121951219512%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdMl1Vz0YnB//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAECAxIR/9oACAEBAAEFAnaJ29Mr6i9Dti1Z/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABkQAAIDAQAAAAAAAAAAAAAAAAABAhAxIv/aAAgBAQAGPwJo5E5bW1//xAAYEAEBAQEBAAAAAAAAAAAAAAABEQAhMf/aAAgBAQABPyG1WBlCCIUvckQLJfMPOuaH3f/aAAwDAQACAAMAAAAQpN//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCK/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Qo//EABsQAQADAQEBAQAAAAAAAAAAAAEAESFBMVFx/9oACAEBAAE/EKfyjbZbe6cnyeojXOTdsPMEvGN8L/Im6FWJyNOp/9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 72%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdMl9Nz0YoB//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAECAxIR/9oACAEBAAEFAnck7emV9Reh2xas/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABsQAAEEAwAAAAAAAAAAAAAAAAABAhAxESKB/9oACAEBAAY/Alaa8MuuLj//xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAxUSH/2gAIAQEAAT8hsRAPdEgiHX3MMDGvMPPGh3//2gAMAwEAAgADAAAAEJQf/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Qiv/EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/EKP/xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUFx/9oACAEBAAE/EHG3LbFt7p5G3zOBrzyW/heYJeMRxv5E2IUImVHm1n//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;A rendering of an ET-NavSwarm robot.&quot;
-        title=&quot;A rendering of an ET-NavSwarm robot.&quot;
-        src=&quot;/static/a88bd8278255e3b6646dedd66a285197/1b844/et-navswarm.jpg&quot;
-        srcset=&quot;/static/a88bd8278255e3b6646dedd66a285197/9fb78/et-navswarm.jpg 250w,
-/static/a88bd8278255e3b6646dedd66a285197/48a11/et-navswarm.jpg 500w,
-/static/a88bd8278255e3b6646dedd66a285197/1b844/et-navswarm.jpg 820w&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a88bd8278255e3b6646dedd66a285197/de5ef/et-navswarm.jpg&quot;
+        srcset=&quot;/static/a88bd8278255e3b6646dedd66a285197/0479a/et-navswarm.jpg 250w,
+/static/a88bd8278255e3b6646dedd66a285197/41099/et-navswarm.jpg 500w,
+/static/a88bd8278255e3b6646dedd66a285197/de5ef/et-navswarm.jpg 820w&quot;
         sizes=&quot;(max-width: 820px) 100vw, 820px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
@@ -214,29 +362,31 @@
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 656px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 656px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/5683b/kappafeed-overwolf.jpg&quot;
+    href=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/065ac/kappafeed-overwolf.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAFGtj0BGKI//8QAGxAAAQUBAQAAAAAAAAAAAAAAAgABAwQREjH/2gAIAQEAAQUCrgJzPFGw+qsfDnbfN1f/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRABAAMBAQAAAAAAAAAAAAAAAQAQIRIi/9oACAEBAAY/AtMj5MpYnJX/xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhMUH/2gAIAQEAAT8hIBsvHNIaGZqq9yQbDzfWYnuMf//aAAwDAQACAAMAAAAQvB//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8Q3SHf/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EByVv//EABsQAQADAQEBAQAAAAAAAAAAAAEAESExQWFx/9oACAEBAAE/ENiq/wAIpOqnRDPZeanewBjvXt/ZTJDXUulRbIVWdn//2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62.4%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAFFiG+TKLD/xAAaEAACAwEBAAAAAAAAAAAAAAABAgADBBIh/9oACAEBAAEFAs4DXlE5mdirPpsg9n//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAQQDAAAAAAAAAAAAAAAAAQAQESEiMVH/2gAIAQEABj8CFI4jXGkKKb//xAAZEAEAAwEBAAAAAAAAAAAAAAABABEhMUH/2gAIAQEAAT8hsUJ6QlYoqh3ViDsEpPJzkXqf/9oADAMBAAIAAwAAABBLz//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8QvEP/xAAWEQEBAQAAAAAAAAAAAAAAAAABACH/2gAIAQIBAT8QFJdv/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARITFBcVH/2gAIAQEAAT8Q5z6oWaMf1gQMzyAep+xzC2l8PsrpJWrq4xgtCms8n//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The Kappafeed Overwolf app running over League of Legends.&quot;
-        title=&quot;The Kappafeed Overwolf app running over League of Legends.&quot;
-        src=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/5683b/kappafeed-overwolf.jpg&quot;
-        srcset=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/9fb78/kappafeed-overwolf.jpg 250w,
-/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/48a11/kappafeed-overwolf.jpg 500w,
-/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/5683b/kappafeed-overwolf.jpg 656w&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/065ac/kappafeed-overwolf.jpg&quot;
+        srcset=&quot;/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/0479a/kappafeed-overwolf.jpg 250w,
+/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/41099/kappafeed-overwolf.jpg 500w,
+/static/4a8d02f0ae6b436ff6fe58e88ac7aaab/065ac/kappafeed-overwolf.jpg 656w&quot;
         sizes=&quot;(max-width: 656px) 100vw, 656px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;

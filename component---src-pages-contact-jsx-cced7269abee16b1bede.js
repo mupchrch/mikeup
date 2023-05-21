@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmikeup_church=self.webpackChunkmikeup_church||[]).push([[661],{8797:function(c,e,t){t.r(e);var h=t(2059),s=t(230),u=t(5893);e.default=()=>(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(h.Z,{title:"Contact"}),(0,u.jsx)("h1",{children:"Contact"}),(0,u.jsx)(s.Z,{})]})}}]);
+//# sourceMappingURL=component---src-pages-contact-jsx-cced7269abee16b1bede.js.map
