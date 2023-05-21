@@ -9,6 +9,8 @@ const skillsList = [
   'Frontend Architect',
   'Certified Scrum Master',
   'Test Driven Development',
+  'Web Accessibility',
+  'Full-stack Engineer',
 ];
 const techList = [
   'React',
@@ -45,12 +47,12 @@ const About = ({ data }) => {
       <Seo title='About' />
       <h1>About</h1>
       <p>
-        I am a Software Developer who graduated in 2015 from the{' '}
+        I am a {data.site.siteMetadata.job} who graduated in 2015 from the{' '}
         <a href='https://www.unh.edu/'>University of New Hampshire</a> with a
         B.S. in Computer Science.
       </p>
       <p>
-        I live in Manchester, NH, and I have worked at{' '}
+        I live in New Hampshire, and I have worked at{' '}
         <a href='https://www.pega.com/'>Pegasystems</a> since 2015.
       </p>
       <h2>Skills</h2>
@@ -129,6 +131,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        job
       }
     }
     allMarkdownRemark(

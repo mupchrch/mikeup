@@ -1,6 +1,5 @@
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/Bio';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 
@@ -22,9 +21,7 @@ const Blog = ({ data }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
+                <Link to={node.fields.slug}>{title}</Link>
               </h3>
               <small>{node.frontmatter.date}</small>
             </header>
@@ -38,8 +35,6 @@ const Blog = ({ data }) => {
           </article>
         );
       })}
-      <hr />
-      <Bio />
     </>
   );
 };

@@ -16,7 +16,7 @@ $sunny: #fffa75;
   --mun-color: #{$sunny};
   --mun-spot-color: #{$sunny};
 
-  --theme-toggle-background-color: #{darken($greige, 10%)};
+  --theme-toggle-background-color: #{darken($whitesque, 30%)};
   --theme-toggle-foreground-color: #{$whitesque};
   --theme-toggle-text-color: #{$blackish};
   --theme-toggle-slider-color: #{$whitesque};
@@ -34,6 +34,7 @@ html[data-theme='dark'] {
   --mun-color: #{$whitesque};
   --mun-spot-color: #{$greige};
 
+  --theme-toggle-background-color: #{lighten($blackish, 30%)};
   --theme-toggle-text-color: #{$whitesque};
   --theme-toggle-slider-color: #{$blackish};
 }

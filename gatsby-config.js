@@ -5,6 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'Mike Upchurch',
     author: 'Mike Upchurch',
+    job: 'Senior Software Developer',
     description: 'A personal website/blog for Mike Upchurch.',
     siteUrl: 'https://www.mikeup.church',
     social: {

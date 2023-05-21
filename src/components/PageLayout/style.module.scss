@@ -2,7 +2,6 @@
   left: 0;
   right: 0;
   opacity: 0;
-  transition: opacity 0.25s;
   margin-left: auto;
   margin-right: auto;
 }
@@ -10,6 +9,7 @@
 :global(.page-enter),
 :global(.page-enter-active),
 :global(.page-enter-done) {
+  transition: opacity 0.25s;
   opacity: 1;
 }
 

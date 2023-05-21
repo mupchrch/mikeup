@@ -1,79 +1,80 @@
 ---
-title: How I fumbled my way to a top Atom package
-date: 2020-03-05T12:12:03.284Z
+title: "split-diff: How I fumbled my way to a top Atom package"
+date: 2023-05-20T12:12:03.284Z
 ---
 
-![](./spacey-meme.jpg)
+![](./spacey-meme.png)
 
-I know the [Atom text editor](https://atom.io) isn't the new hotness right now (I've long since switched to [VSCode](https://code.visualstudio.com/)), but I've just cracked into writing blog posts, and I'd like to share my rather accidental rise to open source "stardom". Stardom, here, is measured in Github stars, of course.
+This post is probably long overdue, but at the same time, it's not, because I've never written a blog post before. Nonetheless, I'd like to share my rather accidental rise to OSS - Open Source _Stardom_. A metric that is, of course, measured in Github stars.
 
-I first encountered Atom as an innocent new hire at my first full-time job. It was a frontend web application development position, which I only had minimal experience in from one of my internships. Anyway, I'm still working there nearly 5 years later, so I guess you could say it went alright.
+[VSCode](https://code.visualstudio.com/) usurped the [Atom text editor](https://atom.io) a while ago now, but there was a long point in time where **if you wanted to compare two files, you had to go through me**. Or, I don't know, use another tool or something, I guess.
 
-Within a few months of starting, I was pair programming with a coworker, and when he opened up his text editor, my jaw hit the floor.
+## Up and Atom
+I was introduced to Atom at my first full-time job. Within a few months of starting, I was pair programming with my team's Tech Lead, and he showed me this new text editor he had set up to his liking.
 
-> Yeah man, look at these open source packages I installed to improve my workflow. I even wrote a couple of my own JS snippets to change some functionality for my usage. _AND_ I can style whatever I want to my liking with CSS.
+> I installed these open source packages to improve my workflow, I can write my own JS snippets to do anything, _AND_ I can style any part of the UI with CSS. - Mr. Tech Lead, 2015
 
-Okay, what? I can use what I've learned so far at my job to customize the way my text editor looks and behaves? _Sold._
+I could use skills I had already acquired to customize my work environment. Sold.
 
-I had never really paid much attention to my text editor before. I had generally just rolled with whatever opened when I double-clicked a file. I shuddered while writing that sentence — _I thought blog posts were supposed to make me seem cool._
+Immediately, I changed themes and tried out packages and created JS snippets and wrote CSS. I could bend reality to my will - [my power knew no bounds](https://github.com/mupchrch/outline-selection#outline-selection---). Yes, that was an outline/boundary pun about another package I wrote.
 
-## Let's see what Atom can do
+After about a month, I realized a major issue in my workflow. I use MacOS at work. In order to compare two files, I would **boot up a Windows VM** just so I could use WinMerge. Kind of like taking a flight because I wanted some peanuts. This realization spurred me to try every single Atom package that dared to mention the words `compare`, `diff`, or `merge`. Nothing quite fit the bill.
 
-Immediately, I changed themes and tried out packages and created JS snippets and wrote CSS (I mean, as much as anyone really _knows_ how to write CSS). This new world was fantastic. Until it wasn't.
-
-After about a month, I realized a major issue in my workflow. I use MacOS at work. In order to compare two files, I would **BOOT UP MY ENTIRE WINDOWS VM** just so I could use WinMerge. In reflection, I'm baffled that this was a solution I tried even once, let alone for a _month._ This spurred me to go on a rampage trying out every single package that dared to utter the words `compare`, `diff`, or `merge`.
-
-![A totally not doctored photo of what I found on my search for a side-by-side comparison package.](./package-search.png)
-
-Below, you'll find reviews of each package from the perspective of an inexperienced simpleton:
-
-- One offered diffing changes inline — Gross, I could barely understand when they were side-by-side, now you're going to bring in **a whole different axis**?
-- One just highlighted changed line numbers — Okay, what do you expect me to do? **BOOT UP MY ENTIRE WINDOWS VM** to see what changed?
-- Wait! One showed me side-by-side changes! — But in a popup... that I couldn't edit ☹️
+![My very real search for a side-by-side comparison package.](./package-search.png)
 
 ## Hacking the "hackable text editor"
 
-I was floored. How could what I want not exist? (For one, Atom had just exited Beta.) There had always been a package for what I needed. I went into research mode. I found a [StackOverflow post](https://stackoverflow.com/a/1313218), which pointed me to a research paper titled [An O(ND) Difference Algorithm and its Variations](http://www.xmailserver.org/diff2.pdf). Nah. I'm good. I can barely vertically align text in a `<div>`. This is getting a little too college right now.
+I was floored. How could this free product that just exited Beta not provide exactly what I need? No matter, it should be easy enough to build. I went into research mode. I found a [StackOverflow post](https://stackoverflow.com/a/1313218), which pointed me to a research paper titled [An O(ND) Difference Algorithm and its Variations](http://www.xmailserver.org/diff2.pdf). My eyes glazed over. This was out of my wheelhouse - I could barely vertically align text in a `<div>`.
 
-Wait a second. I've seen websites where you can paste in the contents of two files that you want to compare. How do they do it? ...What is [jsdiff](https://github.com/kpdecker/jsdiff)? _Some poor soul already did the dirty work!_ 🎉 (Seriously, a _huge_ shoutout to [Kevin Decker](https://github.com/kpdecker).)
+But wait, I've seen websites where you can paste in the contents of two files that you want to compare. How do they do it? Hold on, what is [jsdiff](https://github.com/kpdecker/jsdiff)? _Some poor soul already did the dirty work!_ 🎉
 
-I followed the documentation and slapped together an initial "Hello, World" package. At the time, packages were built using [CoffeeScript](https://coffeescript.org/), so I stumbled a bit in the beginning. [Things started slow](https://github.com/mupchrch/split-diff/commit/59b0676dfa5b53d900ec8fde1c6b833941ffd8c5), but I persevered:
+I followed Atom's documentation and slapped together a very bare-bones package. At that time, packages were built using [CoffeeScript](https://coffeescript.org/), so I stumbled a bit in the beginning. To be honest, I never fully boarded the CoffeeScript train (and I eventually refactored much of the supporting logic to JavaScript files), but I can appreciate its successful influence on [ES6](https://www.w3schools.com/js/js_es6.asp).
+
+Regarding my new package, [things started out slow](https://github.com/mupchrch/split-diff/commit/59b0676dfa5b53d900ec8fde1c6b833941ffd8c5), but I persevered:
 
 ![The first commit to show signs of life.](./important-commit.png)
 
-Cool, I accomplished what I set out to do... Hold on, everything gets out of whack if the number of lines added doesn't equal the number of lines removed! I needed some way to insert "fake" lines, so related differences remained properly aligned. The only issue was, at the time, there was _zero_ support for what is now called "[block decorations](https://blog.atom.io/2016/02/03/introducing-block-decorations.html)".
+Cool, I'm done. That was quick and easy... Except everything gets misaligned if the number of lines added doesn't equal the number of lines removed! I needed some way to insert "fake lines", so related differences remained properly aligned. The only issue was, at the time, there was _zero_ support for what eventually became "block decorations".
 
 ![Something isn't quite lining up here...](./no-block-decorations.png)
 
-From the block decorations announcement post:
+From the eventual block decorations announcement post:
 
 > Users and package authors have come up with hacks that circumvent the problem by monkey-patching DisplayBuffer and the way it constructs tokenized lines.
 
 Guilty 🙋‍♂️
 
-After 3 days of bashing my head against my keyboard, I finally did it. Just kidding, I took some [slight influence](https://github.com/mupchrch/split-diff/blob/9e71b0c53811460d041fa71ab9e5db8820ad61e0/lib/build-lines-helper.js#L5) from a package that Facebook released called Nuclide. I know what you're thinking, I'm basically the Robin Hood of side-by-side file comparison. It gets better.
+After 3 days of bashing my head against my keyboard, I finally did it. Just kidding, I took some [~slight~ heavy influence](https://github.com/mupchrch/split-diff/blob/9e71b0c53811460d041fa71ab9e5db8820ad61e0/lib/build-lines-helper.js#L5) from a package that Facebook released called Nuclide. Consider me the Robin Hood of side-by-side file comparison.
 
-I also realized how massive of a pain it is to have to scroll both editors separately. Again, I took a [small bit of influence](https://github.com/mupchrch/split-diff/blob/e24b345715b6af26536af59864182c5944a809b8/lib/sync-scroll.js#L5) from Nuclide, and now the editors scroll positions were in sync at all times.
+I also realized how massive of a pain it is to have to scroll both editors separately. Again, [I ~stole~ borrowed a file](https://github.com/mupchrch/split-diff/blob/e24b345715b6af26536af59864182c5944a809b8/lib/sync-scroll.js#L5) from Nuclide, and now the editors' scroll positions were in sync at all times.
 
 ![Block decorations are working, as is synchronized scrolling!](./sync-scroll.gif)
 
-## Ship it
+## Hello, World!
 
-After adding the ability to recalculate the diff following any changes, I named this thing [split-diff](https://atom.io/packages/split-diff) and shipped v0.1.0. 🚢
+I named this thing [split-diff](https://github.com/mupchrch/split-diff#split-diff---) and shipped v0.1.0.
 
-Shortly thereafter, myself and [at least one person in my growing userbase](https://github.com/mupchrch/split-diff/issues/6#issuecomment-211070405) ran into a problem. Diffing large files _completely froze Atom_.
+I couldn't believe the kind of traction it gained. Something I had created for myself, slowly but surely started racking up a not insignificant amount of downloads. 1,000... 10,000... 100,000... 500,000... and eventually near the end of Atom's life - **1,000,000 downloads** 😱
 
-I did some research (the [Atom API documentation](https://flight-manual.atom.io/api) was, and is, fantastic) and found my solution: `BufferedNodeProcess`. This is pretty much what it sounds like — I could run arbitrary JavaScript in a separate Node.js process, write its output to the buffer, and parse it back in the main thread. This freed up Atom to continue actually functioning while I computed the diff results asynchronously. _More importantly_, I could display a loading indicator if the diff was taking longer than 1 second. _MORE importantly_, the user now had the choice to be able to cancel out of this painfully slow package, and even proceed to uninstall it!
+However, let's not celebrate too soon. Far before all that, myself, and [at least one person in my growing userbase](https://github.com/mupchrch/split-diff/issues/6#issuecomment-211070405), had run into a problem: Diffing large files **completely froze Atom**.
 
-Addressing the UI lockup was what I consider the last interesting issue that I fixed. I went on to add quite a few more features:
+I did some research (the Atom API documentation was fantastic) and found my solution: `BufferedNodeProcess`. This is pretty much what it sounds like — I could run arbitrary JavaScript in a separate Node.js process, write its output to the buffer, and parse it back in the main thread. This freed up Atom to continue actually functioning while I computed the diff results asynchronously. _More importantly_, I could display a loading indicator if the diff was taking longer than 1 second. _MORE importantly_, the user now had the choice to be able to cancel out of this painfully slow package, and even proceed to uninstall it!
+
+## Goodbye, World!
+
+Addressing the UI lockup was what I consider the last interesting issue that I fixed. Although I did go on to add quite a few more features:
 - Moving to the next/previous diff "chunk"
 - Quickly moving a "chunk" of changes from one editor to the other
-- A bottom bar in the UI to show the number of differences and also provide easy buttons for the previous features
+- A bottom bar in the UI to show the number of differences and also provide easy buttons for the aforementioned features
 - Highlighting which words changed between each line
 - Diffing with the previous git commit (if available)
 
 ![Using the UI bar to move between diffs and copy one to the other editor, then demonstrating live editing.](./additional-features.gif)
 
-Looking back with my current experience level, I would have focused even further on performance. No dig at `jsdiff`, but it might have been a better idea to call a C/C++ module using the `BufferedProcess` API. I also always wanted to just use the info from `git diff` if it was available, but never had the time or ambition to add another fork in the code.
+Looking back with my current experience level, there was still a lot of performance to be gained. No dig at `jsdiff`, but it might have been a better idea to call a C/C++ module using the `BufferedProcess` API. I also always wanted to just use the info from `git diff` if it was available, but never had the time or ambition to add another fork in the code.
 
-Unfortunately, I've long since been in maintenance mode on split-diff (apparently, I had ["more important" things to do](https://www.instagram.com/monthlymammals/)). I've had fun, failure, and feature creep, but I think it all resulted in a package with a really solid user experience. I definitely learned how to say "no, that's not in scope" for this tool. It's okay to have an accomplishable goal and stick to it — you don't have to build a Swiss Army knife.
+I'll end this post by sharing the best moment to come out of `split-diff`. At work, we had started hearing rumors that my company was thinking of creating an internal Atom package to help our frontend engineers with some development pain points. My team's Tech Lead (the same one who had introduced me to Atom), was included on a demo of the new package. He noticed the package could compare files... and **it installed `split-diff` to do it**.
+
+> Wait you guys know Mike made that package, right?!
+
+I had poured countless hours into fixing bugs and creating features. I never expected any money or notoriety - I was doing it for free and for fun. Strangely, I was even yelled when things broke. But as it turns out, it literally ended up paying off. That coincidence at work helped advance my career on more than one occasion.
