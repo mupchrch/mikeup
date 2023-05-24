@@ -39,6 +39,7 @@
     "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-plugin-sitemap": "^6.9.0",
     "gatsby-plugin-typography": "^5.9.0",
+    "gatsby-remark-autolink-headers": "^6.10.0",
     "gatsby-remark-copy-linked-files": "^6.9.0",
     "gatsby-remark-embedded-codesandbox": "^1.2.0",
     "gatsby-remark-images": "^7.9.0",

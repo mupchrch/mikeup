@@ -1,0 +1,13 @@
+@use '../components/Header/style.module.scss' as header;
+
+.article {
+  h1, h2, h3, h4, h5, h6 {
+    // Prevent header from scrolling behind header on click of anchor link
+    scroll-margin-top: header.$lineHeight; // From header component style
+  }
+
+  :global(.anchor) {
+    // For posts, color the header link icon same as header
+    fill: var(--header-color);
+  }
+}

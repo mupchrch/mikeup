@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Seo from '../components/seo';
 import Bio from '../components/Bio';
 import { rhythm, scale } from '../utils/typography';
+import * as styles from './post.module.scss';
 
 const PostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark;
@@ -41,7 +42,7 @@ const PostTemplate = ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article className={styles.article}>
         <header>
           <h1 style={{ marginBottom: 0 }}>{post.frontmatter.title}</h1>
           <p

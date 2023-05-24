@@ -43,7 +43,17 @@ module.exports = {
               showCaptions: true,
             },
           },
-          'gatsby-remark-prismjs',
+          'gatsby-remark-autolink-headers', // Must be before prismjs
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              prompt: {
+                user: 'user',
+                host: 'pc',
+                global: true,
+              },
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           {
