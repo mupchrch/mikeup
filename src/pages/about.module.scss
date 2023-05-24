@@ -1,4 +1,4 @@
-@import '../styles/mixins.scss';
+@use '../styles/mixins.scss';
 
 .skillsList {
   display: flex;
@@ -75,7 +75,7 @@
   }
 }
 
-@include smallScreen {
+@include mixins.smallScreen {
   .timeline {
     svg {
       display: none;

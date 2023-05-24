@@ -1,5 +1,5 @@
 @use 'sass:math';
-@import '../../styles/mixins.scss';
+@use '../../styles/mixins.scss';
 
 .hero {
   position: absolute;
@@ -12,7 +12,7 @@
   overflow: hidden;
   opacity: 0;
 
-  @include animateOpacity(0.5s);
+  @include mixins.animateOpacity(0.5s);
 }
 
 .playPause {
@@ -77,7 +77,7 @@ $numNearStars: 0.000003 * $totalPixels;
   height: $starSize;
   box-shadow: $starsBoxShadow;
 
-  @include animateLoop(farStars, #{math.div($screenSize, 20)}s) {
+  @include mixins.animateLoop(farStars, #{math.div($screenSize, 20)}s) {
     from { transform: translateY(0); }
     to { transform: translateY(-#{$screenSize}px); }
   }
@@ -100,7 +100,7 @@ $numNearStars: 0.000003 * $totalPixels;
   height: $starSize;
   box-shadow: $starsBoxShadow;
 
-  @include animateLoop(farStars, #{math.div($screenSize, 40)}s) {
+  @include mixins.animateLoop(farStars, #{math.div($screenSize, 40)}s) {
     from { transform: translateY(0); }
     to { transform: translateY(-#{$screenSize}px); }
   }
@@ -123,7 +123,7 @@ $numNearStars: 0.000003 * $totalPixels;
   height: $starSize;
   box-shadow: $starsBoxShadow;
 
-  @include animateLoop(farStars, #{math.div($screenSize, 60)}s) {
+  @include mixins.animateLoop(farStars, #{math.div($screenSize, 60)}s) {
     from { transform: translateY(0); }
     to { transform: translateY(-#{$screenSize}px); }
   }

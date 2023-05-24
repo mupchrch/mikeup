@@ -14,12 +14,16 @@ const ThemeToggle = ({ isHome }) => {
         className={`${styles.toggle} ${isInitialHomeLoad ? styles.fadeIn : ''}`}
       >
         <input
+          aria-label='Toggle theme'
           type='checkbox'
           className={styles.checkbox}
           checked={themeMode === 'light'}
           onChange={() =>
             setThemeMode(themeMode === 'light' ? 'dark' : 'light')
           }
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') e.target.click();
+          }}
         />
         <div className={styles.slider} />
         <div

@@ -47,6 +47,9 @@ const typography = new Typography({
     'td,th': {
       textAlign: null,
     },
+    html: {
+      overflowY: 'initial',
+    },
   }),
 });
 

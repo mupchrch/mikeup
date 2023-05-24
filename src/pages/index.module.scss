@@ -1,4 +1,4 @@
-@import '../styles/mixins.scss';
+@use '../styles/mixins.scss';
 
 $greetingStart: translateY(42vh);
 $greetingEnd: translateY(37vh);
@@ -15,12 +15,13 @@ $enterExitSpeed: 1s;
 }
 
 .bigText {
+  text-align: center;
   letter-spacing: 0.0571429em;
   font-size: 2.5vw;
   text-transform: uppercase;
 }
 
-@include smallScreen {
+@include mixins.smallScreen {
   .greeting {
     position: static;
     text-align: center;
@@ -32,7 +33,7 @@ $enterExitSpeed: 1s;
   }
 }
 
-@include largeScreen{
+@include mixins.largeScreen {
   // don't allow font size to grow past large screen size
   .bigText {
     font-size: 56px;

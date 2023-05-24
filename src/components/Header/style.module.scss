@@ -1,7 +1,12 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/variables.module.scss';
+@use '../../styles/variables.module.scss';
+@use '../../styles/mixins.scss';
 
 $lineHeight: 50px;
+
+@mixin solidHeader {
+  background: var(--background-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
 
 .header {
   position: sticky;
@@ -12,7 +17,7 @@ $lineHeight: 50px;
   width: 100%;
   z-index: 100; // appear above background stars
   transition: background .25s, box-shadow .25s;
-  background: var(--background-color);
+  @include solidHeader;
 }
 
 .transparentHeader {
@@ -28,7 +33,7 @@ $lineHeight: 50px;
   line-height: $lineHeight;
 
   opacity: 0;
-  @include animateOpacity(0.5s);
+  @include mixins.animateOpacity(0.5s);
 
   a {
     transition: color 1s;
@@ -41,7 +46,7 @@ $lineHeight: 50px;
   @extend .name;
 
   a {
-    color: $blackish;
+    color: variables.$blackish;
   }
 }
 
@@ -52,7 +57,7 @@ $lineHeight: 50px;
   display: flex;
   height: $lineHeight;
 
-  @include animateOpacity(0.5s);
+  @include mixins.animateOpacity(0.5s);
 }
 
 .menuItem {
@@ -107,7 +112,7 @@ $lineHeight: 50px;
     top: 50%;
     left: 50%;
 
-    @include animate(menuItemRipple, 1s) {
+    @include mixins.animate(menuItemRipple, 1s) {
       from {
         opacity: 1;
         transform: scale(0);
@@ -136,7 +141,7 @@ $lineHeight: 50px;
 }
 
 // manage sizing of items in the top bar
-@include smallScreen {
+@include mixins.smallScreen {
   .itemBig {
     display: none;
   }
@@ -145,17 +150,27 @@ $lineHeight: 50px;
     display: flex;
   }
 
-  // don't allow font size to shrink past small screen size
   .name {
+    // don't allow font size to shrink past small screen size
     font-size: 1rem;
+  }
+  
+  .nameHome a {
+    // Color should contrast with solid header
+    color: unset;
   }
 
   .header {
     justify-content: space-around;
   }
+
+  .transparentHeader {
+    // Make header solid for small screens where mun wouldn't line up for text contrast
+    @include solidHeader;
+  }
 }
 
-@include largeScreen{
+@include mixins.largeScreen{
   // don't allow font size to grow past large screen size
   .name {
     font-size: 36px;

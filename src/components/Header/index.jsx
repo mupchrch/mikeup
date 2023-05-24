@@ -72,10 +72,6 @@ const Header = ({ currentPath, is404 }) => {
       className={`${styles.header} ${
         currentPath === '/' || is404 ? styles.transparentHeader : ''
       }`}
-      style={{
-        boxShadow:
-          currentPath === '/' || is404 ? null : '0 0 10px var(--shadow-color)',
-      }}
     >
       <div
         className={currentPath === '/' ? styles.nameHome : styles.name}
@@ -101,6 +97,7 @@ const Header = ({ currentPath, is404 }) => {
             );
           })}
           <div
+            aria-hidden
             className={styles.selectedDecorator}
             style={selectedDecoratorStyles}
           />

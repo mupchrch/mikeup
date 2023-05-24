@@ -50,6 +50,8 @@ const Hero = ({ isHome, is404 }) => {
         appear
       >
         <button
+          // Prevent tab interaction when on pages not showing hero
+          tabIndex={isHome || is404 ? undefined : -1}
           className={styles.playPause}
           onClick={() => setAnimating(!isAnimating)}
         >
