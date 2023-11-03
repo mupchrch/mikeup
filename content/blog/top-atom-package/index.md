@@ -10,6 +10,7 @@ This post is probably long overdue, but at the same time, it's not, because I've
 [VSCode](https://code.visualstudio.com/) usurped the [Atom text editor](https://atom.io) a while ago now, but there was a long point in time where **if you wanted to compare two files, you had to go through me**. Or, I don't know, use another tool or something, I guess.
 
 ## Up and Atom
+
 I was introduced to Atom at my first full-time job. Within a few months of starting, I was pair programming with my team's Tech Lead, and he showed me this new text editor he had set up to his liking.
 
 > I installed these open source packages to improve my workflow, I can write my own JS snippets to do anything, _AND_ I can style any part of the UI with CSS. - Mr. Tech Lead, 2015
