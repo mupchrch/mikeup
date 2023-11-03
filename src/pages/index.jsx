@@ -9,6 +9,7 @@ const Index = () => {
     lineHeight: rhythm(2),
     padding: `0 ${rhythm(1)}`,
     margin: rhythm(0.25),
+    borderRadius: '4px',
   };
 
   return (
