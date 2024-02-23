@@ -3,6 +3,8 @@ title: "Fixing lawn mower spindle"
 date: 2023-11-02T17:42:00.000Z
 ---
 
+![](./d140.jpg)
+
 I have a John Deere D140 from 2003. While mowing my lawn, I hit a small rock with one of the blades. All seemed fine and I continued. The next time I started to mow, I heard this knocking, metal-on-metal noise. I immediately stopped and assumed the blade had broken to a point where it was nicking the deck.
 
 ## The diagnosis
