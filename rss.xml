@@ -1,4 +1,919 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[mikeup.church RSS feed]]></title><description><![CDATA[A personal website/blog for Mike Upchurch.]]></description><link>https://www.mikeup.church</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Nov 2023 01:50:07 GMT</lastBuildDate><item><title><![CDATA[Fixing lawn mower spindle]]></title><description><![CDATA[I have a John Deere D140 from 2003. While mowing my lawn, I hit a small rock with one of the blades. All seemed fine and I continued. The…]]></description><link>https://www.mikeup.church/blog/fixing-lawn-mower-spindle/</link><guid isPermaLink="false">https://www.mikeup.church/blog/fixing-lawn-mower-spindle/</guid><pubDate>Thu, 02 Nov 2023 17:42:00 GMT</pubDate><content:encoded>&lt;p&gt;I have a John Deere D140 from 2003. While mowing my lawn, I hit a small rock with one of the blades. All seemed fine and I continued. The next time I started to mow, I heard this knocking, metal-on-metal noise. I immediately stopped and assumed the blade had broken to a point where it was nicking the deck.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[mikeup.church RSS feed]]></title><description><![CDATA[A personal website/blog for Mike Upchurch.]]></description><link>https://www.mikeup.church</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Feb 2024 16:22:52 GMT</lastBuildDate><item><title><![CDATA[Whole house water filter (hydrogen sulfide)]]></title><description><![CDATA[My wife and I purchased our first house this year. A couple of months after moving in, we started to notice a rotten egg odor coming from…]]></description><link>https://www.mikeup.church/blog/whole-house-water-filter-install/</link><guid isPermaLink="false">https://www.mikeup.church/blog/whole-house-water-filter-install/</guid><pubDate>Sun, 03 Dec 2023 17:42:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/627a1fd9bb35a8f54e81f28b6840c84c/493ac/done.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEB0lEQVR42h2Qa29TBQBA74BpUCFEJGQGFOJ0sLFH13XPro+1vaWvbX33rlu7dWtvt5Z2d23XFcbcuhfPOcJAYSbqBGKC8YUBJAFFlERJNH4lfuGXHCN/4JycI/TqGxm0a8n4DeQkExmvnlGnlvmElxUlwfWVZe7fuMPW5S8ozxSZSo+TT4ZJxyQSYS+jkgeT0Ugxp7D60ScILksbNlMXPd2dGLs6cYtGnAYt1s4Oeg0mhn1hpicKlPPTZKJhQl4vuZF+wm4rC0qMVMhGy5GDyD6Rz5/+i2BQ19CjrqG76Qj6NjWaY7Woao+ibdXQ3qbDZrFiNTsZ8vmQA3YiXifllJcxv5mrC2kSXpH6w2+zIPdxcXUWYUBsxmNoRNTUELJ3E7R1o2/6AHO7Cpuhkz7RiMtiIDYQYD3v5+pymo3SAMWEh40VhXS0F31rPeXCCNOyF2FZCVGMu0hHnUzLPjaWMoxLVkxaDQ1Ha6k+VI3ruJnSiQi/3Cjx7fffcG8zRzEns7Y2TzJXICnHuLUx81ImrBaHUcb68Vg1rM+PcW9rHiXmor25jl279rGyOMGVtSyxoJ1pJc3ZK7cYDdmRc9NIcoZ2VxiHw8pixoPs0yIkgzqc+nqGPVq21rNcXZI5MSRi6qxj52t7+OnuGn8+XkeWLIxHe7l87iTKsI1RJY8vXULbHybkFslFLERsKoTFST+nU/1EHGoCpjpGe5vxiY2I+iYEoZKvbs7z8O4qRk01IbsKV08z+dhx+uQswZMX0Dn6GXLr2Tob50LBjzAhWXDbupkaj+IMROgym8lFdTgN9QgVO9j6bJYnD84z4u5gQtJSznpYLg4yIEnECwto9EbMLe9QnjAzPWJEaKnej3CgnddHbiAUn3PAN8dUqJmgQ4NQsZ1Pr8/w+P4Z7NpalKiRDzMelHE/6aCTwngClc6I6r29jPa1kPC0IbTUVFFZ1YCQ+hVh5gXvh+aY9Na9zKvYto2NSwqPflzCJ6pYmPRRTPajxOzI6TGmTp+itUODpa2aU3GRbFiPUHd4H5W7q6j0f4yg/E3N8BnywUbC9v8fCi+Bzx6ew2usITuoo5R0sJQfJDvmQbT2oGs/hl51kIS7hXIuilD/7h5e3fkGr1hKCJNPOTC4SmlYy7XyAOG+DnxuA4V0H9fKEvOp4yiRHpYKQ0QkK35nF+6eBtqOvMn54gAzqTCCpmYvu3fuYHuTn4rh2+wPX+TLC6P8sJnlt9uzbK7EuFKO8uy7OTbLQWbjRq6vJMnlh0iGLTgMalJjYUopibjfiDBkbyDuVnOoVeSwtMr8mUUe3JzjydeLPLuzwvOfL/Li90v8dWeBjZN9BIyHSHrUnFI8BMR6MvEA//zxiJ7ORqqq3uI/F1Rua5+Lz+wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The finished product :)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/627a1fd9bb35a8f54e81f28b6840c84c/00d43/done.png&quot;
+        srcset=&quot;/static/627a1fd9bb35a8f54e81f28b6840c84c/63868/done.png 250w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/0b533/done.png 500w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/00d43/done.png 1000w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/aa440/done.png 1500w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/e8950/done.png 2000w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/493ac/done.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The finished product :)&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;My wife and I purchased our first house this year. A couple of months after moving in, we started to notice a rotten egg odor coming from our water. We had a water test done before purchasing the house, so it left a bad taste in our mouths. Thankfully, only metaphorically.&lt;/p&gt;
+&lt;h2 id=&quot;diagnosing-the-source-of-the-stink&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#diagnosing-the-source-of-the-stink&quot; aria-label=&quot;diagnosing the source of the stink permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Diagnosing the source of the stink&lt;/h2&gt;
+&lt;p&gt;I called a local well company and then employed the scientific method in the mean time. The smell was coming from both hot and cold water - this ruled out any bacteria growing in the hot water heater. Also, we have a tankless water heater, so if there was any doubt before, it &lt;em&gt;definitely&lt;/em&gt; wasn’t the culprit.&lt;/p&gt;
+&lt;p&gt;Next item of investigation - water softener. Could it be adding the smell? Let’s check the water from the spigot in the basement that is &lt;em&gt;just&lt;/em&gt; after the water enters the house from the well. Verdict: stinky.&lt;/p&gt;
+&lt;details style=&quot;margin-bottom: 1rem; cursor: pointer;&quot;&gt;
+    &lt;summary&gt;
+        Ok, so if the well water smells, how is it that we made it a couple months before experiencing this unpleasantness?
+    &lt;/summary&gt;
+    &lt;div style=&quot;border-left: 1px solid white; padding: .5rem 0 0 1rem; cursor: initial;&quot;&gt;
+        &lt;p&gt;
+            For starters, let&apos;s &quot;regenerate&quot; the water softener to see if it is able to remove the smell when it&apos;s in tip-top shape. A water softener flows water over resin beads to remove unwanted minerals. Once the resin beads are sufficiently &quot;gunked up&quot;, the regeneration cycle of a softener backwashes a bunch of salty water over the resin beads to clean them and then dumps it outside the house.
+        &lt;/p&gt;
+        &lt;p&gt;
+            After regeneration, the egg smell in the water is gone, but only for a day or two. Interesting. But that means this wasn&apos;t what was stopping the smell for the first couple months. And on top of that, I definitely don&apos;t want to regenerate my softener every single day - that would waste an incredible amount of water.
+        &lt;/p&gt;
+        &lt;p&gt;
+            It was around this point where the well company arrived. They agreed with what we know so far, and they suggested that perhaps the small cartridge filter was enough to remove the smell for a bit.
+        &lt;/p&gt;
+        &lt;p&gt;
+            They did a water test from the well water directly - before the softener. Because we had a test from when we purchased the house, we could compare before and after the softener. Good to have readings from both ends. Ultimately, the iron readings were on the lower end, so they were looking for the presence of manganese, but ultimately, the test came back negative.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/details&gt;
+&lt;p&gt;The conclusion from the well company was that our water contains Hydrogen Sulfide gas (H2S) - something that wouldn’t show up in a test. This is because the gas will immediately begin separating from the water upon collection.&lt;/p&gt;
+&lt;p&gt;It’s something we can easily verify by collecting water in a drinking glass and then letting it sit out. The gas will remove itself from the water over time and the smell will eventually go away.&lt;/p&gt;
+&lt;p&gt;The well company suggested an aeration system. After a bit of research, it’s not difficult to purchase and install - I’ll give it a shot.&lt;/p&gt;
+&lt;h2 id=&quot;concocting-a-plan&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#concocting-a-plan&quot; aria-label=&quot;concocting a plan permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Concocting a plan&lt;/h2&gt;
+&lt;p&gt;To begin, let’s take a look at the current plumbing setup, which is where water enters from the well, gets pressurized, goes through a sediment filter, and then a softener.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/38aa792516f45870eeb2ec2689f0b9bb/669cd/initial-plumbing.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.20000000000002%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Initial plumbing setup.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/38aa792516f45870eeb2ec2689f0b9bb/00d43/initial-plumbing.png&quot;
+        srcset=&quot;/static/38aa792516f45870eeb2ec2689f0b9bb/63868/initial-plumbing.png 250w,
+/static/38aa792516f45870eeb2ec2689f0b9bb/0b533/initial-plumbing.png 500w,
+/static/38aa792516f45870eeb2ec2689f0b9bb/00d43/initial-plumbing.png 1000w,
+/static/38aa792516f45870eeb2ec2689f0b9bb/aa440/initial-plumbing.png 1500w,
+/static/38aa792516f45870eeb2ec2689f0b9bb/e8950/initial-plumbing.png 2000w,
+/static/38aa792516f45870eeb2ec2689f0b9bb/669cd/initial-plumbing.png 3024w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Initial plumbing setup.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;It’s a bit of an odd rollercoaster loop. And it’s &lt;a href=&quot;https://en.wikipedia.org/wiki/Cross-linked_polyethylene&quot;&gt;pex&lt;/a&gt; &lt;em&gt;and&lt;/em&gt; copper, with some interesting transitions. It’s like the rollercoaster is half wooden track, half steel track - I wouldn’t ride it.&lt;/p&gt;
+&lt;p&gt;I think there’s a few key things we can improve with this re-pipe:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Better layout
+&lt;ul&gt;
+&lt;li&gt;Easier to understand&lt;/li&gt;
+&lt;li&gt;Easy access to sediment filter for changes&lt;/li&gt;
+&lt;li&gt;Saves us floor space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pex A instead of pex B + copper
+&lt;ul&gt;
+&lt;li&gt;Pex B fittings &lt;em&gt;can&lt;/em&gt; reduce flow rate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Better sediment filter - why not?
+&lt;ul&gt;
+&lt;li&gt;I went with &lt;a href=&quot;https://amzn.to/3NqURj8&quot;&gt;the Pentair Pentek Big Clear&lt;/a&gt; - Don’t forget the &lt;a href=&quot;https://amzn.to/3RDUWCx&quot;&gt;cartridge&lt;/a&gt;, &lt;a href=&quot;https://amzn.to/3tekMDE&quot;&gt;wrench&lt;/a&gt;, and &lt;a href=&quot;https://amzn.to/3tekcFY&quot;&gt;mounting bracket&lt;/a&gt;! (We’ll need to mount it since pex isn’t rigid)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add an off-shoot for garden hose bib (We have none!)&lt;/li&gt;
+&lt;li&gt;And of course, we’re adding &lt;a href=&quot;https://www.purewaterproducts.com/products/st011&quot;&gt;an aeration filter&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So after a couple of (even more complex) iterations, I came up with the following plan.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9ca454ca65658dd1f8e71781816da347/c0e5e/the-plan.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.4%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjklEQVR42iWOW2/SAABG+xt9U3CDQum9tKUWCgN2d/ewzbmhTOOM0exl+rBN5ri00PsV2sIKOPWfGDQ5Tyf5Tj5AldqG3JU7P3qdO9dUDEX0PcM1FVlsWVrPUkVD6fquNh27s4fBZOT+Zzp2fa8PuKZsyKJnKmPffgidgaM7huzZqmcrvqMH7hzf0ea4WhTYk5EbBc6vqT8OVGBoa56pBK4xHXtav6MrYjg0g4HhWYqpiKbSdY2+o/ccvadKbVuVPFOOAufPz3A2cYChow1sNfTMyci19f7AVmfRcOzbttaTWs3m9VXgGY/RcBK6UejYqhQF9u9Z+HsWPk49wFIlS5UGtuq7uqVKgWc4hhx4pmspc+lo48B+mP8MHnzTVLqjoRn5lmf0o5EJKFJLan+3NMkx+uL9rSLe99rNzt2NLN3fXX/T5U6v0xxYynTs6f3WzdfLq8uPXy7efnpf73dvgdru5tH+yw+N1+/qxye1nZPaduO0dvZq//R472B7/XBvs3F2+PnizXn96Lx+eLS/ubNRWSlxQo5snB4ABZZYLnLlApNn8UqBKReY1SV+tczTBCRwZFVgOQrJs8Rahd9aLa5XC9vrpbUyt1LK7W4sARWBKXJE6QXFMyhLZHgaXS6xRY6EwTiNp5fyNEtCDJHeWhOqRYbFMzyDVAW6nKc2qjyQZ7AclcGhBRSMoak4l4V5GsnNBykkGRNyOI2nskiSQpJEJpFFk1g6TmOgwGFVgQZYAsoiIALGsHScgBdZEuKoTI5MCyyap2EKSdAo+C8dJ6CFLJJgcZBCEzwNFzkcYLB5mIbn1RyZ4sg0n83k8FSBhossymJJgYFJeGHx2RM8HSeh5wQUx9IxDHyahRN/AaxLv+jTDSn9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The master plan.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9ca454ca65658dd1f8e71781816da347/00d43/the-plan.png&quot;
+        srcset=&quot;/static/9ca454ca65658dd1f8e71781816da347/63868/the-plan.png 250w,
+/static/9ca454ca65658dd1f8e71781816da347/0b533/the-plan.png 500w,
+/static/9ca454ca65658dd1f8e71781816da347/00d43/the-plan.png 1000w,
+/static/9ca454ca65658dd1f8e71781816da347/aa440/the-plan.png 1500w,
+/static/9ca454ca65658dd1f8e71781816da347/e8950/the-plan.png 2000w,
+/static/9ca454ca65658dd1f8e71781816da347/c0e5e/the-plan.png 3980w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The master plan.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;It shouldn’t be too bad! Although it did take me a bit of time to figure out which fittings I needed to make the connections between pipes/devices. For tools, I needed &lt;a href=&quot;https://amzn.to/3GDzOpN&quot;&gt;a pipe cutter&lt;/a&gt;, and a pex A expansion tool. I went with &lt;a href=&quot;https://www.homedepot.com/p/Apollo-PEX-A-Expansion-Tool-Kit-with-1-2-in-3-4-in-and-1-in-Expander-Heads-EPXTOOLKIT/302742804&quot;&gt;the manual one&lt;/a&gt; (used from eBay) as I’m not planning to become a professional :)&lt;/p&gt;
+&lt;h2 id=&quot;plumbing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#plumbing&quot; aria-label=&quot;plumbing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Plumbing&lt;/h2&gt;
+&lt;p&gt;To minimize down time, I’ll be installing as much as I can alongside the existing system, and then doing the switch over at the last possible minute. The first step is to install the new sediment filter. This meant adding something to mount it to - some scrap wood I had from the &lt;a href=&quot;/blog/shed-build&quot;&gt;shed build&lt;/a&gt;. After that, we have the water shutoff valve, which also needed mounting. I got a valve with mounting holes specifically for this purpose.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b4f371160bff278daca3e023ffc76b39/669cd/sediment-filter.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.20000000000002%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Installing new sediment filter behind old.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b4f371160bff278daca3e023ffc76b39/00d43/sediment-filter.png&quot;
+        srcset=&quot;/static/b4f371160bff278daca3e023ffc76b39/63868/sediment-filter.png 250w,
+/static/b4f371160bff278daca3e023ffc76b39/0b533/sediment-filter.png 500w,
+/static/b4f371160bff278daca3e023ffc76b39/00d43/sediment-filter.png 1000w,
+/static/b4f371160bff278daca3e023ffc76b39/aa440/sediment-filter.png 1500w,
+/static/b4f371160bff278daca3e023ffc76b39/e8950/sediment-filter.png 2000w,
+/static/b4f371160bff278daca3e023ffc76b39/669cd/sediment-filter.png 3024w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Installing new sediment filter behind old.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;It takes some muscle to use the expansion tool 💪. I’d definitely get the electric one if I was doing a whole house.&lt;/p&gt;
+&lt;p&gt;Next up, we’ll tee off for the hose bib. I left extra pipe just in case, since we’ll be installing the spigot in the spring. I already had purchased the Sharkbite fitting and the pex B pipe for a hose install far before I planned this bigger project, so it made sense to use that here, despite it not being ideal. It also made it easier for me to transition between these two types of pipe, &lt;em&gt;and&lt;/em&gt; so I didn’t have to buy any pex B crimping supplies.&lt;/p&gt;
+&lt;p&gt;I also piped two 90 degree transitions into and out of the new aeration filter.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e1cb6632b8445cbe2267b9490c4dfc38/493ac/hose-and-h2s.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEFUlEQVR42h3MS0ybBQDA8c/EGPcezMnoeKy2hZbxaKHtaOn3lVFaSqGFUdpBgdKuLZPxptAV6HiMR2FsTCgZuLkZdWayTbMYbzO7qAc9OA8eFm+LMR68avRi/sYdftefIFaoaXdIhM85uDrYw9b0IBuJfmLtHhxmMwZ1EQVZh5GfzEOl0FBUXIZGqSZoryPV1Umy+zzzw/3MDF9EW6JBOC3L4q1D+zi273VyDr6BOjcLqUyBr76GaLuby9EOZqLnaZe0GBQnKFUpOFVwioNH3kanKebpVpLp3i56HBLuWhFBqjZSWqRC1JWiLX4HZW4Oqpxsjr/5Gif2CxQcO0KJXE6V9gwWyYO/uZEG0Uj/0AzxsSRfbsZ5sveAtdkEXU4RQbScRZKsRC6O4WkLUmdz0tLSTnOzl5oaG0qNGbVCiUoux9oYpK51lEgozMToMO/2+tlbjzMzHKXBWoVd0iMo845TXlyAo6acOpMOs1aBs66anmAYc62Hs3UOvL4AHV433d5GLLUuDGcDWPVKPNZy/vjhc9Kpcdw2PXMTfQhquYxKTSFuSwn1BiUWrZzqciUmnQa9tgJzRSFGXRH2ajXNtTp8di3auhC+1mbCLWZefrNHZnmaK8NBbqVTCKWqAhprdcTaREIt/7PQ12GnqcFBV6sNv6uaVoeRgNtMh1tiLNzEOX+I+pYw8aCN7++v8PH6DLsLY1xPxhFUhbJX4WCXk6HeFkZ6m+gPOGlyOukLuIh2OPE1iXS6RXq8dnbW4szPzdIaShAPu3i4HufOxgqLU0NMjcYQykqKCQXa+WrvHjfnR1mZDJEc6MDX7uOC30V/twu7WEliKMj1xYlXvG0ezoUTxPu83Bjq5P7NWZYSFxiJnkew1hiJhYM8/+4Zjz/aZvdaks8+zLC0vIrb5SA7O5vjOTIkq5XUeIR06hJtbhuBS2keZJJsx7v49dkuvLjDPz/dRoh0e2lpcrJ+ZYT58QjbS3F2rs9zJTXLhVCAIrUGWb6CQ1m5tLkkNlfiDET8mBrDrCe7ebwc5pcnaf5+vsW/L3YRZhNjWExGNhYnmRuPkp4Z5L25fiYGIiwkYjTUW9l/4ABVlZWkl+bZ2VxlajRKn1/ii3ur3E318Cwzyo8Pl/j23gDC9EgMk7GKycEga6lBNhcukZnpZmtpksyNNKJJT15+Ic6GejwOC7bqEpqsOmoNp3HWVtMg6pmMdLKW6KPPY0K4OjWEUa9jLOZjcSxAqt9L+nKErY01vn76iE8+3eHWB7ukb6xhEw2cKZVjqlChlp9EduzwKzVGPZK+HLtkQFhOxDij1yEaSkiNBLm7vc61hSS3Mmv8+ddLfvv9Z+4/ekDm9vv0dntRyI6iVeViPJ2PaChDnpdLkTwPlewomvws/gMsCGGdw+8/DAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Hose bib and new filter installed!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e1cb6632b8445cbe2267b9490c4dfc38/00d43/hose-and-h2s.png&quot;
+        srcset=&quot;/static/e1cb6632b8445cbe2267b9490c4dfc38/63868/hose-and-h2s.png 250w,
+/static/e1cb6632b8445cbe2267b9490c4dfc38/0b533/hose-and-h2s.png 500w,
+/static/e1cb6632b8445cbe2267b9490c4dfc38/00d43/hose-and-h2s.png 1000w,
+/static/e1cb6632b8445cbe2267b9490c4dfc38/aa440/hose-and-h2s.png 1500w,
+/static/e1cb6632b8445cbe2267b9490c4dfc38/e8950/hose-and-h2s.png 2000w,
+/static/e1cb6632b8445cbe2267b9490c4dfc38/493ac/hose-and-h2s.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Hose bib and new filter installed!&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Next, I piped from the new filter to where the softener would be. The softener uses a different valve assembly from the new filter - Clack instead of Fleck, so I was able to find &lt;a href=&quot;https://amzn.to/3GGoadJ&quot;&gt;these fittings&lt;/a&gt;, which handled the 90 degree transition into and out of the device. On the Fleck, I had to plumb the 90 degree transition myself - not bad at all, but something I had to plan for.&lt;/p&gt;
+&lt;p&gt;The rest of the piping above was fairly straightforward. I was able to put two 90 degree bends instead of 90 degree fittings - bends are better for flow.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fb0e399449d6841af490d50ab7452ac1/493ac/upper-pipe.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/klEQVR42h2Qy0/aBwCAf5mr77aitbWAj9qiUp7KSwQR5A3lIchLQCiKoBZ14rMvH62da7fabm2zJbt0p6XbpVl2WbLDsmSHJUt222X/y7esh+/0Hb7kE/r7ZPSKJQxIeujuaEcsamFc3ofDqMY8qvqAYmjwg++70kFPRxOSrnaUA90ErRqidj0Tin62izP88vYMoVcsprurC/FVCRajHvekkdmgiwm9FtOoClmfmEvtzXS2NiDubEM/IiUyNYp9dJjguBytpI1RcSO6vjZiNjWC3+Ug7HOjVSuZto4zPR1g3B7D5/URdE0RdZrxOywsZWPkoj6MqiHU/V0YBkQU3Ro8Gik2uQSnqh+H+hqCTTdCMmgnFfYynwhzyzWFY9KGJ5ii//JFamkPpfkCmpEbOHQ3KcV9WMcURK0KDlcyFMIuwhYtKbeZvNeI4DYOEXUZKc568IzLsWhlDPd2krplR6PUUs/7KCZCxFxmMm4DtUyAxVyOpEvP3TsFlotzzMWj7C2m2S+GEOLOMdbmw5TTQeYCZtKBCa6KWignnFTyae4uZynP2iknXGzl3dSLEfbXq8yFHRh1agb6xHjsViqzPlx6BULGb+bZ3RX2VrJkAhMsJtzIpJ3sr+Z4WJsnMGWhEHVQywXYvR2gGrPzoBwjGolgsjjRyGXUK3nWUm6syl6E/0tfHW1wb62Ew6RkKRNANSSlVkqwvRghGXRTK0Q4O1jlzZMd1nNBXn/xKTu1CvpJHyG3jb1aicfrWep5P0J+xsXzw03u3E7jNN3kYG0O7bAUtUyMTi3jxuAAqdkI7777mr9/+5nd1XlKD57z7MUr8qVljneqvH26y+nGbTaLMwjzISv71QSFmBOfRUU+ZEUr68GkvIa0p5Om5mYi4RB79TXs3jSpeIyf3v/A4clnpJMx1jY2sRn0WIaHudp9CaEcsxGyj3FZ1E54SkXQqkJzvRvd0BUGey7Q0PARZoOGejmJyWBg0mzi1cszqp/cY3s5z9n9Ctlb42hGpHRcaEPQDnZhVkipJh3cX4qS9OjxW1SEbSr0N8WsVhK8f/cl29UknkkTM34Xjx8/Yuv4Jbt3Fji7X+WbwyqTY3JaW5sRnHoZtYyTp1s5Xj/a+DB/q5wk7jHgt8k5PVrh339+5ds3x9zolzCmVbK0WGL76HMOtld486DCZilGU0sLjY0NCAcrcU7W0zysRthb8HK6mWS/HKKamsY3IWMx6+HP37/nxWmd800CF0UiQtkFdncOOdko82Inh02v4PyFNlpbGhFmnaPkAibiLj0Jj46lmIWluI1CyIR34jrlrJe//viRs5NNRK0fIxVfIZApsVcqcbQQ41EtgW1smHON52hvb+U/uqMxm+BTH1kAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Rest of plumbing is in place - ready for switch over.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fb0e399449d6841af490d50ab7452ac1/00d43/upper-pipe.png&quot;
+        srcset=&quot;/static/fb0e399449d6841af490d50ab7452ac1/63868/upper-pipe.png 250w,
+/static/fb0e399449d6841af490d50ab7452ac1/0b533/upper-pipe.png 500w,
+/static/fb0e399449d6841af490d50ab7452ac1/00d43/upper-pipe.png 1000w,
+/static/fb0e399449d6841af490d50ab7452ac1/aa440/upper-pipe.png 1500w,
+/static/fb0e399449d6841af490d50ab7452ac1/e8950/upper-pipe.png 2000w,
+/static/fb0e399449d6841af490d50ab7452ac1/493ac/upper-pipe.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Rest of plumbing is in place - ready for switch over.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;I cut the old pex/copper piping out along with the old sediment filter. Removing the fitting on the well outlet was difficult - I had to buy I pipe wrench for that (New tool! 🎉). Also, it’s crazy to see the difference in fitting size.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/35f9b36ce2a48f04eee8fe8eec7deaef/defc9/wrench-and-fitting-comparison.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMElEQVR42iXD6U+TBwDA4TceKOrUgIJKuJEabLFclbbAkKsIggWhxVJKhVEEoVQQLJdCQRCQapVSQAflMHIISBCjRmWHm7ojOueyZDHLln1aluxf+O3DnuQRxmdmsXYPctU5QY9jBEtjC8+X3XS11mMo0TPqGuLD2x9x9dpo0GlZdfZjb6nHqM6hxWTg6eIcC3en6Wtv5tfvfkcwX2wnRqUlUV2KXBmDXCZh2t6EufQEnls2oiko4OnqGprUBERbNtCnzyJfJmKvIJAhDqbnYhU5x2JJkEh5t/YGYW5qBLOlloaWdlKTFZQWqbhzpYbbPXVkpCQzPjrMk9nPOavJpvhYLOXJR4kOPsDh3TtIEwdRlh5CyhE/Eg/58nZ5AOHDV/dZn+nm1f0+SnKURAT5Mjxgw9nfzKJ7kPVFF9/O2mkwFJIUdZCsw6FE7NmNaKcn4bs9UB32Rp1wkJNHA1hxtSP88nKJpZF2XD0WyrUqait09Fy2Mj85yOrdId49nuD1/CDnclWkRIVhLs0jLiwAsc9OooK88d4kIAj/Ly/KR/jy8X0qDFpOn8omP1PJ2ZJ8rrWauH2zi8+MeSzcbOHlggNrYS7ykAP47d2Fv/d2Ar13MTFgpVitwtNjIyJfDxw2M8LDhUm6G8vIzkgmJDiQzMQYhluNlOrSUVefokadRF+jkeqMT2lMVSATBRHovZXNgkBbhZZ/f3tF27k80hP9mLA3IcyMXefy+TImHJfY5+tDbLSEZJmE9LQ4FClS1Amh9J/XkSY5REF4AOXKKMKD9jHQpOf2tVr6O8/Sa9ERLfWnt70KoclShVGdxPItCxcMaYQE+6PJSUYRH0VspAh9RiRX6itIiYkkbO92TiVJmXF2subuosOUTZoyAu1xOZLw/TSaTQhlxfn4fLKRzHgRI9aT1OiOER8rprlai1IWR3qCEntXJ4kyKSJ/Lyp1WUw7mrGZizAcj0MVLyJaHECsxI8O6wUEQ1E+e3ZsRikOxGkt5ImrFrMxC6P2OHeuNdNW38DcnUkU0WJkEQFcqDzN3aF2ui1FnMlVok6Wkio/QqEqjpUpB4ImL5ddHhuIDN1Ppfoo8/1n+PjsFgqFnA7NSf66N8w/H7/nRJocTaacSn0ej+/d4JG7m5WhOsY6y+ioKWR9qo0/f3iAoCvMZ+eWTYQc8CIqzJeHY02s3KgnLVJKyaEjPCvV8fcXy4w7mhm/3kppYTazwzZer7pwX63mZoueZWcjr+ds/PFmEcGgL8bH24vQ/V7EhHihT5dSLItAus2DaA9PRFu3caPcwJDNjPtWJ2UFKmqLT2BvNfHAdZFVZy3rky08Ga3jw4tphLFRF+ctZrpbG7hUb8JaVUZXTTW2uhpsNdU0mUy4+/uZm3DyaGmaebeTadcgo/Zufv56iZ9eTPH+xQzP5wZ5/80a/wFcdYpit4vwygAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;New pipe wrench and comparison of fittings.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/35f9b36ce2a48f04eee8fe8eec7deaef/00d43/wrench-and-fitting-comparison.png&quot;
+        srcset=&quot;/static/35f9b36ce2a48f04eee8fe8eec7deaef/63868/wrench-and-fitting-comparison.png 250w,
+/static/35f9b36ce2a48f04eee8fe8eec7deaef/0b533/wrench-and-fitting-comparison.png 500w,
+/static/35f9b36ce2a48f04eee8fe8eec7deaef/00d43/wrench-and-fitting-comparison.png 1000w,
+/static/35f9b36ce2a48f04eee8fe8eec7deaef/aa440/wrench-and-fitting-comparison.png 1500w,
+/static/35f9b36ce2a48f04eee8fe8eec7deaef/e8950/wrench-and-fitting-comparison.png 2000w,
+/static/35f9b36ce2a48f04eee8fe8eec7deaef/defc9/wrench-and-fitting-comparison.png 2046w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;New pipe wrench and comparison of fittings.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;And just like that, we’re done!&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/627a1fd9bb35a8f54e81f28b6840c84c/493ac/done.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEB0lEQVR42h2Qa29TBQBA74BpUCFEJGQGFOJ0sLFH13XPro+1vaWvbX33rlu7dWtvt5Z2d23XFcbcuhfPOcJAYSbqBGKC8YUBJAFFlERJNH4lfuGXHCN/4JycI/TqGxm0a8n4DeQkExmvnlGnlvmElxUlwfWVZe7fuMPW5S8ozxSZSo+TT4ZJxyQSYS+jkgeT0Ugxp7D60ScILksbNlMXPd2dGLs6cYtGnAYt1s4Oeg0mhn1hpicKlPPTZKJhQl4vuZF+wm4rC0qMVMhGy5GDyD6Rz5/+i2BQ19CjrqG76Qj6NjWaY7Woao+ibdXQ3qbDZrFiNTsZ8vmQA3YiXifllJcxv5mrC2kSXpH6w2+zIPdxcXUWYUBsxmNoRNTUELJ3E7R1o2/6AHO7Cpuhkz7RiMtiIDYQYD3v5+pymo3SAMWEh40VhXS0F31rPeXCCNOyF2FZCVGMu0hHnUzLPjaWMoxLVkxaDQ1Ha6k+VI3ruJnSiQi/3Cjx7fffcG8zRzEns7Y2TzJXICnHuLUx81ImrBaHUcb68Vg1rM+PcW9rHiXmor25jl279rGyOMGVtSyxoJ1pJc3ZK7cYDdmRc9NIcoZ2VxiHw8pixoPs0yIkgzqc+nqGPVq21rNcXZI5MSRi6qxj52t7+OnuGn8+XkeWLIxHe7l87iTKsI1RJY8vXULbHybkFslFLERsKoTFST+nU/1EHGoCpjpGe5vxiY2I+iYEoZKvbs7z8O4qRk01IbsKV08z+dhx+uQswZMX0Dn6GXLr2Tob50LBjzAhWXDbupkaj+IMROgym8lFdTgN9QgVO9j6bJYnD84z4u5gQtJSznpYLg4yIEnECwto9EbMLe9QnjAzPWJEaKnej3CgnddHbiAUn3PAN8dUqJmgQ4NQsZ1Pr8/w+P4Z7NpalKiRDzMelHE/6aCTwngClc6I6r29jPa1kPC0IbTUVFFZ1YCQ+hVh5gXvh+aY9Na9zKvYto2NSwqPflzCJ6pYmPRRTPajxOzI6TGmTp+itUODpa2aU3GRbFiPUHd4H5W7q6j0f4yg/E3N8BnywUbC9v8fCi+Bzx6ew2usITuoo5R0sJQfJDvmQbT2oGs/hl51kIS7hXIuilD/7h5e3fkGr1hKCJNPOTC4SmlYy7XyAOG+DnxuA4V0H9fKEvOp4yiRHpYKQ0QkK35nF+6eBtqOvMn54gAzqTCCpmYvu3fuYHuTn4rh2+wPX+TLC6P8sJnlt9uzbK7EuFKO8uy7OTbLQWbjRq6vJMnlh0iGLTgMalJjYUopibjfiDBkbyDuVnOoVeSwtMr8mUUe3JzjydeLPLuzwvOfL/Li90v8dWeBjZN9BIyHSHrUnFI8BMR6MvEA//zxiJ7ORqqq3uI/F1Rua5+Lz+wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Project completed.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/627a1fd9bb35a8f54e81f28b6840c84c/00d43/done.png&quot;
+        srcset=&quot;/static/627a1fd9bb35a8f54e81f28b6840c84c/63868/done.png 250w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/0b533/done.png 500w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/00d43/done.png 1000w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/aa440/done.png 1500w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/e8950/done.png 2000w,
+/static/627a1fd9bb35a8f54e81f28b6840c84c/493ac/done.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Project completed.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Shed build]]></title><description><![CDATA[My wife and I purchased our first house this year, built in 1795. There is a dirt basement and a detached barn that can only be described as…]]></description><link>https://www.mikeup.church/blog/shed-build/</link><guid isPermaLink="false">https://www.mikeup.church/blog/shed-build/</guid><pubDate>Tue, 21 Nov 2023 17:42:00 GMT</pubDate><content:encoded>&lt;p&gt;My wife and I purchased our first house this year, built in 1795. There is a dirt basement and a detached barn that can only be described as “hanging in there”. Suffice to say, we have no storage space. However, we found a concrete pad near the driveway underneath years of leaves and decomposing firewood - a blank canvas - perfect for a shed?&lt;/p&gt;
+&lt;h2 id=&quot;the-plan&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-plan&quot; aria-label=&quot;the plan permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The plan&lt;/h2&gt;
+&lt;p&gt;The plan was simple: Buy a shed. The concrete pad was about 13’ x 13’, so a 10’ x 12’ shed would fit nicely. After too many hours of research, I found a couple options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$2000 - A “build-it-yourself” shed kit from the hardware store&lt;/li&gt;
+&lt;li&gt;$4500 - A fully built shed&lt;/li&gt;
+&lt;li&gt;$10 - &lt;a href=&quot;https://buildblueprint.com/12-x-10-garden-shed-plans/&quot;&gt;A shed plan&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Option 3 it is! We can hopefully build it stronger, cheaper, and &lt;em&gt;prettier&lt;/em&gt; anyway. Thankfully, my father has the knowledge and tools to make this project possible.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 972px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/392d3cf37230bb9ab85442d88f5a4aaa/7ae9c/shed-render.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 87.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAADh0lEQVR42m2U+09bZRjH+5f5gzFOkV1Ky7VACxsLJjMz+2FGt8WMzC36i5fE6BKnkyGCmxml9HZ67j2XnrbQBVB0KE46CwwNoCaW68ec0xWL+iTPec9587yf8/2+57yP7+DggP39fXZ3d3HjQWmaeGyC8vIyjeHWuTV7e3vU19TTfa6nrxFWLOTo6wnS6n+BSFeASxcvMDJ8m7m5WfYPDg7he7u73po6rBHsq8Mc26Cn/ST9oYAH7e9tpTPYjL/5OQInjnH+3CB3vxqnUqkcUe4qdvMQ6E6ahkYk1EIkFPCy7+no5tlIB33dQULB45xsepbO4AluvDWEpipsbm4e2RIX6sukE7SdOka4w++B+ntaiXQHCHe10N8dPJw/E26nv7eNgXAbLz3/DOcGTzM2OowqS95+uyrd8BlZjetDVxjo6yLUepzejlOEO/0MhNvpdaHuC0IBb/5MbxvtgSauXnmNXF7DLCiIchxJSjJTzLO+/qRm+dHPS4yND/Pxh+/z6itniYSCdAWbPXWeylCAgUgHbf4XuXr5IqajoJgCGWUK3RBQLYFy+RHVarUG/H7xWxQtzfzcDIW8xcgXn3Ft6BKDp3voclV3+mlvaeLam29g2yqyFkeRp8jbCjlLRVCnWHuyWrPsXh7+sIBmiCTECbKWjG6JSHoKWU7x6a2bXDj/MteHLmPbCnlLoVQ0WZgvMT8/TaFoIWoJVtcq/wAXf/wOUU6QFKMoWcGDpaVJbEdkumQiCJOYOQVZSzIzbVOcsbwU9Bh2XkU1BVZWfzkKFKQ4uiGh6iIZtQY3jQTp5BiiOOntm2FLWHmFlBLFKeioZhotK/5XoWtZNyUEZcqznpbivPvBDd5+53XuDL9HJhOrAS0R21HRzAy6LpIvGtiOjqj/D1AQp4gL91GyadRsBllLce/rUUbGPiElRD1rrmUnp2E5Ko6jIxkJcgWtZnmlwfLGxm/MzZWYLlpYlkZGjRNN3UPSkxiWTEaJ4xQU7JyrSiWtxsgVXGASVReQtATr60+/cv0MurFd/YvK4zIzpRyCNEk0eZc797/k8/FhUppMQlMQDQXdzDD7oMDDhVmWFhd4vPwT29tVXIrvSLcAr6u491ubG3yzMEs0GeOjWzcZjcW4PRFFM20qy0v8urbCn79vHXaqw7P8797WqNgdd7arrFTK3n+3Ul7ij60NdnZ2jtQ0tq+/Ab8STiXwQsdhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A render of the shed we are aiming for, but we&amp;#39;ll be mirroring it!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/392d3cf37230bb9ab85442d88f5a4aaa/7ae9c/shed-render.png&quot;
+        srcset=&quot;/static/392d3cf37230bb9ab85442d88f5a4aaa/63868/shed-render.png 250w,
+/static/392d3cf37230bb9ab85442d88f5a4aaa/0b533/shed-render.png 500w,
+/static/392d3cf37230bb9ab85442d88f5a4aaa/7ae9c/shed-render.png 972w&quot;
+        sizes=&quot;(max-width: 972px) 100vw, 972px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;A render of the shed we are aiming for, but we&amp;#39;ll be mirroring it!&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;wall-framing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#wall-framing&quot; aria-label=&quot;wall framing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wall framing&lt;/h2&gt;
+&lt;p&gt;I ordered the lumber online from Home Depot. Despite not picking it myself, all the pieces were straight and usable.&lt;/p&gt;
+&lt;p&gt;The shed plan included instructions for building the floor, which we didn’t need thanks to our trusty concrete. We started off by making sure the pressure-treated base was square and laid on foam sill sealer to keep any water out.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d7322a970441fc552f0566a580622b7e/493ac/shed-base.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD90lEQVR42h2QWVNTBwCF8w/63se2OrZqSy1IDVADQVCLUmtFO0ZbFTVqYvbl3pvlZrkBw6KAUqLEQpAsNwsJRoIQkEW07fSlHd867V/5OvJw5pzv4cycOZpmbSMHD+2hpaWBz7/8hEPt+9jX/DEffvoBh482oG37ms869mAfNmKP36DfYeCmYOCW14BV/Alr6BLi8HWE+/30fn8ETVNbE41t+9F918TJU610dGs5frqLAw17+eLQftr1OrRdWhJzk1TqWYpLc9Q2i9R/L7LxZ5U//trm3bu/+fe/fxh+MI6mqfkzGpv30nLkIMe6teg6Gne9Xf8V+w58xDe6No52ttDZ3UrfhR6uGc/hEoxER1xEHpkZmDYzkXEymZUJ31PQdHc00nXsMN3drfT06Ojt1dPR3kinrpmWtga6vm3l1Bk9fedPY7h4nis/G7h1ux+b9TYmWz828TqOwBW8ymUG4w40JzpbOXtCz9mTek7oWjH0nWMwNkAiMcWTJ0+YTj5m6vE0yZk0z7Il1GKFuYzKQuEZY49GuOUwYPfdxCNZEQM2NOd6jnPmeAeGs734BJF8qYhaVJlLpUjNpMhlVGZn5smmVcqlCrlMgVymSHY+xXp9GTHoxC5cQwib8QTuorn0w2lM168xMTZObaVGsaSSy2TJzKd5lkqRz6mo2TylfIFqpcJCqUqx8Jz0fI61lTKqWsDrMyHJFjxBK5qAIJLJZKgslvj1aRI1WyCv5snncpQXylQXq9SqNWovalTLFV4sVimqBaaTs8zNJFh9uUR4OIbTZUQQrGgWKmXWV0vMJyZ5tbXJ69ebrNWXeLlcYWujztbmKm/fbPNmZ4f1tTpr9TorKy/JF4pM/fKQjaU02WKJgOIiHPCgSSYmSM9OUUjP8ryssrxUplrJUV1Is/wix8b6IpvrNTY3lqmvVtjaXuXtbxu83nnF9s4rKsUU86mnxIeDuN8vdBhvEHDY8DtshD1uIqKHkOAiKniIiG4iPg8DPglFEhgKy4woEcbi90gmJklOT/FgfBAl6uHq1cv0XfoRTcBuRhFdxKT3cjMa8TGmBBj0uRkKeFFEJzHBsct+uxm/w0zAbcEvWYiEnXj8NwjKNuyWO0SibjR+q4mQ07pbkN0WFJ+L0YifEVlkNCRwL+RhaijKo3iEqORCkTzIQRs+0YLgMREOulACbu4PhIiFJTR+u4mY5CQe9BIV7fidZqJeByMhiYeDIcYVmZGQH0V2E1dERhV5N0teEw57P0G/DdF/B6frJi7rHTSy6y5Dskg8IBCT3v/l5X44SCzkZWIgxFg0yHDIz2g0QDwk8UCRicsSMcmLVzBy4fJ5tPoeLhou4LYY+R+AvO/+CQFccwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;You gotta have a good base to build on.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d7322a970441fc552f0566a580622b7e/00d43/shed-base.png&quot;
+        srcset=&quot;/static/d7322a970441fc552f0566a580622b7e/63868/shed-base.png 250w,
+/static/d7322a970441fc552f0566a580622b7e/0b533/shed-base.png 500w,
+/static/d7322a970441fc552f0566a580622b7e/00d43/shed-base.png 1000w,
+/static/d7322a970441fc552f0566a580622b7e/aa440/shed-base.png 1500w,
+/static/d7322a970441fc552f0566a580622b7e/e8950/shed-base.png 2000w,
+/static/d7322a970441fc552f0566a580622b7e/493ac/shed-base.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;You gotta have a good base to build on.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;We then built and raised the first wall, which will have a 6’ x 6’ double door opening that I will be able to drive &lt;a href=&quot;/blog/fixing-lawn-mower-spindle&quot;&gt;my mower&lt;/a&gt; (and snowblower) in and out of. We angled a 2x4 and staked it into the ground to prop the wall and maintain square.&lt;/p&gt;
+&lt;p&gt;Next, we built the “rear” wall - it faces a retaining wall, so will not be seen much at all. I intend to store firewood on a rack beneath the overhang of the roof. Since the shed is a slightly smaller footprint than the concrete pad, we cheated it “forward” a bit to leave more room at the rear.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dac41bbfb998b8bd30a69168ad8b15f9/493ac/shed-half-framed.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEA0lEQVR42gXB7VPSBwDA8d/r3W276d3Wmiurq9DUEuOIcD6QEyVMqJiUD6kE8vwgz48KCCRgYYlmaenCmktrelb2sO68W+/2cv/Pd5+PcKr1K+rbvkOiqkGpb6RbX4c7PIbDM0F02sO7928xGo3YvAPYJocwWPtJpK04vCrk7SeQyusxOqTcMjczbGxEEPf8RJ38e061ViPX1NJ57TT9Q1JknSKGjK08WpvGajeh0ki51CNh2NnHoE2N1atC1nYOhbKBQZOEgYkmtKMiBKn6KKekP1Ar/oYj4q9pbKth2HEZzY0OZN3H6BtqokstpUvZjFYnJZwfIXU3yrPNRZKpIGbvBHrrZQbMvejGOhBE0iqOiatpUBympfs49bIadKZO+gYv0N4rJZ524guYCEYNeAMjZPJ6KhvT3C1NY3VaSd9P8suVZrQGOaPuToTjDd9SU1/FcUk1otYfOSOvRao8TXP7ScIRD+/2/mThfpbSfIpM1sfycoa3byoEYiZMFgvO1DBi5SEUujoGLT0IjeeOUne2hhOiQ4hEh6k9WYWktYHBUR3+oIvnlcdorqmwWG5z9XoPZscwO7vPMZiHcE66uD7RyxFJFWJlI9IeKYJW307bpUbaFRIk58+g16txuY00N59m7NYA25tr9GuVOJwmXPZxAj4LOzsvGL41hMvrolUt4+fz1dTJT9DUWYcwMtJHV5eE3p5OLNYJAiEvCsVFZBea8Lpvs7tVQXddhdM+RiRow2y8yautDQyGccKxEC1tTXRoL1JazZKcDyP8qmxBrVKQnIoT8NpRyFtQKeS0y8TEfDZePV9l/OZVAk4jUyEnftdt/thYQfeblmgihFLVQbeynUDYzMqTLILXM8rSYhG7aRS9RsngVRUDV7rRqi/xsJTj4P1rlu5lWFmcY215nkflOd78tUl+Ns3q02V8PgcjIwNo+nvRaroQcskokw4D5vEbRP024l4rPts4PruBYibB1ubv7O29Zuf1S56tr/JwocT+7jbbLzf58PED6+vrrK8/4enqAtGwGyESdBD2W5kOu4mGbMzEvRSmAmQjHmYiLnJxL3MzMVaXH7C7s83nv/f5799/+PL5LQcHn9nb2+Lj/ks2Ks+Y9NsQpsIeElE3uXSQfDrEvdkEC3dTlOfSlOcylAspHtxJkIlNMhOdpFTMUKk84cP+Dl8OPvHp4zvKSyVicR9O5xhCPhMhn42yNJ/j4b07LM5lWFkosFSapZhLkk6GSE0FKWbjpKc9RINWvJNGEnE/6WSEbC5OJGInGnIyFfMhFHJRSoUk5WKWB4UMj+4XebG2zNPHZRZKeUrFLPG4h3jERThkJxxwkkn6mU2GyM+EKWQjZJNBCpk4pXyS/wGexqPwJNUD3gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Two walls - it&amp;#39;s an open concept shed.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/dac41bbfb998b8bd30a69168ad8b15f9/00d43/shed-half-framed.png&quot;
+        srcset=&quot;/static/dac41bbfb998b8bd30a69168ad8b15f9/63868/shed-half-framed.png 250w,
+/static/dac41bbfb998b8bd30a69168ad8b15f9/0b533/shed-half-framed.png 500w,
+/static/dac41bbfb998b8bd30a69168ad8b15f9/00d43/shed-half-framed.png 1000w,
+/static/dac41bbfb998b8bd30a69168ad8b15f9/aa440/shed-half-framed.png 1500w,
+/static/dac41bbfb998b8bd30a69168ad8b15f9/e8950/shed-half-framed.png 2000w,
+/static/dac41bbfb998b8bd30a69168ad8b15f9/493ac/shed-half-framed.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Two walls - it&amp;#39;s an open concept shed.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;The next wall was another simple one - no doors or windows to worry about. Couldn’t say the same for the final wall… It’ll have both a window and a door 😱. The plans I purchased weren’t super clear for the spacings on this wall, so it took a bit of time to try to figure out what would end up looking most natural.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ca5ef9f702fc53d213737ac8fe1aecf2/21b4d/shed-fully-framed.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD70lEQVR42gXB209bBQDA4ROjL8Ysiy4u2WR72LI5HIIDenrj0gv0RntO7y29Xzlt6YWWUgoUCpQNh90F5nAatzkZLi7zwRg1xgcTE+Obf9LP7xOKvQ6heol4K09yNYI1bUPnnUHtMuNdlDD4jQyKo0w7Z7CFQsjpEqIpgN7hobRRxei2o3PYMbidGGUTQmytjDERxpGZp9krsHwnhjFoY1I2oZW1GAMqxs1aQvkKJncIpblJMLGIyenGn4pgD7iYVyRiFT/pRgZBKicZ9zhJLi1y+vIJBw/rbO/WUBYTVFpRljtxopk4wVSWsWkL9f4LoqUNzB47jf0q8kKA2k6E/hOFh0+7CJasE9FrIlrO8OzkEGfOgrLmZzagZVIS0do1xDJBCsU0mXScdLnMfDJBPBfk4PEW2XqG1u0QxyeLbN1NIWj9BgbNo4QLMZ4/P0JKWKl24vgVA+KslpuGEaacZoKxEFanhN0r4wv5SKTC3L/X5fhwn6XtALJiYODWVQR7Tsc1wyD5WpbXPzwhVpRYWS+QrwXwRd04gjN4wjK5XIZSscjm5hrBkB+T3cRyu8Txl/uMWVVcVl/n4tg1BDltJJx2UqpkefnskMm5CZaKWUI+O5JXwmA3oZ81EotHWG42abebSPIcol5Fq73Eg/4uH41c562Bc5wbuowQi3u5Of4ZBquFV0+PuKVXc6CUmNfNEo4m8Hn8iHoduVySYqlIo15BlhyoRBXNRpXDfo+B4eu8c+l9Phy8iDCsGuXClWs4ZYlX3z5AnNDTX8pQdpgp5fJ43R5EvYZELExJybHSqCLN2ZiamqCymOerB/tcHbrBu+c/4OzlCwiiRs0nQyNIsszp1wfotWryuTyWmRkM0yYuDapwWI1UCjmyqSirzQayaw6tVmRhIcnDz7vcGP6Ut8+c5b3zFxGUdIxJnQ6P5OL7x3vIdjPZfBm92cXwuJah8UnCQR+tRpl6RaHbWSccDiBqxolGgmyvNxgVNZw5P8C5S1cQvuiu4bBZySajvHi0TTYZplyuEJyPEQoGcHu85LNpquUihYUcG2urpLNpkqkErWaNvZ0OPr+bMY2aj4dvIUQCHlxzDjqry5w86vLm5Bm//vicvU6bcqlAOBIhmUqx02mzsbbC7s4Wvd1tKrUqe71t1jdWsLlsaCcnGFGLCKeP7vL6u2P++uWUn5/e5s+fXvLN/R69rXWajTrZvEIgkmBluUGr2cAXCGJxzmG0mfEG/BRKKer1NOlcmJwSQfjnt1P+/eMN//39O/1ujXZziY12E7ffT7GkcNS/jbKQxef30b/T5t5+m6ISRzOlR2ecZlSnYcIyRb4a5uhwk/8BUDp1Fg6lA2kAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;We&amp;#39;ve been framed. Window will be on left and door on right.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ca5ef9f702fc53d213737ac8fe1aecf2/00d43/shed-fully-framed.png&quot;
+        srcset=&quot;/static/ca5ef9f702fc53d213737ac8fe1aecf2/63868/shed-fully-framed.png 250w,
+/static/ca5ef9f702fc53d213737ac8fe1aecf2/0b533/shed-fully-framed.png 500w,
+/static/ca5ef9f702fc53d213737ac8fe1aecf2/00d43/shed-fully-framed.png 1000w,
+/static/ca5ef9f702fc53d213737ac8fe1aecf2/21b4d/shed-fully-framed.png 1280w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;We&amp;#39;ve been framed. Window will be on left and door on right.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;roof-framing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#roof-framing&quot; aria-label=&quot;roof framing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Roof framing&lt;/h1&gt;
+&lt;p&gt;In this chapter, my dad convinces me to &lt;em&gt;transcend the plans&lt;/em&gt;. We decided it’d be the best use of space to add an attic. To do this, we pitched the roof to be steeper and redesigned the trusses to be open in the center. The plans called for a lot of vertical support pieces, which the boss (dad) deemed unnecessary if we beefed up some of the other pieces.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/63b3680447fc64fdc5311f8728c5a667/78958/roof-truss-render.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABRklEQVR42n2Si07DMAxF+/+fh4BtQEc3GDQb7dok69rmcZCjvSiIKzl2bhzHjp1xQozxos8CEVl9iEz9pnfOyH47XPfOgxssb+ucl5cFwZnEj87jvf8zaHab0ZlsWsO+3tLrAmeXlO+PqM0DgykYdI7VO4ztCGFSTYSMCY6doSpnDG1OGJvE7coC330k2w+G0a7o9WvKflpdytD7gDGG5fKZrroj9iXB9wQ/QBxRmyf226dkxxPvui19fc+6mKGNPQWFTD58PCgq9cx8MU8vj/aN0bwySBamQFdLKpXjbZE4ORMff1iT53PWqwWx/7yWvK93VNXXqREB5zzOhUt3W21oW41sReRMfKQ5gsPBospNKjsF9CmII4RADCFpgbUWpRRlWSYt0rZtunjrKx2XByTFH2Mzna/j8Uhd12itaZom2fLX/+EbHYC9DmN/cbsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The roof truss plan, with too many bits and bobs.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/63b3680447fc64fdc5311f8728c5a667/00d43/roof-truss-render.png&quot;
+        srcset=&quot;/static/63b3680447fc64fdc5311f8728c5a667/63868/roof-truss-render.png 250w,
+/static/63b3680447fc64fdc5311f8728c5a667/0b533/roof-truss-render.png 500w,
+/static/63b3680447fc64fdc5311f8728c5a667/00d43/roof-truss-render.png 1000w,
+/static/63b3680447fc64fdc5311f8728c5a667/78958/roof-truss-render.png 1320w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The roof truss plan, with too many bits and bobs.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;My dad was proud of his “forks” he made to hold the ridge beam in just the right spot 🤌. We then added the rafters, tied them to the ridge beam with metal brackets, and fastened them to the walls with hurricane ties. For good measure, we also added collar ties across connecting rafters. Finishing the roof frame allowed us to put a tarp over the whole structure to keep it - and the rest of our precious lumber - dry!&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b4ebc0fa154e682f002bea1417d23538/defc9/shed-roof.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEA0lEQVR42gXB6U+bBQDA4TcxJn4w2Tddshg23ZjKxqYIDCEb4xzlKMjRtVBYKZSztJSzBdrSE+j9UnqfXLWCy8Do5jBzc1+Ni0v8e34+j5DMxHB63YhRkQ2LidGxJ0zOqjBal4lk0lh27PijIQ4KBxwXC/x89pR379+R2T9iSjtP7vCQf97/S6aY5ezFGcKiaZGugW40uhnUUxq+LPuaO9WVPGh5wKTBQHldBa19j1haXSGVy/P84gV/vn1DZccmNdJNjk72uXj9mumFeXKFIwT9gp5pg46dcIjEwRF1tdX0DMjwiSLpYpGuoV4kfe2MT6vZCXk4KuQZWDrhw0+7uHpHjWzOx/z6HDMWLanTGILb6yOUO+T42TNcjnVUQ314fB720gmCyQQzq0aC+ydodBrm14aoHQ7w8V0T10vvce1aOZc+H6ZN62R2S8F2YhMhko6j1U/gsK8RFj2MDQ8g6X7EjHacNbuZRY+RHrUUnWmc9pVTPqpKcON2C3duVVNeVk3JtSoulW1yfypHKJ9EKBazrC6NseOxEt/dwrU8hUwmobKxFLVBybJ5jplFNZ3GX/jg/lNKymXcvV1B1bc11NdJuFn2gC9uNiDcSDPp/w/h5PQQf8DBrncdj3mObeM0x0mR3cAmzbIaajvuYvc4uSF7xSff6Bkd7GVcpWFBN4fDOotOb0Y7McbVijHa9H8jvLo4JyHaiQc28DmXMM0qWDY8IR/3c5zexWqewmia56vmbdo6lOimJmholNLZ/RC5qp0OaRv9/SM0NSvp0eQR/npeJCtucBh3EfOa8NrmCW0vENpe4ewoylkuQHJPRKoKMa3RMKke5fKVy9Q112KwaRmceMyISs6QYhqNXkQo7EdY0spZNgzS2nqP+oYKGlsr+b6mnJamKqI7awz0S2jqXWXLtk54e5XyW6U0tzawF/eQP97jYF+kkA/y8o8LhGxKRPG4m/7eLkquXqG+rQ61VoFsWMrIaB/5sIPZGSUhj4WTrI+M6KBT0kxrSwPygV6mJkfxuTfIp5y8eP4jQigUo7FFSaekjeuff0bPD+24XCaCQRuZXIBiaovfzo7IJ4KcZv14XWZk8iEUg0pUo+Po5pexWTfJRFz8ev4TgsW+R2OTnJ72Zkqvl3Cv8jYP676jS1LPkKKLQsxNPGwlnwxwEPfisFvQGRZZMZqwWDex2hy43G6iQSevfj9H0Bsc1NZ2o+jroae9CXm/FOXjXlRKGWMjciLuZRIBM36vA7vFiN1mxu/bIRT0EYuGieyFEEU/TpuJZ6fHCJn8OWJwl0g4SCwaIZmIkUknyWXSJOIxivsJ3r58yvFBluiun1Rsl/1UjFwiQi4RJZeKkU/HyKZjvHl9wf/C48c02+TcVAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Roof framed. And tarped.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b4ebc0fa154e682f002bea1417d23538/00d43/shed-roof.png&quot;
+        srcset=&quot;/static/b4ebc0fa154e682f002bea1417d23538/63868/shed-roof.png 250w,
+/static/b4ebc0fa154e682f002bea1417d23538/0b533/shed-roof.png 500w,
+/static/b4ebc0fa154e682f002bea1417d23538/00d43/shed-roof.png 1000w,
+/static/b4ebc0fa154e682f002bea1417d23538/aa440/shed-roof.png 1500w,
+/static/b4ebc0fa154e682f002bea1417d23538/e8950/shed-roof.png 2000w,
+/static/b4ebc0fa154e682f002bea1417d23538/defc9/shed-roof.png 2046w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Roof framed. And tarped.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;roof-sheathing-and-window-framing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#roof-sheathing-and-window-framing&quot; aria-label=&quot;roof sheathing and window framing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Roof sheathing and window framing&lt;/h1&gt;
+&lt;p&gt;With the roof fully framed, it was time to add the sheathing and underlayment. The plans also called for purlins - long, thinner pieces of wood stretching across the rafters. We decided it was unnecessary - the sheathing should provide enough rigidity and support.&lt;/p&gt;
+&lt;p&gt;My father-in-law and I handled all of the rest of the roofing. We used OSB (Oriented Strand Board) and laid it the long way parallel to the rafters, which allowed us to do less cuts overall and work quickly from left to right. Unfortunately, I don’t have any photos of the sheathing itself. As the one climbing all over the roof, I almost wished we hadn’t increased the pitch - it was definitely a steep one.&lt;/p&gt;
+&lt;p&gt;Next, we rolled the underlayment on from bottom to top and stapled it down. And with that done, we said goodbye to our tarp - the roof is &lt;em&gt;much&lt;/em&gt; more water-resistant going forward.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fc1f47ac8847ec747caefabdd37d1bab/493ac/roof-underlayment.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+ElEQVR42hXMW09TBwDA8fO8F5ZsS8yy6CS6TYPWIlWqWCzUQlt6OW2hN0rLsT20p0Av9EJv9EbBdkCRDpygTLMYs82HLUv2smzJsmTZF9iT2ZMx+xj/xd8H+AkB5SqeyEVm76tw+0eR4jrWSk6iMSeR1RV+/eNPDg/2OTr8iuXVZeqtTZ6ePuf16395fPKE7d4DsvUUv/z+in/evEFwLqqwLQwhSpeYl7UsZWbpPd2l/+SYXLXOb3/9Te+gz9u3/5HPZxHdTnb3t2g0a6Tz62w9f8HJz9+x83WKRF1GsIUGcYZG8MaGMHtVhBUHB6f7dLdrLEeCHH/zjEIhwavvH9E/6HJ9RI3DZaRSTbHdybG5n2WjK1LeS7HVjyKYA4PMSpfwx87jjWoJKz42OgXWCzkCBg0ZyUW9WWSvl+ewX2d4+CqZ1BynT2Ls7MxRKpopbBpoPfSTqU0i3Jj+mAnXRey+zwkntFhcKqSYmZwSxKsfYvKz95FdBlr1KnI8isliYOeBjy+7NkptLZnaPOmtErmykZCiRhga+xCV/iM0xnOkKmZCIS3ue2rifivijXOYrpxh/MIAiniH/XaZUrVGJp+l3V2h1LSQ27ZT3C1QKHpZyd9F0BjPorMOotadw+RXE3SpaCUX2M4u0pTNtGJWnm8n2Ew42CkG2C0vkpFFVqJ+Umsi+Y6J3MYsEdmMP6BDuDb+CRr9WUb159GMD2KcUvO412Kvdp98zMG6bKVfCdJMW9mshlgJTpAKjZEM3ibsHCWwOEFAvoPHo8fmuIGgVZ9nfOQCYyODXL18Brt9ipOHTcKzOkY1X2DQDVOMO3jYmKddjSD7JkhGzdRLPlLKDOrRT5k0D6PTDzF+9zKCy3iT6fERZiavM3lLRVJZol+LsRaeIi8ZqcYtPG2FOWpIdCtRArZbJBctbFVD7Lai5LN+whErHv805XYTwWa8jWFcg270CgteNzklwmE1RDkyw6N1N49KLn7qxzhphOnXZfYbcfaay9RSXroViWfHRX58+YBoPMZCPIMQ8VrwTWvxmnSUMmkUr52vKu9CG0cFF8c1P696MY4bEi/6BX749oDjow7ttI9OIUwiPItj6iYDAwO8N/ABQtg5jWi8Q0aRyabS3J2YJi05qcRF6ql5CslFOkWZvY0YL483OT1q0+tU2K0lyS2HWI7MI/ntzIpTeFxmBMlrZU40saIoZJNJzHotDqOOBbcFOeShuJZgs7xKbe0+J3tVdptpVpcC+DxORKsel02Px+Ok3cjTqa8iRN7t1kncdhNpJYLXfo+Ay4zLYiAgTjHvNDE/N8NqPEhcmiPon8FkHGPGqMMnGpAlL4tLSwyprjE8Msr/j2KM+61vS38AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Sheathing and underlayment complete. We put the &amp;quot;roof&amp;quot; in waterproof.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fc1f47ac8847ec747caefabdd37d1bab/00d43/roof-underlayment.png&quot;
+        srcset=&quot;/static/fc1f47ac8847ec747caefabdd37d1bab/63868/roof-underlayment.png 250w,
+/static/fc1f47ac8847ec747caefabdd37d1bab/0b533/roof-underlayment.png 500w,
+/static/fc1f47ac8847ec747caefabdd37d1bab/00d43/roof-underlayment.png 1000w,
+/static/fc1f47ac8847ec747caefabdd37d1bab/aa440/roof-underlayment.png 1500w,
+/static/fc1f47ac8847ec747caefabdd37d1bab/e8950/roof-underlayment.png 2000w,
+/static/fc1f47ac8847ec747caefabdd37d1bab/493ac/roof-underlayment.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Sheathing and underlayment complete. We put the &amp;quot;roof&amp;quot; in waterproof.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;I also framed all the windows at this time. In the picture above, the window on the front has been fully framed. The transom windows, which will be above the double doorway and in the same place on the opposing wall, were framed next.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3464186084fcfaeda2d5e423ce9c67d0/7f15f/transom-window-frames.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 106.4%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Let there be light. Transom window frames.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3464186084fcfaeda2d5e423ce9c67d0/00d43/transom-window-frames.png&quot;
+        srcset=&quot;/static/3464186084fcfaeda2d5e423ce9c67d0/63868/transom-window-frames.png 250w,
+/static/3464186084fcfaeda2d5e423ce9c67d0/0b533/transom-window-frames.png 500w,
+/static/3464186084fcfaeda2d5e423ce9c67d0/00d43/transom-window-frames.png 1000w,
+/static/3464186084fcfaeda2d5e423ce9c67d0/aa440/transom-window-frames.png 1500w,
+/static/3464186084fcfaeda2d5e423ce9c67d0/7f15f/transom-window-frames.png 1530w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Let there be light. Transom window frames.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;walls-part-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#walls-part-1&quot; aria-label=&quot;walls part 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Walls (part 1)&lt;/h1&gt;
+&lt;p&gt;The plans called for T1-11 siding. It’s pressure treated and slots together easily. I think because we skipped building the floor, we ended up having to trim each one shorter, but it ain’t rocket science. We installed the siding right over our door and window openings and used a reciprocating saw to cut them out. The cut-outs will be used when building the doors.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b62af5ec68960fa656c220a39cbb6eb1/493ac/shed-walls.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEGUlEQVR42h3O11PTBwDA8d9T73pXbOvZea0tVSpaliiiyFkiywSRMCTRkFwEwiaDTDJICAmEBIIDymhslcgKIziqPa9SHyyCCxHt9exL/5NvTx6+r5/7Ck2NiVj1SSiln9FpaMXVM4DO3EioT0HQKabHoeV2LEK3XUt8IUaeSMSe7/cyuzDH5tZTopMBotcC/Hb7GtOTboQG9Qc0q3bRIElGfPBrAn4fHVY/OqMbo8WJQd/GQKAbj9PKv/+8oahAhOS0iNjSNBMTvYwMtzM552XiupL5qAnhvOxD6hQ7aClLpiRzN32WBoYujVDfpEdn6sLk7MPk6MVg7cbrD1IsLqGlpY7IqJHxKxoGB5vQWdKRN36K1ZWNcEyUQP6pnVSeTMKoKCYSNPKTt5niw3soPJSEolzCBZUSrcFMm8GOu+8KA6PT+Hs7GA5WM3ZRR5dTSntHMTp7GsLe9AS+S0/gnDiDuYtmHtzwMuKqpVF6hDMZHyFOSUCUnED+gZ2cytpLVVEOGpUcW6eLUHiQ4bALp0uNrCEVWf23CEkZO0hMeR9TbRH3IxYi7hqWR21MhbWMO2SEtBKcdQUYFSfQSFKpzt3NmUOfUJq5i9IjX1JZdYy8kiTyKr5BoUlD2J/5IYkH3kOtyMEmy6KxMIlHsz4ezfn5Y1zH/TE9t0d0xIeNzITbifg0jHXXcsUuI2ypoFSexr7ju8ivzKDZIEM4vP9zkr/6GL2yCLfyKKbyVP6a8bAWD/JkupP1GzYeXDXz56+dPJx0cnfcxL2Ijfu/WFiJuhCXp5Eu+oK8/P0UFKQgiLJ+IPdgMn69HIc8g87qQzyNdbMR9/N81s7WgovVqI31OS/P5ntYm3XzONbDk3kPG8t9SKsOk12ciN5QhrFViiA6mkL2wX30GGR4azLxqI6y+Q6L9/NitpONaSurU85t7NXNwPb9s3iA9QUfb+4NcLYshzPlJwmHbdy8eQlBnp/FWdERwu/A86n01efwYrGHl7dCbC508TxqZH3awcaid7uHURcbt4KszveyeSeEraGCsyezUJ4+QYtKjKCU5KIq+ZHrvTrM8myC7ZJt8PWSh6c3zLycsfJ8yspm3MfL5V7WZly8WOrl9Z0B/lsZ4aK7iTa1FJOmEmtDFYJBXYGproqxQQcTl9yM+1vYWOxha7GLx9cMbC152Fxw82rJx9u7/by9F2LrzhCr8cvERt04DDUYWxXYjSq8jlqEyz4zbr0ap1bF5Hg/v0/18yzWzatFN2vRTv6+1c+jKS8rUR8r80NMhKzYtDWcqyygUpLLhepC2i+UYW6V47aoEX4e8hD2WfDb27jc72R57iqPl4ZYHjYxETAQdGjoaD6PsroEWWke1ZIcFGXHUZadoOlcIR31UkxNUmyt1Vi1NfwPa8XIgB52qeUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Siding covering our window and door holes.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b62af5ec68960fa656c220a39cbb6eb1/00d43/shed-walls.png&quot;
+        srcset=&quot;/static/b62af5ec68960fa656c220a39cbb6eb1/63868/shed-walls.png 250w,
+/static/b62af5ec68960fa656c220a39cbb6eb1/0b533/shed-walls.png 500w,
+/static/b62af5ec68960fa656c220a39cbb6eb1/00d43/shed-walls.png 1000w,
+/static/b62af5ec68960fa656c220a39cbb6eb1/aa440/shed-walls.png 1500w,
+/static/b62af5ec68960fa656c220a39cbb6eb1/e8950/shed-walls.png 2000w,
+/static/b62af5ec68960fa656c220a39cbb6eb1/493ac/shed-walls.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Siding covering our window and door holes.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;finishing-the-roof&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#finishing-the-roof&quot; aria-label=&quot;finishing the roof permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Finishing the roof&lt;/h1&gt;
+&lt;p&gt;I decided to go with a green metal roof. It will look good with the gray metal roof on the house and it will last a long time. We put drip edge on the ends, installed all the metal panels, and fastened on the ridge cap. This type of metal roof uses screws with rubber washers to keep water out. The panels were the perfect length, but for the width, we had to cut one panel in half to use to finish off each side. The metal roof installation was the hardest part - moving around on the slippery metal was awkward.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e7b0ea6574c8135659f758f805f136f2/defc9/metal-roof.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFVklEQVR42hXOaVPaiQHA4f/H6MzO7kynO5ud7jRHJ4dNai6NZhVFjSaWKKBQFeUQlQAaVARR8EBADgEBDwIKhoDinajZNUmT1HRnX7TTnX2xsy/6rl/h1+nzCR7h5csDYuFZ8jkPhwcTHO042c27Odp1s54dJhG3sZxw4wm7WchlOfl4Ri6XwuE2E0nYWEvPktmYpViI88OnDwj+gJf75Vf4S8t1hkdLUHd/Q434ItXl59D0ldDYq+CxZRipO8rwco7HolsY5CI61Q3cFZ2jraWUzs5bmJ40ki/kEZaSQeqlpXT0laHouU6T9CJ3Ky/xsFOHJbbMUPwZxsQakZ1jNK31VF/8jL5HZUQcevqNXbTJRDzRVqBsL2ezkEEIxCb5VnaVOullSqt+R3XrZfrnHDhy+zjWC7hye4SKJ/gcQ5hkVYRGu5kztREf72HDP8y03YhCfo+7FV8TDDgR3JFB6rouIdH+ibs1X9CikTAaXeJpJM7oszyxnddsr/rYX7KzszJOMTLEy9VxXq85SbsNyFpkiBoe0NxcTSIRRZiP2KlXltD419tIlFUodTLGzZ3YNI3MzU3iGVaztzTNh5yPfxykWfUM01Z2hRGpmILfxL0vL/DgWhlKlYXl9W2EaNJNY1cZKnMDmgEZvvkJfPY+TpITHC6NcxAd4mwjwFHcQiE2y6JrEKO8EZdOxvaCkWtffs2d33zO+W9KcMyGENKbIWQD1XQaqlD0ldPQfJ1ueQ2f8j5O0y4+5ry8S05xsjRGZk7LwrQJvWEQr7WX05QVlUrBjRuXuVNxlfVMBmFh0U6N5BxtPdeRt5TSUH0FdbuYTzkfZ3k/Zy+8HIaechi2EnRaiMy7EYmb+fbqeQ5jg4Rm+oiHhplYlFP4bhFhM5PkaX8LU9ZeHEY1wXEz2aiH7dUgh5kI/z7N8S4X5Tg5T9/QIDPTLpx2G3ptJ2930xQzy2SzEZxJFccfswjPn6fp7e3BYBzAaB7AajXimrDgDwY4ffsWibydEZuDV6dukpstpHIqltYtFHcmiMSNyKQy9ObHLKSMnL7fQghFvVTWVSJ60ICoQUx9oxilQkKPWkWxmOerP1ygta2VZGoKq/Mm4+5yjObHpBL9DBgbKSm5htlUhdZYSW4vipDOZTEEk1gTG1jjWYbDKfQzIbSOGVSjdq7U1KHs7mZl2cXYtIQnllrMZgkBr5ZHzSKqKkrR9Gt51GUguV5AiAVnMMxFmNx4xdjaHqbEC/ShJDr/Mk2D47Q7vASzm3hCA+ifilGb7tOhqUHZUcW9O7eR9w+g9ybotYR5UXyDsJUOM+5x0+MKonL66HD6UM9G6HD66ZkJoPfG8WS2GZnoQaG7j0R9j9bum9Q132LIE8ObPWbUEaZ/KMTW/geE19vPCLhM6BSNiG78HtGfz9MhqUbaVMnD2nLEVbcZGexlLqxDqbtJXesfedBRjS2RYWHjNaPWecamUgzZVihsv0XYfBbGpn3EdnIWSfklmu5cIOW34LdraWuqoEtaS3pxhukFE+0D1Wg0D0msLBJZyqJXqtFpLIxNJRlxZdk9+hFh/3kCr0XBYdqNUVGLQVnPTsJG3KlD0VSBRS9lK+XHMtmLUtmCtVZKfMKFzTGCTilmVFHPZJ8CjVxKajX9/2GIWYOEnbiNda+BNZ8Rn12LpreLtq4uWjrVTC0s0t4h5reffYG6tInB7k4q7t8k4hliY8rA+4yPjWkDf9t/gXD25pj97CI/fr/F34+es59PsZLNkt3dZfPkDYH8O/IffmbvYIPoQoC12DIxzyThqJ9/vX/FP78r8ssP3/PT+yP++59f+R/lEe4XQHfvdAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Metal roof 🤘&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e7b0ea6574c8135659f758f805f136f2/00d43/metal-roof.png&quot;
+        srcset=&quot;/static/e7b0ea6574c8135659f758f805f136f2/63868/metal-roof.png 250w,
+/static/e7b0ea6574c8135659f758f805f136f2/0b533/metal-roof.png 500w,
+/static/e7b0ea6574c8135659f758f805f136f2/00d43/metal-roof.png 1000w,
+/static/e7b0ea6574c8135659f758f805f136f2/aa440/metal-roof.png 1500w,
+/static/e7b0ea6574c8135659f758f805f136f2/e8950/metal-roof.png 2000w,
+/static/e7b0ea6574c8135659f758f805f136f2/defc9/metal-roof.png 2046w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Metal roof 🤘&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;walls-part-2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#walls-part-2&quot; aria-label=&quot;walls part 2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Walls (part 2)&lt;/h1&gt;
+&lt;p&gt;The rest of the walls were installed and I also installed the window. I waterproofed it as best I could, taping from bottom to top.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/26b6fe0a438c49bd3a307fea06d35042/defc9/shed-walls-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFdUlEQVR42gXBWUzbhwHA4f+0aNq0TVW2ttqUVO26rIwlhMK4j5SWREAwhhgIN4ZwGoyBcB+x8YEvMI4hxjGOAQPG2JgrUEMCIQkiLWkOFVWqtCXN1Dxtj5Oqvf72fcLxD/8m8PAYf+gxq6tBVgMLPDl8wv7eLnMeD69fveLtj285fvsfFlc3Of7HPzl6ecyr1z9gd89z783/mFoO4Znz8uLpNwi+veco7NuofV+j8x9i9N1Hd8dHu26EyqYWDLohttZXePn9axrbehiy3KJTY2IiuEuKREqNfgp5n57GOjmusVGEtdB98iViMj5PobC4GGl9I8UNTYhqW2gxT9CqM+Dz+3jz5l9c7x6gWlrBB79/h4uXReRLG1CNOlGqNZRkJDNjMyMsehxYlTXo265SVVFGWYEYeWEK17LOkxH9IXkXo1FpOxi1j5FfVEBacixJCTEkxUfRfl2OUj2EpFzKZ7Hh2E0ahOWFKTZmVTzcdKM0j9PWr+TRmoPVcQUXwt9lrLcUh72Tenk9Az1ygj4nK4EZVgLTfLm5iEnbTfoXn3M+PpVh/TBCcMHNlzM3eLTuQN6vpVLWztGmg7v2dpJizuK2XGfc3EVJUTEToxqe7PrYCy2xuzHLg5CXpYCH4qoazkeEo9GpEYJeFztzKg6XTWwsThLyO3i5bmTd0UVczN+Z1Cvw2NTUlEmZtGh4uDXL3paX/a05HoUWCIWCqEyjtMhqCAb9CBvBRXbnbnDkH+JgtpvDhQGOAmoCE51ERUeh7WskMG1FVivDOWHm6P4CBztLHO54eby9wMO9VXR6LaWFEoK+eQS/14PL0MycpQ27thmrqglTv4w+WSmdilpaGqUMD/XS069GNaTE67YS9LkIrbjZ3Zzn7rqXq2VSUqKjcI3bEEJ31zCoezDrlQz2tHOjp52lnSO03R2YupoYGejAM2ljeXGBYbUSo3YIq9mIzWLGYR9netpFZ3c3bbJGNpYDCGNWB8kXxORJaiip1tCm3ue69UdatQdkZmZSKB1Abz/gvz/9xNb2A6bnFrHZxglubjPrX6e1sxfPoh/XfJDnx98j9Aze5NQnuUTElfBFqRdR6zPyGryUyUaJSBARnliGQr/PN89e8PTZt4hz8jh18jecDTtDZXU1xddkzAS3aZa34HZNIRhvBjmbWENmuYMrii0KqvqQZKcgLbhAfmEBiZcKadMu4ZxyMj5hIzEynLTEaJJiI7mSlUaHop7evl4u5eSg0aoQOrpucOrjZIrq9GjU3cza2lF1ViG/lo+8OpeY2BjSM0TUyWqRZKdh7GtmwtCP3TzIlEWF09zLpcRI/hr2CYZRK0J9XT0nTvwKhayc2clBvtpx8mD9FksuNRZtBzHRZ0lMiCNbJKK+Mp/exlLOffQH3v/tL8lMjWXFbaK1qY6/fHyagYF+hIYGGYIg0Nwgxesy8Pyxl3urt/FPj2DRdREf+ymi7Cxysy4jqyykqVzMB++9w69/cYKUuCg2ZoyoVYMUFebidDoQFC0KTvzs59RUFOG263jz3TYvDta4u+TArO4i8lwYebmZFOddoUl6lbZKMef+fJqTv3uPlPgoAlM6HBYlFUViHJMTCKr+Xs796RTi9GTaZFK8bgumoU4aKvK5mBrP+bCPKJHkUFtVRXvTNXqay7mQHEvEp1GIL6cTnDZh0XaSHBfNiNGAcNOoQZwaTW1+BkWidERpCVyMjyAhMoyov53hzOn3yUr/DGl5KalJcVy5nE6+OJOrkmyqyiSYVa0UF+bwx3dPolcOIrx4+hXLcy7urfnYXJ7H73GxcMfBrHMCl92KQaPC5bCz7FvEZhnhtm2MW2MjjJoMuOw27kxNcntyHKtxmP37O/wf6G3OkBrke9sAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The rest of the walls.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/26b6fe0a438c49bd3a307fea06d35042/00d43/shed-walls-2.png&quot;
+        srcset=&quot;/static/26b6fe0a438c49bd3a307fea06d35042/63868/shed-walls-2.png 250w,
+/static/26b6fe0a438c49bd3a307fea06d35042/0b533/shed-walls-2.png 500w,
+/static/26b6fe0a438c49bd3a307fea06d35042/00d43/shed-walls-2.png 1000w,
+/static/26b6fe0a438c49bd3a307fea06d35042/aa440/shed-walls-2.png 1500w,
+/static/26b6fe0a438c49bd3a307fea06d35042/e8950/shed-walls-2.png 2000w,
+/static/26b6fe0a438c49bd3a307fea06d35042/defc9/shed-walls-2.png 2046w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The rest of the walls.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Meanwhile, my dad built the doors in his shop. The plans said to use 2x4s for the trim (and structure), but we decided to build a frame on the back and trim the door nicely. He did a test fit while I finished the triangular upper walls and installed &lt;a href=&quot;https://amzn.to/47Yj9cc&quot;&gt;the transom windows&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then we added trim to the doors and hung them. I used &lt;a href=&quot;https://amzn.to/3sYLnEI&quot;&gt;these&lt;/a&gt; &lt;a href=&quot;https://amzn.to/3RpaklW&quot;&gt;hinges&lt;/a&gt; and &lt;a href=&quot;https://amzn.to/49Yh8ym&quot;&gt;these locking handles&lt;/a&gt;. This is the moment where it got really exciting - it was starting to look like a finished shed.&lt;/p&gt;
+&lt;p&gt;Also, you’ll notice I made some cuts on the ends of the roof rafters to prepare for roof trim and the soffit on the under side.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f9591eeac709c967810f14fe461e4866/493ac/shed-doors.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEAklEQVR42i2SaVCVZRiGPznrx9kPpwMiHKkAZQ9xQVAHMMSRigYaaXLJZTTJEIjIyITOARLZ9LAcNFnEQwxLKigiiprkElpoCk7ZMtpMNWPTYk79vprvox/Pn3ee+3qv531eQa/XodP5otVqMJmMaLValEolKpWKWT4KVEolVqsFtVpNYKA/4eHPYve3EzgnAIcjCINBh0qllDMKpQJBghkMeiSwzeYnhwVBwOEI5tW1L6HUiHKzr6jFz+ZHQkIccfHRhIY9jegryhdLMlKPVILUqNFoUKtVWKxm7HabDKwo2cH06SbclQVExkTKZ6JWQ9LShcTERMiTSCDJXNTO5KUSfHUiM2OLMyOLImkrErl7soGr3VXcHW7hi5ON5OetR6XTY7WY8LOYEEUtBr0OjUYtgzT/gwWT2YDFasJsNqJQ+OA/O4CBljL6PC6OuCvZXVJEb1M5f17vYMhbx+LkJbKtIMzCaDRgsZhkqFKlRK1WIhiMOowmPVarSbYrL9jAtf56DteXMdBey6X+Zm4PHuSHsVZ+GW9nauworTWlvLwmlYAAuwySRCSYSqVAkMyMRj0Go545cwIo27WO0Q4n40fLuXW8njuD9Uz0VvP7V14eXm5jvK+Z0wPH+LzfzZH9JTLYz2qWYbJhWNBThAbZiAiZzVx/C8sXRTPaXcuVvnqmR4/w46U2fp7o5Z/7gzz+upfz/a0Uulyc8dbQWFFITGSo/G1EUTMDTJgfzJL5wSRHhbBoXjA5GUlcHTrMxFAr9y56eXi9h8f3L/Dv96d4MjXAZ0MdlFVXM9ZTi7fZyTMhgfgofOSlysDliTGkJsWSvmIBi2PD2JCdzqi3jvPtLiZPeZgeaeHBzUGe3DvBX5OfcHmog5omD2e8tXj2lRARHiJvXHo2rVaNkJmaQNaqRDJXLuL5pDje3JjFleNNXO2t487Ix0wNu7l3oZPHd3t5dPMYt4Y9nOs5wHBHJV1NThYnRGKzGbHbzZjNOoSslOd4YUU8q5fFk5oYR9G2tdwYbObLk418c7GTn655+ePOCZ5M9fDbZDf3z7qZGKjmXFcVPZ4K1qQnETV/LvPCg3A4/BC25qSxa/1qdr62is3ZaezdtZ72/cWcaXMyOdTIdxcO8etEN3/f7uLRjXZuD9ZzvusjjjWUUl60meyMZJYtjCR54TzioxwIhRtfZG/eK1Tk5+LcmUt18UYa3ttC094ddO4r5ETLB4y0V/BgzM23Zxv5tNWJp6oY59tbKNiUxetZKWSmJLByaTRLF4Qi7NmeQ1XBOup2b+VA6TYO7tlOc1keh1z5eD58i1ZXAZ7KQjrr3qHbXcrBinyq39+Oq2gT776RS/66TLZmp5GdkUjG8lj+A/YEXbipWl0bAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Doors trimmed and hung. Transom windows transomed.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f9591eeac709c967810f14fe461e4866/00d43/shed-doors.png&quot;
+        srcset=&quot;/static/f9591eeac709c967810f14fe461e4866/63868/shed-doors.png 250w,
+/static/f9591eeac709c967810f14fe461e4866/0b533/shed-doors.png 500w,
+/static/f9591eeac709c967810f14fe461e4866/00d43/shed-doors.png 1000w,
+/static/f9591eeac709c967810f14fe461e4866/aa440/shed-doors.png 1500w,
+/static/f9591eeac709c967810f14fe461e4866/e8950/shed-doors.png 2000w,
+/static/f9591eeac709c967810f14fe461e4866/493ac/shed-doors.png 4032w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Doors trimmed and hung. Transom windows transomed.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;priming&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#priming&quot; aria-label=&quot;priming permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Priming&lt;/h1&gt;
+&lt;p&gt;You may have noticed - winter is coming, so I wanted to get everything primed in order to protect it. The siding is pressure-treated, but the trim definitely needs the protection as soon as possible. Also, we’ll be going with a white paint, so priming it means we’ll get to see it in white.&lt;/p&gt;
+&lt;p&gt;Before that, it’s important to note that we added some aluminum Z channel along the bottom of the siding, to protect it, and the frame behind it, from moisture.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/62ccc4d76e0f1ed8097403694810326b/defc9/shed-primer.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFhklEQVR42iWQa1DThwHA/9uunX3Ydr2T85A7t7O+ar22WLSIvHxAS5UqKBBBAXkGqIEQJPIIBssjhIQgJBJCEhJCHgQCBKKglVdBkIIIUrb1rtutX7rNXa932/ffrtuH36ff3e/DT5heWOGO4yH26b/hXv4Z78rPOKe2sAzPIJPX0m7s5avFddQqFeL8PMqlZZSXlXJDJv0/FTLklTcQFxbgdrsR9M4JMuq91Hq/Rz78A9LOUdLzpCTnlvPhqQvsCz1Bo2WQY0eOIAgC2367jVdefontr79O0NvbCd7xJm9uf/V/rrCgAGFwfhPV2DoGT4AvW9uoVSgpkim5Lq3kXIqI0IhYbmkMxEZEEPTWGyQlxPLeof3s2hXMO7tD2Ls7mJCdQWz7tUDZ9S8QHOOThEVGc/LoYVo0d9FZ/JTf7qK1w4rocib7Dh6mTF5N+JGPeH9PCE0V2ZSJM4iO+Zi9+/9ASPAOQnb8jtd+I1AuKUFo16rJuJSAqvkW3f33MTgfoXHMYvTOo1R3s3f/QXLz84gOP07SyTDavqzEob/N5IABvaaOW5WFJH8ayduv/Aqp5AsEX+ABJrMep9OMeWgWw8A8avsMhqEl6jVm9u47gEgk4tTxcE6Hh+LptzLm7mbpvh2lohpHbw9lRdkcCn6VJsUNhMWlOSy9eszmTqyji3R6l2h2LNLpW6NaZeLA/gNcShXxSVQEn0WH4XGYcZt13Pf20KHX097RQX5uNqG/fwtDiwJhamoCs0lDr1WPZWwVo38dnW8N9cBTihsH2HMwlISEeBLPnOREWBjatnaMna14nT3YHA5qa6o4+2kc2355WCZB6DDcpaBYTHNLAyrHE/LbV4itWiT4aoCdp2+yc/chks/Gk3A6hpCgID4IjSEh4RLpqSnERoTx3jshHN6zi51vvMxNmQShv99JZnYOMnkVF2pm+LDyOw4UrRCd10dWdjYZKcloOy3UyisQfR5PTkYqWemXuZqSRH56Ellpn5ORlsS5uGjudrQhTEzcZ2jQy9bWt9idHh58NUXg3j3KS8WYekzMLTzmxxc/4fR4UWvaGR+fQFlXz4C9F5XRQqbWis47wejYEH/88yaCzWpB19bG4sI8NZWlNLU04nC5OHb0GPVKJb5hP1PTs5SUVZB4IY3crBwiE1M5VljB+yX1SHVmOk0mpC1GJha+QRj3j6Br01Irl6KoU6DRtVLVUEdWaSm3mxuRlUsIBALU1itIy0jjvPg6h0W5fHDxCpeLK+gzafEPmbC7bCw/e4pgNneRnXURRc1NDCYbHt843d1d5ItzuFpcSH5xASOjw8hrZMQlnCEp/SqVFVXUymtoVhsZ81kZ8dnw3xtjc2sD4Y66gdNH38XpHeHx6nMeTs/zcO4JhcUl1CjqEIvzEOdnUSmXkZqaTLWylamVH1l6/k++3njBZMDFvbF+hnxuNjZWEaydbZyLPIrrl+DKBo/mFllY3URvG2Dw0TfY+x10qWtpUChJjo/j0pUixpZfML32D6bW/0XA349/2MbI2DAbz9cQdKrbnD/5MeMTUzzd+iuLT79lfnWTmfW/MP+nv9NjtWHpaKK8VEZsZBS5xdV4Zn/g0fN/M7n2EyO+Ppy2O7icFp49W0JwdLeTcyGG5roKzMZOPANuHsw9xumf4Fa9kisXP0Mpl5B3LYeo41EUFJTQoNJhG10m8Ow/DA458Lnu4hlwsLyyiGA3ask+H8m1pChS4o6QfvY4ualxiM6eIOlUKJnnY2iqlnC9qITo8Ag+ORNPYmIShUUSqhq7UWtbuVEhIfNaAdZeO8Lq0ixuyx18ThMjrh6G+rpwmHQMu3oY7jfhcxiZmRxl/vET+uz9tOvaaWhoxmZ3Yuu1Y3c46TKa0Go0zExP819/vucBcCn9FAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The priming process.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/62ccc4d76e0f1ed8097403694810326b/00d43/shed-primer.png&quot;
+        srcset=&quot;/static/62ccc4d76e0f1ed8097403694810326b/63868/shed-primer.png 250w,
+/static/62ccc4d76e0f1ed8097403694810326b/0b533/shed-primer.png 500w,
+/static/62ccc4d76e0f1ed8097403694810326b/00d43/shed-primer.png 1000w,
+/static/62ccc4d76e0f1ed8097403694810326b/aa440/shed-primer.png 1500w,
+/static/62ccc4d76e0f1ed8097403694810326b/e8950/shed-primer.png 2000w,
+/static/62ccc4d76e0f1ed8097403694810326b/defc9/shed-primer.png 2046w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The priming process.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;The priming process was a bit slower than I expected. The T1-11 siding was quite “thirsty” - I ended up using 2 gallons of &lt;a href=&quot;https://amzn.to/4a1Tj8S&quot;&gt;KILZ 2 All-Purpose Primer&lt;/a&gt;. I used a roller for the siding, and a brush for the grooves in the siding and for the trim (I bought &lt;a href=&quot;https://amzn.to/3T9r3uV&quot;&gt;a kit like this one&lt;/a&gt;).&lt;/p&gt;
+&lt;h1 id=&quot;finishing-touches&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#finishing-touches&quot; aria-label=&quot;finishing touches permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Finishing touches&lt;/h1&gt;
+&lt;p&gt;To wrap up, we added soffits and finished the trim on the transom windows. Not much more to say!&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/92bc8efc620bff6f01b213a8c552320d/defc9/soffits-and-trim.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFRUlEQVR42m2S/1PTdRzHP5WZSd+uu4q+XF1c+SVJQ0UgMTQEPb5oQYZjgAIbG2aXZJghY3wZeBCowZAvKjA3GDqolG8DxDFBYI2vGwzGF+Ei0OqqP+HRuTq7rn543ut1r3s/H/d8ve8lXL6sRSyOQyZLRiaTI5FI+fhgDMXfnGHJ0ccdxxDTU+M4bQNM9jWTqVTwsSjG9TYpSYZUmuTqxeIYtFotglgciyAI/5L4wyCsrReZtbbiGOrGPtjNtL2f+cE2bupO4+O1/j+e+4qLi0OQy5P/Hqxg08YNNFzI4a7DRPuVcr5KjibzcyladS7q06cozEhhoK2W36dukP2ljEdXubm8q1c/4arJR5IRpFIZDz+ygrRPRUwZv2Fm9CajQ7dpunYVZUYa2Vnp6GoqUWUpSP38UxrqtdgGe1kYaqW+VIHH66/x0MMrXMAkuQzhUHwiwTvewVx+lOvq4wyP9jNut7AwZ+OX5Vn++GWeX5ec/H5vjt+WZ5ifHmPQ0o25q4lBvZKG4uO4v/iCCyhPliPIZLIHf7AvfC/j9gFudRvpbPue2ckhfpy1sXRnnOX5CRZnbfR0tTA61ENvbwc7/P14+kk3nnjyr9Vl9xPK5fIHwOiDkcxMjzBsvcXYcC/Tk4MszNlZWnBwd3GSuz9OMuOw4rBb6O/vwtt7q8v36KrH/h8oTYhlbnaM8bEBFmbHWLhjZ/mnaX5enOLX5RnuLTm5tzjFjHOE4cFb7N4ZgCA8hJub2z8rSyWSB0BJvBjHhAWzqYUf+jqZGOtzJbrjHOanhXEW58eYsg0wbhtgdKQXX5/7CVfyyMpVLn+iJBEhV6Vizdp1bPDcSF5uFs7pMTqN12hvacQ5OcKUvR/78G2ck6NM2K3caG/CbDJy09ROtFiMl7cvfv7v8caba8hRqRB0raOI8kwcPWfmk7M9KMtMpGUWolBmkZ+dTsoRGWr1BeIST/K2VxBbfILYvG03ISEfEBYexWbfMMJC9hAY4MO5s18jXDbcJDylnpjMZg5nNRF19CzxhxKI2R/IW688S1BgGBmqUtZseA9BeBz3F15l17tbkcZ+SKIojDVverL6qZd5/pmVZCpOImiv9RD5mZr4hDiiD0YgCvXjWNQuPD1ewuNld0SHUsgq0iGOOkBcZDDFualcKCuiuFRN/tf5ZJxIJjAggBfd3cnLTkeoMhiJPqZi147NHAjdjlaVQPrhPQRv9sDn7fVExH6BsqiOb+vK0VWVoDhxhPi4g8gSxcglMSQcEpF8OBL/LevISEtFOFOYy7vbPNm+bRMph0M5JQknMsgXWWwkWekn+eSYgnx1Pe3X9TTUlpFxPB7RB+8T+1EQ4v0B7Ny2loiQAA7sC6QgV4lwOieDd9a9xk4/L3Zt92agt4PuziYW5yeYc1iorlBT29iKsa0ZvV7HVUM9+nodVTVVqM+XUHSmgOwcpeuodbU6hIK8PAL9/fD12sjewADXaXQYm7GN9DFqNVFdUYLO0ETHjS70hgZ0+jqqNBouaDSUVlZytqSE/KIiUlJPcLWhEeH7K3XER4QiCvYnKnQ3JlM7zc3XGbT2MO2wYNBdpK6hCWNHB7V6PXX1ejRaDZc0NZRVVnBOXUxBYSEpqalcMRgQdNUX8du0Ho/nnsb7LQ+arxu4VKOlvaOVIauJmopzVFTX0/hdI2UV5VReusj58jKKS0spPFOE6nQeGZlKJLIkqjUahPbWFnIUp8hRpHFNX4nDZqXT1MvMjJO52Ul6u7u4bRlmZGSEWz09LnWbzZjMZjq7umgzGmlqaaZOX8eAxcKffnzmaQoMqKYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Soffits and trim. So close.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/92bc8efc620bff6f01b213a8c552320d/00d43/soffits-and-trim.png&quot;
+        srcset=&quot;/static/92bc8efc620bff6f01b213a8c552320d/63868/soffits-and-trim.png 250w,
+/static/92bc8efc620bff6f01b213a8c552320d/0b533/soffits-and-trim.png 500w,
+/static/92bc8efc620bff6f01b213a8c552320d/00d43/soffits-and-trim.png 1000w,
+/static/92bc8efc620bff6f01b213a8c552320d/aa440/soffits-and-trim.png 1500w,
+/static/92bc8efc620bff6f01b213a8c552320d/e8950/soffits-and-trim.png 2000w,
+/static/92bc8efc620bff6f01b213a8c552320d/defc9/soffits-and-trim.png 2046w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Soffits and trim. So close.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Hopefully, I’ll remember to update with a finished picture once it’s fully trimmed and painted in the spring. Bye for now!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fixing lawn mower spindle]]></title><description><![CDATA[I have a John Deere D140 from 2003. While mowing my lawn, I hit a small rock with one of the blades. All seemed fine and I continued. The…]]></description><link>https://www.mikeup.church/blog/fixing-lawn-mower-spindle/</link><guid isPermaLink="false">https://www.mikeup.church/blog/fixing-lawn-mower-spindle/</guid><pubDate>Thu, 02 Nov 2023 17:42:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/df6502328c2e83c2912c19d8e9234c43/b17f8/d140.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAWZgdmrCEg//xAAaEAACAwEBAAAAAAAAAAAAAAACEQABAxIi/9oACAEBAAEFAi05g6+e3CpkdPOnP//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/Aaf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAHBAAAgICAwAAAAAAAAAAAAAAAAEREiExAlGB/9oACAEBAAY/Atss7vqCZNGOXkGHCP/EABwQAAICAgMAAAAAAAAAAAAAAAABESExQVFhof/aAAgBAQABPyHZe+kkiGTJg1G16MZSRsCY1UxFV3A7P//aAAwDAQACAAMAAAAQ3P8A/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERQf/aAAgBAwEBPxBaKz//xAAXEQEBAQEAAAAAAAAAAAAAAAABABFR/9oACAECAQE/EHExZ4b/xAAcEAEAAwACAwAAAAAAAAAAAAABABEhQWExUaH/2gAIAQEAAT8Qr0iLvWdxt+2k5c+JfZt1B51FRRF0+3ACwDR2D6lIBYKIyf/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;d140&quot;
+        title=&quot;&quot;
+        src=&quot;/static/df6502328c2e83c2912c19d8e9234c43/a2510/d140.jpg&quot;
+        srcset=&quot;/static/df6502328c2e83c2912c19d8e9234c43/0479a/d140.jpg 250w,
+/static/df6502328c2e83c2912c19d8e9234c43/41099/d140.jpg 500w,
+/static/df6502328c2e83c2912c19d8e9234c43/a2510/d140.jpg 1000w,
+/static/df6502328c2e83c2912c19d8e9234c43/c58a3/d140.jpg 1500w,
+/static/df6502328c2e83c2912c19d8e9234c43/b17f8/d140.jpg 1600w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I have a John Deere D140 from 2003. While mowing my lawn, I hit a small rock with one of the blades. All seemed fine and I continued. The next time I started to mow, I heard this knocking, metal-on-metal noise. I immediately stopped and assumed the blade had broken to a point where it was nicking the deck.&lt;/p&gt;
 &lt;h2 id=&quot;the-diagnosis&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-diagnosis&quot; aria-label=&quot;the diagnosis permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The diagnosis&lt;/h2&gt;
 &lt;p&gt;So I bought &lt;a href=&quot;https://www.amazon.com/MaxPower-561812X-Commercial-Mulching-Replaces/dp/B010B3B22U/ref=sr_1_15?crid=3M1G7GXY2UMC9&amp;#x26;keywords=d140+mulch+blade&amp;#x26;qid=1698420498&amp;#x26;sprefix=d140+mulch+blade%252Caps%252C93&amp;#x26;sr=8-15&amp;#x26;_encoding=UTF8&amp;#x26;tag=upchurch-20&amp;#x26;linkCode=ur2&amp;#x26;linkId=421189c5cfbfb533aece1d8a0103dc57&amp;#x26;camp=1789&amp;#x26;creative=9325&quot;&gt;new blades&lt;/a&gt;, &lt;a href=&quot;https://www.amazon.com/Neiko-00200A-Extension-Chrome-Vanadium-Rotating/dp/B002GQ1O7E/ref=sr_1_2?crid=3Q9SHIKR1389R&amp;#x26;keywords=breaker+bar&amp;#x26;qid=1698420643&amp;#x26;sprefix=breaker+bar%252Caps%252C138&amp;#x26;sr=8-2&amp;#x26;_encoding=UTF8&amp;#x26;tag=upchurch-20&amp;#x26;linkCode=ur2&amp;#x26;linkId=a4f823ce0357272b3ea02ab028b96b82&amp;#x26;camp=1789&amp;#x26;creative=9325&quot;&gt;a breaker bar&lt;/a&gt;, and &lt;a href=&quot;https://www.amazon.com/CRAFTSMAN-Shallow-Impact-16-Inch-CMMT15857/dp/B07QG49R2Y/ref=sr_1_2?crid=249BK0MF5C4Q&amp;#x26;keywords=socket%252B15%252F16&amp;#x26;qid=1698420711&amp;#x26;sprefix=socket%252B15%252Caps%252C112&amp;#x26;sr=8-2&amp;#x26;th=1&amp;#x26;_encoding=UTF8&amp;#x26;tag=upchurch-20&amp;#x26;linkCode=ur2&amp;#x26;linkId=c6386527e62e208421c2424f64ec26dc&amp;#x26;camp=1789&amp;#x26;creative=9325&quot;&gt;a 15/16 socket&lt;/a&gt;. I borrowed some
 &lt;a href=&quot;https://www.amazon.com/gp/search?ie=UTF8&amp;#x26;tag=upchurch-20&amp;#x26;linkCode=ur2&amp;#x26;linkId=8efd760e76f197bea09cf5bc015f01d2&amp;#x26;camp=1789&amp;#x26;creative=9325&amp;#x26;index=automotive&amp;#x26;keywords=Rhino%20ramps&quot;&gt;RhinoRamps&lt;/a&gt;, so I could get under the mower deck easily.&lt;/p&gt;
