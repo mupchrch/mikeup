@@ -31,7 +31,7 @@ Next, we built the "rear" wall - it faces a retaining wall, so will not be seen 
 
 ![Two walls - it's an open concept shed.](./shed-half-framed.png)
 
-The next wall was another simple one - no doors or windows to worry about. Couldn't say the same for the final wall... It'll have both a window and a door 😱. The plans I purchased weren't super clear for the spacings on this wall, so it took a bit of time to try to figure out what would end up looking most natural.
+The next wall was another simple one - no doors or windows to worry about. Couldn't say the same for the final wall... It'll have both a window and a door. The plans I purchased weren't super clear for the spacings on this wall, so it took a bit of time to try to figure out what would end up looking most natural.
 
 ![We've been framed. Window will be on left and door on right.](./shed-fully-framed.png)
 
@@ -61,7 +61,7 @@ I also framed all the windows at this time. In the picture above, the window on 
 
 # Walls (part 1)
 
-The plans called for T1-11 siding. It's pressure treated and slots together easily. I think because we skipped building the floor, we ended up having to trim each one shorter, but it ain't rocket science. We installed the siding right over our door and window openings and used a reciprocating saw to cut them out. The cut-outs will be used when building the doors.
+The plans called for T1-11 siding, which is pressure treated and slots together easily. I think because we skipped building the floor, we ended up having to trim each one shorter, but it ain't rocket science. We installed the siding right over our door and window openings and used a reciprocating saw to cut them out. The cut-outs will be used when building the doors.
 
 ![Siding covering our window and door holes.](./shed-walls.png)
 
@@ -101,4 +101,6 @@ To wrap up, we added soffits and finished the trim on the transom windows. Not m
 
 ![Soffits and trim. So close.](./soffits-and-trim.png)
 
-Hopefully, I'll remember to update with a finished picture once it's fully trimmed and painted in the spring. Bye for now!
+Unfortunately, dirt was splashing up onto the siding, so before I could paint it, I had to dig a shallow trench around the perimeter of the concrete, add a border of edging stones, lay weed barrier, and fill it with gravel.
+
+![Gravel border and mostly painted.](./mostly-done.png)

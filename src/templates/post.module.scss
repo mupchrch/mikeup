@@ -10,4 +10,10 @@
     // For posts, color the header link icon same as header
     fill: var(--header-color);
   }
+
+  section img {
+    width: auto !important;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+  }
 }

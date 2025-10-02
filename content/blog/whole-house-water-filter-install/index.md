@@ -72,7 +72,7 @@ To minimize down time, I'll be installing as much as I can alongside the existin
 
 ![Installing new sediment filter behind old.](./sediment-filter.png)
 
-It takes some muscle to use the expansion tool 💪. I'd definitely get the electric one if I was doing a whole house.
+It takes some muscle to use the expansion tool. I'd definitely get the electric one if I was doing a whole house.
 
 Next up, we'll tee off for the hose bib. I left extra pipe just in case, since we'll be installing the spigot in the spring. I already had purchased the Sharkbite fitting and the pex B pipe for a hose install far before I planned this bigger project, so it made sense to use that here, despite it not being ideal. It also made it easier for me to transition between these two types of pipe, _and_ so I didn't have to buy any pex B crimping supplies.
 
