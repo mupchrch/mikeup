@@ -21,8 +21,17 @@ class Transition extends React.PureComponent {
             className={styles.page}
             style={{
               maxWidth: rhythm(36),
-              padding: `${rhythm(0)} ${rhythm(3 / 4)}`,
-              paddingBottom: rhythm(1),
+              // Effectively hide the page content on the home screen
+              // Prevents interference with Mun interactivity
+              ...(location.pathname === '/'
+                ? {
+                    height: 0,
+                    padding: 0,
+                  }
+                : {
+                    padding: `${rhythm(0)} ${rhythm(3 / 4)}`,
+                    paddingBottom: rhythm(1),
+                  }),
             }}
           >
             {children}

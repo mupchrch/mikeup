@@ -16,7 +16,7 @@ const Earth = ({ className, style }) => {
   const [hi, sayHi] = useState(false);
   useEffect(() => {
     const normalizedRotation = ((rotation % 360) + 360) % 360;
-    const inView = normalizedRotation > 242 && normalizedRotation < 252;
+    const inView = normalizedRotation > 205 && normalizedRotation < 215;
     if (!hi && inView) {
       sayHi(true);
     } else if (hi && !inView) {
@@ -67,9 +67,9 @@ const Earth = ({ className, style }) => {
         <path
           style={{ fill: 'white' }}
           d='M258.318,50.313c-1.102,1.427-2.241,2.935-2.522,4.716c-0.459,2.907,1.452,5.602,3.26,7.924  c2.744,3.525,5.812,7.269,10.147,8.35c8.079,2.014,15.309-6.074,23.609-6.74c6.665-0.535,12.851,3.795,19.533,4.037  c7.581,0.275,11.497-6.948,13.03-14.377C313.199,41.932,299.033,31.62,283.4,23.802C277.307,31.689,264.41,42.428,258.318,50.313z'
-          transform='rotate(142,212.313,166.222)'
+          transform='rotate(180,212.313,166.222)'
         />
-        <g transform='translate(212.313, 315.371) rotate(180,5,6)'>
+        <g transform='translate(122, 300) rotate(215,0,0)'>
           {/* Hi blurb */}
           <Transition in={hi} timeout={200}>
             {(state) => (
