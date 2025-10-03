@@ -13,8 +13,10 @@ $sunny: #fffa75;
   --link-color: #{darken($bluey, 10%)};
   --shadow-color: #{darken($greige, 10%)};
   
-  --mun-color: #{$sunny};
-  --mun-spot-color: #{$sunny};
+  --mun-color-start: #{$sunny};
+  --mun-color-stop: #{adjust-hue($sunny, -25deg)};
+  --mun-color: url('#gradient');
+  --mun-spot-color: transparent;
 
   --theme-toggle-background-color: #{darken($whitesque, 30%)};
   --theme-toggle-foreground-color: #{$whitesque};
